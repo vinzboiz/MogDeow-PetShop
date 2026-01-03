@@ -1,0 +1,10 @@
+ProductName: Chó Pug mặt xệ trắng
+
+ProdutDetail: Chó Pug mặt xệ màu trắng là một giống chó nhỏ đáng yêu, nổi bật với khuôn mặt tròn, đôi mắt to long lanh và những nếp nhăn đặc trưng trên khuôn mặt. Bộ lông ngắn, mượt và có màu trắng tinh khiết giúp chúng trông vô cùng đáng yêu và sang trọng. Chiếc mũi ngắn, hơi hếch cùng đôi tai nhỏ cụp hoặc dựng nhẹ càng làm tăng thêm vẻ ngộ nghĩnh của chúng.
+
+Pug có tính cách vui vẻ, thân thiện và rất quấn chủ. Chúng thích được cưng nựng, luôn tò mò và ham chơi, nhưng cũng rất ngoan ngoãn và dễ thích nghi với môi trường sống. Dù có vẻ ngoài hơi “lười biếng”, nhưng thực chất Pug rất năng động và thích chạy nhảy khi được chơi cùng chủ.
+
+Với ngoại hình dễ thương, khuôn mặt xệ đáng yêu và tính cách hiền lành, chó Pug màu trắng là người bạn đồng hành lý tưởng cho mọi gia đình, đặc biệt là những ai yêu thích thú cưng thân thiện và dễ chăm sóc.
+
+
+ProductPrice: 7.900.000

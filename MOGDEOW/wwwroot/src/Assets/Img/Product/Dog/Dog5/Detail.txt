@@ -1,0 +1,6 @@
+ProductName: Chó Shiba vàng 
+ProdutDetail: Chó Shiba Inu màu vàng là một giống chó nhỏ nhưng mạnh mẽ, có nguồn gốc từ Nhật Bản. Chúng có bộ lông dày, mềm mượt với màu vàng óng đặc trưng, kết hợp với lớp lông trắng ở ngực, má và phần dưới bụng. Đôi tai nhỏ, dựng đứng và đôi mắt sắc bén hình tam giác tạo nên vẻ tinh anh, lanh lợi.
+
+ Shiba Inu nổi tiếng với tính cách độc lập, thông minh nhưng cũng rất trung thành và tình cảm với chủ. Chúng năng động, thích chạy nhảy và khám phá, rất phù hợp với những người thích nuôi thú cưng có cá tính mạnh. Đặc biệt, gương mặt biểu cảm của Shiba Inu khiến chúng trở thành một trong những giống chó đáng yêu và hài hước nhất trên mạng xã hội.
+
+ProductPrice: 14.200.000

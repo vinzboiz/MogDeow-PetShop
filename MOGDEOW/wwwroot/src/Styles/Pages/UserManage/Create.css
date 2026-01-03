@@ -1,0 +1,170 @@
+﻿:root {
+    --primary-color: #ff6b6b; /* Màu cam chủ đạo giống header */
+    --primary-dark: #e85b5b;
+    --success: #28a745;
+    --warning: #ffc107;
+    --text-dark: #333;
+    --text-light: #666;
+    --bg-light: #f1f5f9;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+}
+
+.create-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease-in-out;
+}
+
+.create-header {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #999;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        font-weight: 600;
+        margin-bottom: 6px;
+        display: block;
+        color: var(--text-dark);
+    }
+
+.form-control {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+    .form-control:focus {
+        border-color: var(--primary-color);
+        background-color: #fff;
+        outline: none;
+    }
+
+/* Nút chọn ảnh */
+.btn-upload {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+    .btn-upload:hover {
+        background-color: var(--primary-dark);
+        transform: scale(1.05);
+    }
+
+/* Ảnh preview */
+.preview-wrapper {
+    margin-top: 12px;
+    text-align: center;
+}
+
+    .preview-wrapper img {
+        max-height: 140px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease;
+    }
+
+        .preview-wrapper img:hover {
+            transform: scale(1.05);
+        }
+
+/* Nút hành động */
+.form-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-submit,
+.btn-cancel {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    min-width: 150px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-submit {
+    background-color: var(--success);
+    color: white;
+}
+
+    .btn-submit:hover {
+        background-color: #218838;
+        transform: scale(1.05);
+    }
+
+.btn-cancel {
+    background-color: var(--warning);
+    color: #212529;
+}
+
+    .btn-cancel:hover {
+        background-color: #e0a800;
+        transform: scale(1.05);
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .create-container {
+        padding: 25px;
+        margin: 20px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-submit,
+    .btn-cancel {
+        width: 100%;
+    }
+}

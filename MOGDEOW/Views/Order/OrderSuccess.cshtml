@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Đặt Hàng Thành Công";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/Products/OrderSuccess.css" asp-append-version="true" />
+}
+
+@{
+    var culture = new System.Globalization.CultureInfo("vi-VN");
+}
+
+<div class="background-container">
+    <div class="receipt-wrapper">
+        <div class="receipt-content">
+            <div class="check-icon">✔</div>
+            <p class="success-message">
+                Cảm ơn bạn đã mua hàng tại <strong>MOGDEOW Petshop</strong>. Chúng tôi sẽ liên hệ sớm để xác nhận và giao hàng.
+            </p>
+            <h2>Đặt hàng thành công</h2>
+            <p class="order-id">Mã đơn hàng @ViewBag.BillID</p>
+            <h3>***************************</h3>
+            <div class="shipping-info">
+                <h5>Thông tin giao hàng</h5>
+                <p><strong>Người nhận:</strong> @ViewBag.ReceiverName</p>
+
+                <p><strong>Địa chỉ:</strong> @(string.IsNullOrEmpty(ViewBag.ShippingAddress) ? "Chưa cung cấp" : ViewBag.ShippingAddress)</p>
+                <p><strong>Số điện thoại:</strong> @(string.IsNullOrEmpty(ViewBag.ReceiverPhone) ? "Chưa cung cấp" : ViewBag.ReceiverPhone)</p>
+            </div>
+            <div class="total-info">
+                <strong>Tổng tiền</strong>
+                <p> @(ViewBag.TotalPrice != null ? ((decimal)ViewBag.TotalPrice).ToString("N0", culture) : "0") VNĐ</p>
+            </div>
+
+            <a href="/" class="btn-home">🏠 Quay lại trang chủ</a>
+        </div>
+
+        <img src="~/src/Assets/Icon/Common/bottom-receipt.png" alt="bottom-receipt" class="bottom-receipt" />
+    </div>
+</div>

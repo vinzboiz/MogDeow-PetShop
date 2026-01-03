@@ -1,0 +1,441 @@
+﻿@model MOGDEOW.Models.Product
+
+@{
+    ViewData["Title"] = "Chi Tiết Sản Phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var userId = Context.Session.GetInt32("UserID");
+    bool isFavorite = false;
+
+    if (userId != null && Model.Favorites != null)
+    {
+        isFavorite = Model.Favorites.Any(f => f.UserID == userId);
+    }
+
+    var heartIconPath = isFavorite
+        ? "~/src/Assets/Icon/Pages/Home/heart-icon-filled.png" // icon đã yêu thích
+        : "~/src/Assets/Icon/Pages/Home/heart-icon2.png";      // icon rỗng
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/Products/ProductDetail.css" asp-append-version="true" />
+}
+
+<div class="container-detail">
+    <!--============= CONTAINER SLIDE BÊN TRÁI =======================-->
+    <div class="container-left">
+        <div id="slidesWrapper">
+            <div id="slidesContainer">
+                <!-- Slide ảnh chính -->
+                <div class="slide">
+                    <img src="@Url.Content("~" + Model.ProductImage)" alt="@Model.ProductName" onclick="openFullscreen(this.src)" />
+                </div>
+
+                <!-- Slide ảnh phụ -->
+                @if (Model.Images != null && Model.Images.Any())
+                {
+                    foreach (var image in Model.Images)
+                    {
+                        <div class="slide">
+                            <img src="@Url.Content("~" + image.LinkImage)" alt="Ảnh phụ" onclick="openFullscreen(this.src)" />
+                        </div>
+                    }
+                }
+            </div>
+
+            <!-- Nút điều hướng -->
+            <button type="button" class="prev" onclick="changeSlide(-1)"></button>
+            <button type="button" class="next" onclick="changeSlide(1)"></button>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row" id="thumbnailContainer">
+            <img class="thumbnail" src="@Url.Content("~" + Model.ProductImage)" alt="Thumbnail chính" />
+            @if (Model.Images != null && Model.Images.Any())
+            {
+                foreach (var image in Model.Images)
+                {
+                    <img class="thumbnail" src="@Url.Content("~" + image.LinkImage)" alt="Thumbnail phụ" />
+                }
+            }
+        </div>
+    </div>
+
+    <!-- Overlay và ảnh fullscreen -->
+    <div id="fullscreenOverlay" class="fullscreen-overlay" onclick="closeFullscreen()">
+        <img id="fullscreenImage" class="fullscreen-image" src="" alt="Phóng to" />
+    </div>
+
+    <!--Script slide ảnh-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const slides = document.querySelectorAll("#slidesContainer .slide");
+            const thumbnails = document.querySelectorAll("#thumbnailContainer .thumbnail");
+            let currentIndex = 0;
+            let slideInterval;
+
+                   function showSlide(index) {
+            if (index >= slides.length) currentIndex = 0;
+            else if (index < 0) currentIndex = slides.length - 1;
+            else currentIndex = index;
+
+            const offset = -currentIndex * 100;
+            document.getElementById("slidesContainer").style.transform = `translateX(${offset}%)`;
+
+            thumbnails.forEach((thumb, i) => {
+                thumb.classList.toggle("active", i === currentIndex);
+            });
+        }
+
+
+            // Chuyển slide khi click nút "Previous" hoặc "Next"
+            window.changeSlide = function (direction) {
+                showSlide(currentIndex + direction);
+                resetInterval(); // reset lại interval nếu người dùng thao tác
+            };
+
+            thumbnails.forEach((thumb, index) => {
+                thumb.addEventListener("click", () => {
+                    showSlide(index);
+                    resetInterval();
+                });
+            });
+
+            // Tự động chuyển slide mỗi 5 giây
+            function startAutoSlide() {
+                slideInterval = setInterval(() => {
+                    showSlide(currentIndex + 1);
+                }, 7000);
+            }
+
+            function resetInterval() {
+                clearInterval(slideInterval);
+                startAutoSlide();
+            }
+
+            // Khởi tạo slide đầu tiên và bắt đầu auto slide
+            if (slides.length > 0) {
+                showSlide(0);
+                startAutoSlide();
+            }
+        });
+    </script>
+
+    <!--Script cua Overlay và ảnh fullscreen -->
+    <script>
+        function openFullscreen(src) {
+            const overlay = document.getElementById("fullscreenOverlay");
+            const image = document.getElementById("fullscreenImage");
+            image.src = src;
+            overlay.style.display = "flex";
+        }
+
+        function closeFullscreen() {
+            const overlay = document.getElementById("fullscreenOverlay");
+            overlay.style.display = "none";
+        }
+    </script>
+
+    <!--============= THÔNG TIN SẢN PHẨM =======================-->
+    <div class="container-right">
+        <div class="name-product-container">
+            <h2 class="name-product">@Model.ProductName</h2>
+            <!-- Dòng chữ chỉ hiển thị nếu vừa mới thêm -->
+            <span id="favoriteMessage"
+                  style="display: none; margin-left: 8px;"></span>
+            <a id="favoriteBtn" data-id="@Model.ProductID" title="Yêu thích sản phẩm">
+                <img id="heartIcon"
+                     src="@Url.Content(heartIconPath)"
+                     alt="Yêu thích" />
+            </a>
+
+
+        </div>
+
+        <hr />
+
+        <!-- Hiển thị đánh giá trung bình -->
+        <div class="rating-star">
+            @if (Model.Ratings.Any())
+            {
+                double avgRating = Model.Ratings.Average(r => r.Rate);
+                for (int i = 0; i < Math.Floor(avgRating); i++)
+                {
+                    <span>⭐</span>
+                }
+                <span>(@avgRating.ToString("0.0")/5.0)</span>
+            }
+            else
+            {
+                <span>Chưa có đánh giá</span>
+            }
+        </div>
+
+        <div class="price-product">@Model.ProductPrice.ToString("N0") VNĐ</div>
+        <p class="desc-product">@Model.ProductDetail</p>
+        <hr />
+        <div class="id-container">
+            <h3>Mã Sản Phẩm:</h3>
+            <p>@Model.ProductID</p>
+        </div>
+        <div class="quantity-product-container">
+            <h3>Hiện Còn:</h3>
+            <p>@Model.Quantity sản phẩm</p>
+        </div>
+        <div class="category-container">
+            <h3>Danh Mục Sản Phẩm:</h3>
+
+            <a href="@Url.Action("Index", "Product", new { category = @Model.ProductType?.ProductTypeName })"> @Model.ProductType?.ProductTypeName</a>
+        </div>
+
+        <!-- Hiển thị thông báo -->
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success">@TempData["Success"]</div>
+        }
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger">@TempData["Error"]</div>
+        }
+
+        <hr />
+        @if (Model.Quantity <= 0)
+        {
+            <div class="alert alert-danger">Sản phẩm hiện đã hết hàng.</div>
+        }
+        else
+        {
+            @if (TempData["Warning"] != null)
+            {
+                <div class="alert alert-warning">@TempData["Warning"]</div>
+            }
+            <div class="contact-container">
+                <a class="contact-btn fb-btn" href="https://www.facebook.com/mogdeow" target="_blank">Facebook</a>
+                <a class="contact-btn zalo-btn" href="https://zalo.me/0123456789" target="_blank">Zalo</a>
+            </div>
+
+
+            <!-- Số lượng và nút giỏ hàng -->
+            <div class="quantity-container">
+                <h3>Số Lượng:</h3>
+                <form id="quantityForm">
+                    <input type="hidden" id="productId" value="@Model.ProductID" />
+                    <button type="button" class="btn-decrease">-</button>
+                    <span id="quantityDisplay" class="quantity-viewbag">@ViewBag.Quantity</span>
+                    <button type="button" class="btn-increase">+</button>
+                </form>
+            </div>
+
+            <!-- Nút thêm vào giỏ hàng bằng AJAX -->
+            <div>
+                <button type="button" class="add-to-cart" data-id="@Model.ProductID">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+
+            <!-- Nút mua ngay (giữ nguyên logic GET) -->
+            <form method="get" asp-action="CheckOut" asp-controller="Order">
+                <input type="hidden" name="productId" value="@Model.ProductID" />
+                <button type="submit" class="buy-now">MUA NGAY</button>
+            </form>
+        }
+
+    </div>
+</div>
+
+<!-- ========================================== Khu vực bình luận =============================================== -->
+<div class="comment-container">
+    <h2>Bình luận khách hàng</h2>
+    <div class="quantity-comment">@Model.Ratings.Count bình luận</div>
+
+    @if (Model.Ratings.Any())
+    {
+        @foreach (var rating in Model.Ratings.OrderByDescending(r => r.Date))
+        {
+            <div id="comment-list">
+                <div id="name-cmt">@rating.User.UserName</div>
+                <div id="star-cmt">
+                    @for (int i = 0; i < rating.Rate; i++)
+                    {
+                        <span>⭐</span>
+                    }
+                </div>
+                <div id="date-cmt">@rating.Date.ToString("dd-MM-yyyy")</div>
+                <div id="desc-cmt">@rating.Message</div>
+            </div>
+        }
+    }
+    else
+    {
+        <p>Chưa có bình luận nào.</p>
+    }
+    <h2>Thêm đánh giá</h2>
+    <!-- Form gửi bình luận -->
+    <div class="comment-by-user-container">
+        <form method="post" asp-action="SubmitRating" asp-controller="Rating">
+            <div class="comment-by-user-container-top">
+                <h5>Nhận Xét Của Bạn</h5>
+                <div class="star-rating">
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        <span class="star" data-value="@i">★</span>
+                    }
+                    <input type="hidden" name="Rate" id="ratingValue" value="0" />
+                </div>
+            </div>
+
+            <textarea class="comment-input" name="Message" placeholder="Viết bình luận của bạn..." required></textarea>
+            <input type="hidden" name="ProductID" value="@Model.ProductID" />
+            <button type="submit" class="btn-submit">Gửi bình luận</button>
+        </form>
+    </div>
+</div>
+@section Scripts {
+
+    <script>
+        const stars = document.querySelectorAll('.star-rating .star');
+        const ratingInput = document.getElementById('ratingValue');
+        let selected = 0;
+
+        stars.forEach(star => {
+            const value = parseInt(star.dataset.value);
+
+            star.addEventListener('mouseenter', () => {
+                highlight(value);
+            });
+
+            star.addEventListener('mouseleave', () => {
+                highlight(selected);
+            });
+
+            star.addEventListener('click', () => {
+                selected = value;
+                ratingInput.value = selected;
+                highlight(selected);
+            });
+        });
+
+        function highlight(value) {
+            stars.forEach(s => {
+                const val = parseInt(s.dataset.value);
+                s.classList.toggle('hovered', val <= value);
+                s.classList.toggle('selected', val <= value);
+            });
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        let quantity = parseInt('@ViewBag.Quantity' || 1);
+        let maxQuantity = parseInt('@Model.Quantity');
+
+        $('.btn-decrease').click(function () {
+            if (quantity > 1) {
+                quantity--;
+                $('#quantityDisplay').text(quantity);
+            }
+        });
+
+                      $('.btn-increase').click(function () {
+            if (quantity < maxQuantity) {
+                quantity++;
+                $('#quantityDisplay').text(quantity);
+            } else {
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Số lượng tối đa!',
+                    text: 'Bạn đã chọn số lượng tối đa có thể mua.',
+                    confirmButtonText: 'OK',
+                    confirmButtonColor: '#d33'
+                });
+            }
+        });
+
+
+               $('.add-to-cart').click(function () {
+            const productId = $(this).data('id');
+
+            $.ajax({
+                url: '/Cart/AddToCartAjax',
+                method: 'POST',
+                data: {
+                    productId: productId,
+                    quantity: quantity
+                },
+                success: function (res) {
+                    if (res.success) {
+                        $('#cartCount').text(res.totalQuantity);
+
+                        // ✅ Thông báo SweetAlert
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Đã thêm vào giỏ hàng!',
+                            text: res.message,
+                            timer: 2000,
+                            showConfirmButton: false,
+                            toast: true,
+                            position: 'bottom-end'
+                        });
+
+                        // Hiệu ứng rung icon giỏ hàng
+                        $('.cart-icon').addClass('shake');
+                        setTimeout(() => $('.cart-icon').removeClass('shake'), 400);
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Lỗi',
+                            text: res.message,
+                            confirmButtonColor: '#d33'
+                        });
+                    }
+                },
+                error: function () {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Lỗi hệ thống',
+                        text: 'Đã có lỗi xảy ra, vui lòng thử lại sau.',
+                        confirmButtonColor: '#d33'
+                    });
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        $('#favoriteBtn').click(function () {
+            const productId = $(this).data('id');
+
+            $.ajax({
+                url: '/Favorite/Toggle',
+                method: 'POST',
+                data: { productId: productId },
+                success: function (res) {
+                    const heartIcon = $('#heartIcon');
+                    const message = $('#favoriteMessage');
+
+                    if (res.success) {
+                        if (res.isFavorite) {
+                            heartIcon.attr("src", "/src/Assets/Icon/Pages/Home/heart-icon-filled.png");
+                            message.text("✔ Đã thêm vào yêu thích")
+                                   .css("color", "red")
+                                   .fadeIn()
+                                   .delay(2000)
+                                   .fadeOut();
+                        } else {
+                            heartIcon.attr("src", "/src/Assets/Icon/Pages/Home/heart-icon2.png");
+                            message.fadeOut();
+                        }
+                    } else {
+                        message.text(res.message)
+                               .css("color", "red")
+                               .fadeIn()
+                               .delay(2500)
+                               .fadeOut();
+                    }
+                }
+            });
+        });
+    </script>
+
+}
+
+ 

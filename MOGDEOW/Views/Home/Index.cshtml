@@ -1,0 +1,355 @@
+﻿@{
+    ViewData["Title"] = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/Home/Index.css" asp-append-version="true" />
+}
+@{
+    var culture = new System.Globalization.CultureInfo("vi-VN");
+}
+<!--======================= SLIDE ==============================-->
+<div class="slider-container">
+    <!-- Nút chuyển slide bên trái -->
+    <div class="slider-left"></div>
+    <!-- Nút chuyển slide bên phải -->
+    <div class="slider-right"></div>
+
+    <!-- Container chứa các slide -->
+    <div class="slides">
+        <!-- Slide 1 -->
+        <div class="slide active">
+            <img src="~/src/Assets/Img/Home/Slide/slide1.png"
+                 alt="Slide 1"
+                 class="slide-image" />
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide">
+            <img src="~/src/Assets/Img/Home/Slide/slide2.png"
+                 alt="Slide 2"
+                 class="slide-image" />
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide">
+            <img src="~/src/Assets/Img/Home/Slide/slide3.png"
+                 alt="Slide 3"
+                 class="slide-image" />
+        </div>
+        <!-- Slide 4 -->
+        <div class="slide">
+            <img src="~/src/Assets/Img/Home/Slide/slide4.png"
+                 alt="Slide 4"
+                 class="slide-image" />
+        </div>
+    </div>
+    <!-- Thanh chấm (dots) -->
+    <div class="dots-container">
+        <span class="dot active-dot" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+    </div>
+</div>
+
+<!--======================= DIEM NOI BAT CU WEBSITE===============-->
+<div class="feature-section-container">
+    <!--anh o tren-->
+    <div class="feature-section-img">
+        <img src="~/src/Assets/Img/Home/Banner/feature-1.png" alt="anh-1" />
+        <img src="~/src/Assets/Img/Home/Banner/feature-2.png" alt="anh-2" />
+        <img src="~/src/Assets/Img/Home/Banner/feature-3.png" alt="anh-3" />
+    </div>
+    <!--Mo ta o duoi-->
+    <div class="feature-section-desc">
+        <div class="desc-container">
+            <img src="~/src/Assets/Icon/Pages/Home/map-marker-icon.png"
+                 alt="icon-" />
+            <p>Giao hàng toàn quốc</p>
+        </div>
+
+        <div class="desc-container">
+            <img src="~/src/Assets/Icon/Pages/Home/gift-icon.png" alt="icon-" />
+            <p>giảm giá & khuyến mãi</p>
+        </div>
+
+        <div class="desc-container">
+            <img src="~/src/Assets/Icon/Pages/Home/human-icon.png" alt="icon-" />
+            <p>bảo hành & tư vấn</p>
+        </div>
+    </div>
+</div>
+
+<!--======================= LUA CHON MUA SAM THEO THU CUNG ======================-->
+<div class="shop-by-pet-container">
+    <div class="title-container">
+        <hr />
+        <div class="title-container-group">
+            <img src="~/src/Assets/Icon/Pages/Home/pet-foot-icon.png"
+                 alt="pet-foot-icon" />
+            <p>MUA SẮM THEO THÚ CƯNG</p>
+        </div>
+
+        <hr />
+    </div>
+    <div class="img-choose-pet-container">
+        <a href="@Url.Action("Index", "Product", new { category = "dog" })">
+            <img src="~/src/Assets/Img/Home/Banner/banner-choose-dog.png"
+                 alt="banner-choose-dog" />
+        </a>
+        <a href="@Url.Action("Index", "Product", new { category = "cat" })">
+            <img src="~/src/Assets/Img/Home/Banner/banner-choose-cat.png"
+                 alt="banner-choose-cat" />
+        </a>
+    </div>
+</div>
+
+<!-- ==================== DANH MUC SAN PHAM ===================-->
+<div class="category-container">
+    <div class="title-container">
+        <hr />
+        <div class="title-container-group">
+
+            <img src="~/src/Assets/Icon/Pages/Home/pet-foot-icon.png"
+                 alt="pet-foot-icon" />
+            <p>Danh mục sản phẩm</p>
+
+        </div>
+        <hr />
+    </div>
+    <div class="category-scrollbar">
+        <div class="category-item">
+            <a href="@Url.Action("Index", "Product", new { category = "cat" })">
+                <img src="~/src/Assets/Img/Home/Category/cat-category.png"
+                     alt="Item 1" />
+                <div class="category-info">
+                    <p class="category-name" data-category="cat">Mèo cảnh</p>
+                </div>
+            </a>
+        </div>
+        <div class="category-item">
+            <a href="@Url.Action("Index", "Product", new { category = "dog" })">
+                <img src="~/src/Assets/Img/Home/Category/dog-category.png"
+                     alt="Item 2" />
+                <div class="category-info">
+                    <p class="category-name">chó cảnh</p>
+                </div>
+            </a>
+        </div>
+        <div class="category-item">
+            <a href="@Url.Action("Index", "Product", new { category = "accessories" })">
+                <img src="~/src/Assets/Img/Home/Category/clothes-category.png"
+                     alt="Item 3" />
+                <div class="category-info">
+                    <p class="category-name">
+                        Đồ dùng, đồ chơi, phụ kiện
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="category-item">
+            <a href="@Url.Action("Index", "Product", new { category = "housing" })">
+                <img src="~/src/Assets/Img/Home/Category/cage-category.png"
+                     alt="Item 4" />
+                <div class="category-info">
+                    <p class="category-name">
+                        Chuồng, balo, đệm
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="category-item">
+            <a href="@Url.Action("Index", "Product", new { category = "food" })">
+                <img src="~/src/Assets/Img/Home/Category/food-category.png"
+                     alt="Item 6" />
+                <div class="category-info">
+                    <p class="category-name">
+                        Thức ăn và thực phẩm dinh dưỡng
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="category-item">
+            <a href="@Url.Action("Index", "Product", new { category = "hygiene" })">
+                <img src="~/src/Assets/Img/Home/Category/hygiene-category.png"
+                     alt="Item 77" />
+                <div class="category-info">
+                    <p class="category-name">
+                        Vệ sinh và chăm sóc
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="category-item">
+            <a href="@Url.Action("Index", "Product", new { category = "medicine" })">
+                <img src="~/src/Assets/Img/Home/Category/medicine-category.png"
+                     alt="Item 9" />
+                <div class="category-info">
+                    <p class="category-name">
+                        Thuốc & thực phẩm chức năng
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <a class="btn" href="@Url.Action("Index", "Product")">XEM THÊM</a>
+</div>
+
+<!-- ==================== SHOP CHO CUNG =========================-->
+<div class="dog-shop-container">
+    <div class="title-container">
+        <div class="title-container-group">
+            <p>SHOP CHÓ CƯNG</p>
+        </div>
+    </div>
+    <div class="product-list-dog">
+        <img src="~/src/Assets/Img/Home/Order/dog-say-hi.png"
+             alt="dog-say-hi"
+             class="dog-say-hi" />
+        <div id="dogContainer" class="product-container">
+            @foreach (var product in ViewBag.DogProducts)
+            {
+                var imagePath = Url.Content("~" + product.ProductImage); // Lấy ảnh từ ProductImage
+                <div class="product-card" tabindex="0">
+                    <div class="image-container">
+                        <img class="product-image" src="@imagePath" alt="@product.ProductName" />
+                        <a class="view-now" href="@Url.Action("ProductDetail", "Product", new { id = product.ProductID })">Xem ngay</a>
+                    </div>
+                    <div class="product-details">
+                        <p class="product-price">@product.ProductPrice.ToString("N0", culture) đ</p>
+                        <p class="product-name">@product.ProductName</p>
+                    </div>
+                </div>
+            }
+        </div>
+        <a class="btn" href="@Url.Action("Index", "Product", new { category = "dog" })">XEM THÊM</a>
+    </div>
+</div>
+<!-- ==================== SHOP MEO CUNG =========================-->
+<div class="cat-shop-container">
+    <div class="title-container">
+        <div class="title-container-group">
+            <p>SHOP MÈO CƯNG</p>
+        </div>
+    </div>
+    <div class="product-list-cat">
+        <img src="~/src/Assets/Img/Home/Order/cat-say-hi.png"
+             alt="cat-say-hi"
+             class="cat-say-hi" />
+        <div id="catContainer" class="product-container">
+            @foreach (var product in ViewBag.CatProducts)
+            {
+                var imagePath = Url.Content("~" + product.ProductImage); // Lấy ảnh từ ProductImage
+
+                <div class="product-card" tabindex="0">
+                    <div class="image-container">
+                        <img class="product-image" src="@imagePath" alt="@product.ProductName" />
+                        <a class="view-now" href="@Url.Action("ProductDetail", "Product", new { id = product.ProductID })">Xem ngay</a>
+                    </div>
+                    <div class="product-details">
+                        <p class="product-price">@product.ProductPrice.ToString("N0", culture) đ</p>
+                        <p class="product-name">@product.ProductName</p>
+                    </div>
+                </div>
+            }
+        </div>
+        <a class="btn" href="@Url.Action("Index", "Product", new { category = "cat" })">XEM THÊM</a>
+    </div>
+</div>
+<!-- ===================== DANH CHO PET YEU ==========================-->
+<div class="product-shop-container">
+    <div class="title-container">
+        <hr />
+        <div class="title-container-group">
+            <img src="~/src/Assets/Icon/Pages/Home/pet-foot-icon.png"
+                 alt="pet-foot-icon" />
+            <p>Dành cho pet yêu</p>
+        </div>
+        <hr />
+    </div>
+
+    <div class="product-list">
+        <div id="productContainer" class="product-container">
+            @foreach (var product in ViewBag.PetLoverProducts)
+            {
+                var imagePath = Url.Content("~" + product.ProductImage); // Lấy ảnh từ ProductImage
+
+
+                <div class="product-card" tabindex="0">
+                    <div class="image-container">
+                        <img class="product-image" src="@imagePath" alt="@product.ProductName" />
+                        <a class="view-now" href="@Url.Action("ProductDetail", "Product", new { id = product.ProductID })">Xem ngay</a>
+                    </div>
+                    <div class="product-details">
+                        <p class="product-price">@product.ProductPrice.ToString("N0", culture) đ</p>
+                        <p class="product-name">@product.ProductName</p>
+                    </div>
+                </div>
+            }
+        </div>
+        <a class="btn" href="@Url.Action("Index", "Product")">XEM THÊM</a>
+    </div>
+</div>
+<!-- =======================THUONG HIEU ==============================-->
+<div class="brand-container">
+    <div class="title-container">
+        <hr />
+        <div class="title-container-group">
+            <img src="~/src/Assets/Icon/Pages/Home/push-pin-icon.png"
+                 alt="pet-foot-icon" />
+            <p>THƯƠNG HIỆU</p>
+        </div>
+        <hr />
+    </div>
+
+    <div class="brand-list">
+        <img src="~/src/Assets/Logo/Order/lazada-logo.png" alt="lazada-logo" />
+        <img src="~/src/Assets/Logo/Order/shoppe-logo.png" alt="shoppe-logo" />
+        <img src="~/src/Assets/Logo/Order/tiktok-shop-logo.png"
+             alt="tiktok-shop-logo" />
+        <img src="~/src/Assets/Logo/Order/titki-logo.png" alt="tiki-logo" />
+    </div>
+</div>
+<!--======================== MO TA  ======================-->
+<div class="desc-shop-container">
+    <div class="title-container">
+        <div class="title-container-group">
+            <p>Mogdeow pet shop - yêu thú cưng cùng bạn</p>
+        </div>
+    </div>
+    <div class="desc-shop-desc">
+        Tại MogDeow Pet Shop, chúng tôi chia sẻ niềm đam mê chăm sóc và yêu
+        thương thú cưng của bạn! Chúng tôi cung cấp sản phẩm chất lượng cao,
+        từ thức ăn dinh dưỡng, đồ chơi độc đáo, phụ kiện thời trang đến dụng
+        cụ chăm sóc sức khỏe. Mỗi sản phẩm đều được lựa chọn kỹ lưỡng từ
+        thương hiệu uy tín và kiểm định nghiêm ngặt, mang lại sự an tâm cho
+        thú cưng và cả gia đình.
+        <br />
+        <br />
+        Không chỉ cung cấp sản phẩm, MogDeow Pet Shop còn mang đến dịch vụ tư
+        vấn chuyên nghiệp và hỗ trợ tận tâm. Với phương châm “Chăm sóc tận
+        tâm, yêu thương trọn vẹn”, chúng tôi luôn lắng nghe và đáp ứng mọi nhu
+        cầu của bạn. Hãy đến với chúng tôi để cảm nhận sự khác biệt và niềm
+        vui trong việc chăm sóc thú cưng theo cách riêng của bạn!
+    </div>
+</div>
+<!--==========================VIDEO WEB========================-->
+<div class="youtube-container">
+    <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/u2FLSmVsFs0"
+                title="YouTube Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/src/JavaScripts/Common/Slide.js" asp-append-version="true"></script>
+    <script src="~/src/JavaScripts/Home/CategorySlide.js" asp-append-version="true"></script>
+    <script src="~/src/Data/ProductData/ProductData.js" asp-append-version="true"></script>
+    <script src="~/src/JavaScripts/Home/ProductReaderData.js" asp-append-version="true"></script>
+    <script src="~/src/JavaScripts/Home/DislayProduct.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,378 @@
+﻿@using Newtonsoft.Json
+@using MOGDEOW.Models
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    var userName = HttpContextAccessor.HttpContext?.Session.GetString("UserName") ?? "";
+    var userRole = HttpContextAccessor.HttpContext?.Session.GetString("UserRole") ?? "";
+    var userImg = Context.Session.GetString("UserImg") ?? "";
+}
+
+<!--Layout khi mo sidebar-->
+<div class="layout" id="layout-sidebar"></div>
+<!--Header-->
+<div class="header">
+    <div class="header-container">
+        <div class="hamburger-menu-container tablet-mobile-only">
+            <img src="~/src/Assets/Icon/Layout/Header/hamburger-icon.png"
+                 alt="hamburger-icon"
+                 id="open-menu" />
+        </div>
+        <!--Logo website-->
+        <div class="header-left">
+            <a href="@Url.Action("Index", "Home")">
+                <img src="~/src/Assets/Logo/Main/LogoWhite.png"
+                     alt="logo-website-header" />
+            </a>
+        </div>
+
+        <!--Container header ben phai-->
+        <div class="header-right">
+            <!--Header o tren-->
+            <div class="header-top">
+                <!-- Thanh search -->
+                <div class="search-container desk-only">
+                    <!-- Ô tìm kiếm -->
+                    <form method="get" action="@Url.Action("Index", "Product")">
+                        <input type="text" id="searchBox" name="search" value="@ViewBag.SearchTerm" placeholder="Tìm kiếm sản phẩm..." onkeyup="fetchSuggestions()" />
+                        <button type="submit">
+                            <img src="~/src/Assets/Icon/Layout/Header/search-icon.png" alt="search-icon" />
+                        </button>
+                    </form>
+                    <!-- Danh sách gợi ý -->
+                    <ul id="suggestions" style="display: none; position: absolute; background: white; list-style: none;"></ul>
+                </div>
+
+                <script>
+                    function fetchSuggestions() {
+                        var searchBox = document.getElementById("searchBox");
+                        var suggestionsBox = document.getElementById("suggestions");
+                        var query = searchBox.value.trim();
+
+                        if (query.length === 0) {
+                            suggestionsBox.style.display = "none";
+                            return;
+                        }
+
+                        fetch(`/products/suggestions?keyword=${query}`)
+                            .then(response => response.json())
+                            .then(data => {
+                                suggestionsBox.innerHTML = "";
+                                if (data.length > 0) {
+                                    suggestionsBox.style.display = "block";
+                                    data.forEach(item => {
+                                        var li = document.createElement("li");
+                                        li.textContent = item;
+                                        li.style.cursor = "pointer";
+                                        li.onclick = function () {
+                                            searchBox.value = item;
+                                            suggestionsBox.style.display = "none";
+                                        };
+                                        suggestionsBox.appendChild(li);
+                                    });
+                                } else {
+                                    suggestionsBox.style.display = "none";
+                                }
+                            });
+                    }
+                </script>
+                <!--Hotline cua website-->
+                <div class="hotline-container desk-only">
+                    <p class="title">Hotline</p>
+                    <a href="tel:0862053894">086 205 3894</a>
+                </div>
+                <!--Icon yeu thich, user va gio hang-->
+                <div class="icon-container">
+                    <ul class="nav-menu desk-only">
+
+                        @if (!string.IsNullOrEmpty(userName))
+                        {
+                            <li class="nav-item dropdown hover-dropdown">
+                                <a class="nav-link" href="#" id="userDropdown">
+                                    @if (!string.IsNullOrEmpty(userImg))
+                                    {
+                                        <img src="~/src/Assets/Img/User/@userImg" alt="User Image" class="user-img" style="object-fit: cover;" />
+                                    }
+                                    else
+                                    {
+                                        <img src="~/src/Assets/Icon/Layout/Header/User-Icon.png" alt="User icon" class="user-icon" />
+                                    }
+                                </a>
+                                <div class="dropdown-menu user-menu">
+                                    <div class="user-greeting">
+                                        👋 Xin chào, <strong>@userName</strong>!
+                                    </div>
+                                    <a class="dropdown-item account" asp-controller="Account" asp-action="Index">👤 Thông tin cá nhân</a>
+                                    <form method="post" asp-action="Logout" asp-controller="User">
+                                        <button type="submit" class="dropdown-item logout-btn">🚪 Đăng xuất</button>
+                                    </form>
+                                </div>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item dropdown hover-dropdown">
+                                <a class="nav-link" href="#">
+                                    <img src="~/src/Assets/Icon/Layout/Header/User-Icon.png" alt="User icon" class="user-icon" />
+                                </a>
+                                <div class="dropdown-menu user-menu">
+                                    <div class="user-greeting">
+                                        Đăng nhập để trải nghiệm tốt hơn!
+                                    </div>
+                                    <a class="dropdown-item" asp-controller="User" asp-action="Login">🔑 Đăng nhập</a>
+                                    <a class="dropdown-item" asp-controller="User" asp-action="Signin">📝 Đăng ký</a>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                    @if (!string.IsNullOrEmpty(userName))
+                    {
+                        <a class="icon-link" asp-controller="Favorite" asp-action="Index">
+                            <img src="~/Assets/Icon/Layout/Header/Heart-Icon.png"
+                                 alt="Heart-icon"
+                                 class="heart-icon desk-only" />
+                        </a>
+                        int totalQuantity = 0;
+                        var cartJson = Context.Session.GetString("Cart");
+
+                        if (!string.IsNullOrEmpty(cartJson))
+                        {
+                            var cart = JsonConvert.DeserializeObject<List<CartDetail>>(cartJson);
+                            totalQuantity = cart?.Sum(item => item.Quantity) ?? 0;
+                        }
+
+                        <a class="icon-link" asp-controller="Cart" asp-action="Cart" style="position: relative; display: inline-block;">
+                            <img src="~/src/Assets/Icon/Layout/Header/Cart-Icon.png" alt="Cart icon" class="cart-icon" />
+                            <span id="cartCount" class="cart-count-badge">@totalQuantity</span>
+                        </a>
+                    
+                    }
+                    else
+                    {
+                        <a class="icon-link" asp-controller="User" asp-action="Login">
+                            <img src="~/Assets/Icon/Layout/Header/Heart-Icon.png"
+                                 alt="Heart-icon"
+                                 class="heart-icon desk-only" />
+                        </a>
+                        <a class="icon-link" asp-controller="User" asp-action="Login">
+                            <img src="~/src/Assets/Icon/Layout/Header/Cart-Icon.png" alt="Cart icon" class="cart-icon" />
+                        </a>
+                    }
+                </div>
+            </div>
+            <!--Header o duoi-->
+            <div class="header-bottom desk-only">
+                <ul class="header-menu-list">
+                    <!--TRANG CHU-->
+                    <li class="choose-menu-list">
+                        <img src="~/src/Assets/Icon/Layout/Header/Home-Icon.png"
+                             alt="Home-icon" />
+                        <a href="@Url.Action("Index", "Home")">Trang chủ</a>
+                    </li>
+                    <!--VE CHUNG TOI-->
+                    <li class="choose-menu-list">
+                        <img src="~/src/Assets/Icon/Layout/Header/About-Icon.png"
+                             alt="About-icon" />
+                        <a href="@Url.Action("Index", "About")">Về chúng tôi </a>
+                    </li>
+                    <!-- THÚ CƯNG -->
+                    <li class="choose-menu-list">
+                        <img src="~/src/Assets/Icon/Layout/Header/Pet-Icon.png" alt="Pet-Icon" />
+                        <a href="@Url.Action("Index", "Product", new { category = "all" })">Thú cưng</a>
+
+                        <ul class="dropdown">
+                            <li class="choose-dropdown-list">
+                                <a href="@Url.Action("Index", "Product", new { category = "dog" })">Chó cảnh</a>
+                                <img src="~/src/Assets/Icon/Layout/Header/Dog-icon-Icon.png" alt="Dog icon" />
+                            </li>
+                            <li class="choose-dropdown-list">
+                                <a href="@Url.Action("Index", "Product", new { category = "cat" })">Mèo cảnh</a>
+                                <img src="~/src/Assets/Icon/Layout/Header/Cat-icon-Icon.png" alt="Cat icon" />
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- PHỤ KIỆN THÚ CƯNG -->
+                    <li class="choose-menu-list">
+                        <img src="~/src/Assets/Icon/Layout/Header/Accessories-Icon.png" alt="Accessories-icon" />
+                        <a href="@Url.Action("Index", "Product", new { category = "all" })">Phụ kiện thú cưng</a>
+
+                        <ul class="dropdown">
+                            <li class="choose-dropdown-list">
+                                <a href="@Url.Action("Index", "Product", new { category = "food" })">Thức ăn và thực phẩm dinh dưỡng</a>
+                                <img src="~/src/Assets/Icon/Layout/Header/Pet-Food-Icon.png" alt="Pet food icon" />
+                            </li>
+                            <li class="choose-dropdown-list">
+                                <a href="@Url.Action("Index", "Product", new { category = "hygiene" })">Vệ sinh và chăm sóc</a>
+                                <img src="~/src/Assets/Icon/Layout/Header/Pet-Hygiene-icon.png" alt="Pet-Hygiene" />
+                            </li>
+                            <li class="choose-dropdown-list">
+                                <a href="@Url.Action("Index", "Product", new { category = "accessories" })">Đồ dùng, đồ chơi, phụ kiện</a>
+                                <img src="~/src/Assets/Icon/Layout/Header/Pet-toy-icon.png" alt="Pet-toy" />
+                            </li>
+                            <li class="choose-dropdown-list">
+                                <a href="@Url.Action("Index", "Product", new { category = "housing" })">Chuồng, balo, đệm</a>
+                                <img src="~/src/Assets/Icon/Layout/Header/Pet-cushion-icon.png" alt="Pet-cushion" />
+                            </li>
+                            <li class="choose-dropdown-list">
+                                <a href="@Url.Action("Index", "Product", new { category = "medicine" })">Thuốc và thực phẩm chức năng</a>
+                                <img src="~/src/Assets/Icon/Layout/Header/Pet-medicine-icon.png" alt="Pet-medicine" />
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--HO TRO-->
+                    <li class="choose-menu-list">
+                        <img src="~/src/Assets/Icon/Layout/Header/Contact-Icon.png"
+                             alt="Contact-icon" />
+                        <a href="@Url.Action("Index", "Contact")">Hỗ trợ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Cart-side-bar khi nhan vao icon cart-->
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-sidebar-header">
+        <img src="~/src/Assets/Icon/Layout/Header/close.png"
+             alt="close-cart"
+             class="close-cart"
+             id="close-cart" />
+    </div>
+    <div class="cart-sidebar-content">
+        <h2>Giỏ hàng</h2>
+        <p>Chưa có sản phẩm nào trong giỏ hàng.</p>
+        <a href="@Url.Action("Cart", "Product")" id="shop-now">MUA NGAY</a>
+    </div>
+</div>
+
+<!--Menu-side-bar khi nhan vao icon menus-->
+<div id="menu-sidebar" class="menu-sidebar">
+    <div class="menu-sidebar-header">
+        <img src="~/src/Assets/Icon/Layout/Header/close.png"
+             alt="close-menu"
+             class="close-menu"
+             id="close-menu" />
+    </div>
+    <!-- Thanh search -->
+    <div class="search-container">
+        <!-- Ô tìm kiếm -->
+        <form method="get" action="@Url.Action("Index", "Product")">
+            <input type="text" id="searchBox" name="search" value="@ViewBag.SearchTerm" placeholder="Tìm kiếm sản phẩm..." onkeyup="fetchSuggestions()" />
+            <button type="submit">
+                <img src="~/src/Assets/Icon/Layout/Header/search-icon.png" alt="search-icon" />
+            </button>
+        </form>
+    </div>
+
+    <div class="menu-sidebar-content">
+        <ul class="header-menu-list">
+            <!--TRANG CHU-->
+            <li class="choose-menu-list">
+                <a href ="@Url.Action("Index", "Home")">Trang chủ</a>
+                <img src="~/src/Assets/Icon/Layout/Header/Home-Icon.png" alt="Home-icon" />
+            </li>
+            <!--VE CHUNG TOI-->
+            <li class="choose-menu-list">
+                <a href="@Url.Action("Index", "About")">Về chúng tôi </a>
+                <img src="~/src/Assets/Icon/Layout/Header/About-Icon.png"
+                     alt="About-icon" />
+            </li>
+            <!--THU CUNG-->
+            <li class="choose-menu-list" id="open-drop-pet">
+                <a href="@Url.Action("Index", "Product")" data-category="all-pet">Thú cưng </a>
+                <img src="~/src/Assets/Icon/Layout/Header/Pet-Icon.png" alt="Pet-Icon" />
+            </li>
+            <ul class="dropdown-pet">
+                <li class="choose-dropdown-item">
+                    <a href="@Url.Action("Index", "Product")" data-category="dog">Chó cảnh</a>
+                    <img src="~/src/Assets/Icon/Layout/Header/Dog-icon-Icon.png"
+                         alt="Dog icon" />
+                </li>
+                <li class="choose-dropdown-item">
+                    <a href="@Url.Action("Index", "Product")" data-category="cat">Mèo cảnh</a>
+                    <img src="~/src/Assets/Icon/Layout/Header/Cat-icon-Icon.png"
+                         alt="Cat icon" />
+                </li>
+            </ul>
+
+            <!--PHU KIEN THU CUNG-->
+            <li class="choose-menu-list" id="open-drop-accesories">
+                <a href="@Url.Action("Index", "Product")" data-category="all-accessories">Phụ kiện thú cưng</a>
+                <img src="~/src/Assets/Icon/Layout/Header/Accessories-Icon.png"
+                     alt="Accessories-icon" />
+            </li>
+            <ul class="dropdown-accesories">
+                <li class="choose-dropdown-item">
+                    <a href="@Url.Action("Index", "Product")" data-category="food">Thức ăn và thực phẩm dinh dưỡng</a>
+                    <img src="~/src/Assets/Icon/Layout/Header/Pet-Food-Icon.png"
+                         alt="Pet food icon" />
+                </li>
+                <li class="choose-dropdown-item">
+                    <a href="@Url.Action("Index", "Product")" data-category="hygiene">Vệ sinh và chăm sóc</a>
+                    <img src="~/src/Assets/Icon/Layout/Header/Pet-Hygiene-icon.png"
+                         alt="Pet-Hygiene" />
+                </li>
+                <li class="choose-dropdown-item">
+                    <a href="@Url.Action("Index", "Product")" data-category="accessories">Đồ dùng, đồ chơi, phụ kiện</a>
+                    <img src="~/src/Assets/Icon/Layout/Header/Pet-toy-icon.png"
+                         alt="Pet-toy" />
+                </li>
+                <li class="choose-dropdown-item">
+                    <a href="@Url.Action("Index", "Product")" data-category="housing">Chuồng, balo, đệm</a>
+                    <img src="~/src/Assets/Icon/Layout/Header/Pet-cushion-icon.png"
+                         alt="Pet-cushion" />
+                </li>
+                <li class="choose-dropdown-item">
+                    <a href="@Url.Action("Index", "Product")"  data-category="medicine">Thuốc và thực phẩm chức năng</a>
+                    <img src="~/src/Assets/Icon/Layout/Header/Pet-medicine-icon.png"
+                         alt="Pet-medicine" />
+                </li>
+            </ul>
+
+            <!--HO TRO-->
+            <li class="choose-menu-list">
+                <a href="@Url.Action("Index", "Contact")">Hỗ trợ</a>
+                <img src="~/src/Assets/Icon/Layout/Header/Contact-Icon.png"
+                     alt="Contact-icon" />
+            </li>
+
+
+            @if (!string.IsNullOrEmpty(userName))
+            {
+                <hr style="width: 90%; margin: 0px auto;" />
+                <li class="choose-menu-list">
+                    <span> Xin chào, <strong>@userName</strong>!</span>
+                </li>
+
+                <li class="choose-menu-list">
+                    <a asp-controller="Account" asp-action="Index"> Thông tin cá nhân</a>
+                </li>
+                <li class="choose-menu-list">
+                    <a class="icon-link" asp-controller="Favourite" asp-action="Index">Yêu Thích</a>
+                </li>
+                <li class="choose-menu-list">
+                    <form method="post" asp-action="Logout" asp-controller="User">
+                        <button type="submit" class="dropdown-item logout-btn">Đăng xuất</button>
+                    </form>
+                </li>
+            }
+            else
+            {
+                <li class="choose-menu-list">
+                    <a href="@Url.Action("Login", "User")"> Tài khoản</a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        console.log("Session Debug:");
+        console.log("UserName: '@userName'");
+        console.log("UserRole: '@userRole'");
+    });
+</script>

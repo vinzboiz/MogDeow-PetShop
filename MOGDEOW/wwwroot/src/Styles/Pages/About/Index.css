@@ -1,0 +1,361 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --main-color: #ff6464;
+  --title-color: #fcae53;
+}
+.container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.to-top-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: none; /* Ẩn ban đầu */
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  z-index: 10000;
+}
+
+.to-top-icon:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+.banner-top-about {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../../../Assets/Img/About/banner-1.png") no-repeat center
+    center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.title-container {
+  text-align: center;
+}
+
+.title-about-top {
+  display: block;
+  font-family: "Coiny", cursive;
+  font-size: 3rem;
+  color: #f8ccac;
+  margin-bottom: 30px;
+}
+.title-about-bottom {
+  display: block;
+  font-family: "Coiny", cursive;
+  font-size: 1.8rem;
+  color: #f8ccac;
+  margin-bottom: 40px;
+}
+.desc-about-banner {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  max-width: 70%;
+  line-height: 2rem;
+}
+.desc-about {
+  font-size: 1.1rem;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 70%;
+  line-height: 2rem;
+  margin: 40px auto;
+}
+.pic-banner {
+  display: block;
+  width: 80%;
+  margin: 0px auto;
+}
+.pic-about-container {
+  width: 100%;
+  max-width: 80vw;
+  margin: 50px auto;
+  margin-bottom: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  gap: 10px;
+  grid-template-areas:
+    "pic1 pic2 pic3"
+    "pic4 pic5 pic5"
+    "pic4 pic6 pic6";
+}
+
+/* Định nghĩa vùng ảnh */
+.pic1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: pic1;
+}
+.pic2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: pic2;
+}
+.pic3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: pic3;
+}
+.pic4 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: pic4;
+} /* Ảnh dọc bên trái */
+.pic5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: pic5;
+} /* Ảnh ngang bên phải */
+.pic6 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: pic6;
+} /* Ảnh ngang bên phải */
+
+/* Căn chỉnh hình ảnh */
+.pic-about-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.decor-contact {
+    width: 100%;
+ 
+}
+
+    .decor-contact img {
+        width: 100%;
+        height: 20%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+/* ======================== RESPONSIVE SIDEBAR ======================== */
+/*================================================== DESKTOP ====================================================*/
+@media (min-width: 1025px) {
+}
+/*================================================== IPAD ================================================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner-top-about {
+    min-height: 40vh;
+  }
+
+  .title-about-top {
+    font-family: "Coiny", cursive;
+    font-size: 2.1rem;
+    color: #f8ccac;
+    margin-bottom: 30px;
+  }
+  .title-about-bottom {
+    font-family: "Coiny", cursive;
+    font-size: 1.3rem;
+    color: #f8ccac;
+    margin-bottom: 40px;
+  }
+  .desc-about-banner {
+    font-size: 1rem;
+  }
+  .desc-about {
+    font-size: 1rem;
+  }
+
+  .pic-about-container {
+    width: 90%;
+    max-width: 90vw;
+    margin: 50px auto;
+    margin-bottom: 40px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas:
+      "pic1 pic2 pic3"
+      "pic4 pic5 pic5"
+      "pic4 pic6 pic6";
+  }
+
+  .pic1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .pic2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .pic3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+
+  .pic4 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+
+  .pic5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+  }
+
+  .pic6 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+  }
+    .decor-contact {
+        width: 100%;
+       
+    }
+
+        .decor-contact img {
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+}
+/* ==================================== MOBILE =====================================*/
+@media (max-width: 767px) {
+  .banner-top-about {
+    min-height: 30vh;
+    padding: 20px;
+  }
+
+  .title-about-top {
+    font-family: "Coiny", cursive;
+    font-size: 1.1rem;
+    color: #f8ccac;
+    margin-bottom: 10px;
+  }
+  .title-about-bottom {
+    font-family: "Coiny", cursive;
+    font-size: 0.9rem;
+    color: #f8ccac;
+    margin-bottom: 10px;
+  }
+  .desc-about-banner {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    max-width: 80%;
+  }
+  .desc-about {
+    font-size: 0.6rem;
+    max-width: 80%;
+    line-height: 1rem;
+    margin: 20px auto;
+  }
+
+  .pic-about-container {
+    width: 95%;
+    max-width: 90vw;
+    margin: 10px auto;
+    margin-bottom: 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas:
+      "pic1 pic2 pic3"
+      "pic4 pic5 pic5"
+      "pic4 pic6 pic6";
+  }
+
+  .pic1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .pic2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .pic3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+
+  .pic4 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+
+  .pic5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+  }
+
+  .pic6 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+  }
+    .decor-contact {
+        width: 100%;
+        
+    }
+
+        .decor-contact img {
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+}

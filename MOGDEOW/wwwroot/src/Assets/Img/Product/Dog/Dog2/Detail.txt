@@ -1,0 +1,5 @@
+ProductName: Chó Corgi fluffy lông dài màu vàng trắng
+ProdutDetail:Chó Corgi Fluffy lông dài màu vàng trắng có vẻ ngoài vô cùng đáng yêu với đôi chân ngắn đặc trưng, thân hình mũm mĩm và bộ lông dài mềm mượt. So với Corgi thông thường, phiên bản Fluffy sở hữu lớp lông dài hơn, bồng bềnh và óng ả, tạo nên một diện mạo vừa sang trọng vừa dễ thương. Bộ lông hai màu vàng trắng hòa quyện hài hòa, đặc biệt nổi bật ở phần ngực, bụng và đuôi xù đáng yêu.
+
+Không chỉ có ngoại hình cuốn hút, Corgi Fluffy còn rất thông minh, lanh lợi và dễ huấn luyện. Chúng thân thiện, quấn quýt với chủ và hòa đồng với trẻ em cũng như các vật nuôi khác. Corgi Fluffy thích chạy nhảy, khám phá và luôn tràn đầy năng lượng, mang đến bầu không khí vui vẻ cho mọi gia đình.
+ProductPrice: 15.000.000

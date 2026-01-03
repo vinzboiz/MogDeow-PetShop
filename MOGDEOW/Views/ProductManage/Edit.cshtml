@@ -1,0 +1,91 @@
+﻿@model MOGDEOW.Models.Product
+@using MOGDEOW.Models
+@{
+    ViewData["Title"] = "Chỉnh sửa sản phẩm";
+    var productTypes = ViewBag.ProductTypes as List<ProductType>;
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/ProductManage/Edit.css" asp-append-version="true" />
+}
+
+
+
+<form asp-controller="Product" asp-action="Edit" method="post" enctype="multipart/form-data" class="form-edit">
+    <h2 class="title">✏️ Chỉnh sửa sản phẩm</h2>
+    <input type="hidden" asp-for="ProductID" />
+    <input type="hidden" asp-for="ProductImage" />
+
+    <div class="form-group">
+        <label asp-for="ProductName"></label>
+        <input asp-for="ProductName" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ProductPrice"></label>
+        <input asp-for="ProductPrice" class="form-control" type="number" required />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Quantity"></label>
+        <input asp-for="Quantity" class="form-control" type="number" required />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DVT"></label>
+        <input asp-for="DVT" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ProductDetail"></label>
+        <textarea asp-for="ProductDetail" class="form-control" required></textarea>
+    </div>
+
+    <!-- Ảnh hiện tại -->
+    <div class="form-group text-center">
+        <label>Ảnh hiện tại:</label><br />
+        <img src="@Model.ProductImage" alt="Ảnh sản phẩm" class="img-preview" />
+    </div>
+
+    <!-- Ảnh mới -->
+    <div class="form-group text-center">
+        <label>Ảnh mới (nếu muốn thay):</label><br />
+        <button type="button" class="btn-upload" onclick="document.getElementById('uploadInput').click()">📷 Chọn ảnh mới</button>
+        <input asp-for="Upload" id="uploadInput" type="file" accept="image/*" style="display:none;" onchange="previewImage(event)" />
+        <div class="preview-wrapper">
+            <img id="preview-img" style="display:none;" />
+        </div>
+    </div>
+
+    <!-- Danh mục -->
+    <div class="form-group">
+        <label asp-for="SelectedTypeName"></label>
+        <select asp-for="SelectedTypeName" class="form-control" required>
+            <option value="">-- Chọn danh mục --</option>
+            @foreach (var type in productTypes)
+            {
+                <option value="@type.ProductTypeName">@type.ProductTypeName</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group mt-4 form-buttons text-center">
+        <button type="submit" class="btn-submit">💾 Cập nhật</button>
+        <a asp-action="Manage" class="btn-cancel">🔙 Quay lại</a>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        function previewImage(event) {
+            const file = event.target.files[0];
+            const preview = document.getElementById('preview-img');
+            if (file) {
+                preview.src = URL.createObjectURL(file);
+                preview.style.display = "block";
+            } else {
+                preview.style.display = "none";
+            }
+        }
+    </script>
+}

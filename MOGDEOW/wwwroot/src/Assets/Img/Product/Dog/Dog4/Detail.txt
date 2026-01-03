@@ -1,0 +1,10 @@
+ProductName: Chó Golden màu vàng
+ProdutDetail: Chó Golden Retriever màu vàng là một giống chó cỡ trung, nổi bật với bộ lông dày, mềm mượt và óng ánh như màu nắng. Chúng có đôi mắt to, tròn, ánh lên vẻ hiền lành và thân thiện, cùng đôi tai cụp nhẹ tạo nên vẻ ngoài ấm áp, dễ mến.
+
+Golden Retriever nổi tiếng với tính cách hiền hòa, thông minh và trung thành. Chúng rất thân thiện, hòa đồng với cả con người lẫn vật nuôi khác, đặc biệt yêu thích trẻ em. Đây là giống chó năng động, thích chơi đùa, bơi lội và có khả năng học hỏi nhanh, thường được huấn luyện để làm chó nghiệp vụ hoặc hỗ trợ người khuyết tật.
+
+Với sự thông minh và tình cảm của mình, Golden Retriever không chỉ là một người bạn trung thành mà còn là một thành viên tuyệt vời trong gia đình.
+
+
+ProductPrice: 10.700.000
+

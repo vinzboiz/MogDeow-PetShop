@@ -1,0 +1,5 @@
+ProductName: Chó Phốc sóc mini màu trắng tuyết
+ProdutDetail:Chó Phốc Sóc Mini màu trắng tuyết là một trong những giống chó nhỏ đáng yêu nhất, sở hữu bộ lông dày, mềm mại và bông xù như một đám mây nhỏ. Màu lông trắng tinh khôi giúp chúng trông thanh lịch, sang trọng và vô cùng nổi bật. Đôi mắt to tròn, long lanh cùng chiếc mũi nhỏ nhắn khiến gương mặt của Phốc Sóc Mini luôn biểu lộ vẻ đáng yêu, tinh nghịch.
+
+Dù có kích thước nhỏ bé, Phốc Sóc lại rất thông minh, lanh lợi và tràn đầy năng lượng. Chúng thích chạy nhảy, chơi đùa và đặc biệt rất trung thành với chủ nhân. Ngoài ra, bé còn có xu hướng bám chủ, thích được âu yếm và cưng nựng.
+ProductPrice: 9.000.000

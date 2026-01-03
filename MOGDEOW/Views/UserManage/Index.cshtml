@@ -1,0 +1,76 @@
+﻿@model IEnumerable<MOGDEOW.Models.User>
+@{
+    ViewData["Title"] = "Quản lý tài khoản";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/UserManage/Index.css" asp-append-version="true" />
+}
+
+
+<div class="user-manage-container">
+    <div class="user-manage-header">
+        <h2 class="page-title">📋 Danh sách tài khoản</h2>
+        <a asp-action="Create" class="btn-create">+  Tạo mới tài khoản</a>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+
+    <form asp-action="Index" method="get" class="user-filter-form">
+        <input type="text" name="searchName" value="@ViewBag.CurrentSearch" placeholder="🔍 Tìm theo tên..." />
+
+        <select name="roleFilter">
+            @{
+                var role = ViewBag.CurrentRole as string ?? "All";
+            }
+            <option value="All" selected="@(role == "All")">Tất cả vai trò</option>
+            <option value="Customer" selected="@(role == "Customer")">Customer</option>
+            <option value="Staff" selected="@(role == "Staff")">Staff</option>
+            <option value="Admin" selected="@(role == "Admin")">Admin</option>
+        </select>
+
+        <button type="submit">Lọc</button>
+    </form>
+
+    <div class="table-wrapper">
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Họ tên</th>
+                    <th>Email</th>
+                    <th>SĐT</th>
+                    <th>Địa chỉ</th>
+                    <th>Vai trò</th>
+                    <th>Chức Năng</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td data-label="ID">@user.UserID</td>
+                        <td data-label="Họ tên"><p class="collapsible-text">@user.UserName</p></td>
+                        <td data-label="Email"><p class="collapsible-text">@user.Email</p></td>
+                        <td data-label="SĐT"><p class="collapsible-text">@user.PhoneNumber</p></td>
+                        <td data-label="Địa chỉ"><p class="collapsible-text">@user.Address</p></td>
+                        <td data-label="Vai trò"><p class="collapsible-text">@user.Role</p></td>
+                        <td class="action-buttons" data-label="Thao tác">
+                            <a asp-action="EditRole" asp-route-id="@user.UserID" class="btn-action role">Phân quyền</a>
+                            <a asp-action="Edit" asp-route-id="@user.UserID" class="btn-action edit">Sửa</a>
+                            <form asp-action="Delete" asp-route-id="@user.UserID" method="post" onsubmit="return confirm('Xác nhận xóa tài khoản này?')">
+                                <button type="submit" class="btn-action delete">Xóa</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="back-container">
+        <a asp-controller="Account" asp-action="Index" class="btn-back">← Quay lại trang tài khoản</a>
+    </div>
+</div>

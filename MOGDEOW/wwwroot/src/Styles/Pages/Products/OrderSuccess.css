@@ -1,0 +1,460 @@
+﻿
+.background-container {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: url("../../../Assets/Img/Home/Slide/slide2.png") no-repeat center center/cover;
+    position: relative;
+}
+
+.receipt-wrapper {
+    background: transparent; /* ⛔ Không đặt nền ở đây nếu muốn trong suốt */
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.receipt-content {
+    background: white; /* ✔️ Tờ hóa đơn trắng */
+    width: 95%;
+    max-width: 500px;
+    padding: 30px 40px 20px;
+    border-top: 7px solid #51D96B;
+    position: relative;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    height: auto;
+}
+
+.bottom-receipt {
+    width: 95%;
+    max-width: 900px;
+}
+
+.check-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #51D96B; /* màu xanh lá thành công */
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 20px; /* căn giữa và cách dưới */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.success-message {
+    word-break: break-word;
+    white-space: normal;
+}
+
+.receipt-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    margin-bottom: 15px;
+}
+
+.receipt-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #777;
+    line-height: 1.2rem;
+    margin-bottom: 15px;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.receipt-content h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #777;
+    letter-spacing: 2px;
+    line-height: 1.2rem;
+    margin-bottom: 20px;
+}
+
+shipping-info {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.shipping-info h5 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.2rem;
+    margin-bottom: 15px;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.shipping-info p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #777;
+    line-height: 1.2rem;
+    margin-bottom: 3px;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.total-info {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+    .total-info strong {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #333;
+        line-height: 1.2rem;
+        margin-bottom: 10px;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .total-info p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #777;
+        line-height: 1.2rem;
+        margin-bottom: 3px;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+.btn-home {
+    padding: 14px;
+    background-color: var(--main-color);
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* ======================== RESPONSIVE  ======================== */
+/*================================================== DESKTOP ====================================================*/
+@media (min-width: 1025px) {
+}
+/*================================================== IPAD ================================================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .background-container {
+        display: flex;
+        font-family: "Montserrat", sans-serif;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+        background: url("../../../Assets/Img/Home/Slide/slide2.png") no-repeat center center/cover;
+        position: relative;
+    }
+
+    .receipt-wrapper {
+        background: transparent; /* ⛔ Không đặt nền ở đây nếu muốn trong suốt */
+        padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .receipt-content {
+        background: white; /* ✔️ Tờ hóa đơn trắng */
+        width: 95%;
+        max-width: 500px;
+        padding: 30px 40px 20px;
+        border-top: 7px solid #51D96B;
+        position: relative;
+        text-align: center;
+        font-family: 'Segoe UI', sans-serif;
+        overflow: hidden;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        height: auto;
+    }
+
+    .bottom-receipt {
+        width: 95%;
+        max-width: 900px;
+    }
+
+    .check-icon {
+        width: 60px;
+        height: 60px;
+        background-color: #51D96B; /* màu xanh lá thành công */
+        color: white;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 0 auto 20px; /* căn giữa và cách dưới */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .success-message {
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .receipt-content h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        margin-bottom: 15px;
+    }
+
+    .receipt-content p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #777;
+        line-height: 1.2rem;
+        margin-bottom: 15px;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .receipt-content h3 {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #777;
+        letter-spacing: 2px;
+        line-height: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    shipping-info {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
+
+    .shipping-info h5 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #333;
+        line-height: 1.2rem;
+        margin-bottom: 15px;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .shipping-info p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #777;
+        line-height: 1.2rem;
+        margin-bottom: 3px;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .total-info {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+        .total-info strong {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #333;
+            line-height: 1.2rem;
+            margin-bottom: 10px;
+            word-break: break-word;
+            white-space: normal;
+        }
+
+        .total-info p {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #777;
+            line-height: 1.2rem;
+            margin-bottom: 3px;
+            word-break: break-word;
+            white-space: normal;
+        }
+
+    .btn-home {
+        padding: 14px;
+        background-color: var(--main-color);
+        font-size: 1rem;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        text-transform: capitalize;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+}
+/* ==================================== MOBILE =====================================*/
+@media (max-width: 767px) {
+    .background-container {
+        display: flex;
+        font-family: "Montserrat", sans-serif;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+        background: url("../../../Assets/Img/Home/Slide/slide2.png") no-repeat center center/cover;
+        position: relative;
+    }
+
+    .receipt-wrapper {
+        background: transparent; /* ⛔ Không đặt nền ở đây nếu muốn trong suốt */
+        padding: 10px 10px;
+        display: flex;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .receipt-content {
+        background: white; /* ✔️ Tờ hóa đơn trắng */
+        width: 95%;
+        max-width: 500px;
+        padding: 20px 10px 20px;
+        border-top: 7px solid #51D96B;
+        position: relative;
+        text-align: center;
+        font-family: 'Segoe UI', sans-serif;
+        overflow: hidden;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        height: auto;
+    }
+
+    .bottom-receipt {
+        width: 95%;
+        max-width: 900px;
+    }
+
+    .check-icon {
+        width: 40px;
+        height: 40px;
+        background-color: #51D96B; /* màu xanh lá thành công */
+        color: white;
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 0 auto 20px; /* căn giữa và cách dưới */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .success-message {
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .receipt-content h2 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        margin-bottom: 15px;
+    }
+
+    .receipt-content p {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #777;
+        line-height: 1.2rem;
+        margin-bottom: 15px;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .receipt-content h3 {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #777;
+        letter-spacing: 2px;
+        line-height: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    shipping-info {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
+
+    .shipping-info h5 {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #333;
+        line-height: 1.2rem;
+        margin-bottom: 15px;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .shipping-info p {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #777;
+        line-height: 1.2rem;
+        margin-bottom: 3px;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .total-info {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+        .total-info strong {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #333;
+            line-height: 1.2rem;
+            margin-bottom: 5px;
+            word-break: break-word;
+            white-space: normal;
+        }
+
+        .total-info p {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #777;
+            line-height: 1.2rem;
+            margin-bottom: 3px;
+            word-break: break-word;
+            white-space: normal;
+        }
+
+    .btn-home {
+        padding: 11px;
+        background-color: var(--main-color);
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        text-transform: capitalize;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+}

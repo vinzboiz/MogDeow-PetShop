@@ -1,0 +1,1533 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #ff6464;
+    --title-color: #fcae53;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+/*=================================== COMMON ===========================================*/
+/*========= TIEU DE =======*/
+.title-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+    .title-container hr {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1; /* Chiếm toàn bộ không gian còn lại */
+        border: none;
+        height: 2px;
+        background-color: #737373;
+        opacity: 0.5;
+        margin: 0 1vw;
+    }
+
+    .title-container .title-container-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+        .title-container .title-container-group img {
+            height: 50px;
+            padding: 5px;
+        }
+
+        .title-container .title-container-group p {
+            margin: 0;
+            color: var(--title-color);
+            font-size: 1.6rem;
+            letter-spacing: 1.8px;
+            font-weight: 800;
+            margin-left: 2px;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+/*========= BUTTON ==========*/
+.btn {
+    height: auto;
+    width: auto;
+    padding: 17px 40px;
+    background-color: var(--main-color);
+    color: inherit;
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    border-radius: 20px;
+    border: none;
+    margin: 20px auto;
+    cursor: pointer;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    text-decoration: none;
+}
+
+    .btn:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+
+/*=================================== Container slider============================================== */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 45vw;
+    overflow: hidden;
+}
+
+.slides .slide {
+    position: absolute;
+    width: 100vw;
+    height: 45vw;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+    .slides .slide.active {
+        opacity: 1;
+    }
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 5vh;
+    right: 4vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5vw;
+}
+
+.dot {
+    width: 0.6vw;
+    height: 0.6vw;
+    background-color: #f5f3f47c;
+    border-radius: 50%;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    cursor: pointer;
+    padding: 0.7vh;
+}
+
+    .dot:hover {
+        background-color: white;
+    }
+
+.active-dot {
+    width: 5vw;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.slider-left,
+.slider-right {
+    position: absolute;
+    top: 0;
+    width: 6vw;
+    height: 45vw;
+    cursor: pointer;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+    .slider-left:hover,
+    .slider-right:hover {
+        opacity: 1;
+    }
+
+.slider-left {
+    left: 0;
+}
+
+.slider-right {
+    right: 0;
+}
+/*====================================== FEATURED SECTION ===========================================*/
+.feature-section-container {
+    margin-top: 40px;
+    width: 100%;
+}
+/*========Img o tren================*/
+.feature-section-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1vw; /* Khoảng cách giữa các ảnh là 1vw */
+}
+
+    .feature-section-img img {
+        width: calc( (100% - 2vw) / 3 ); /* 2 khoảng cách giữa 3 ảnh, chia đều phần còn lại */
+        height: auto;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+/*=========== description o duoi =============*/
+
+.feature-section-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+    .feature-section-desc .desc-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+        .feature-section-desc .desc-container p {
+            margin: 0;
+            color: #737373;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-left: 2px;
+            padding: 5px;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .feature-section-desc .desc-container img {
+            height: 35px;
+            padding: 5px;
+        }
+
+/*======================== LUA CHON MUA SAM THEO THU CUNG==================*/
+.shop-by-pet-container {
+    margin-top: 50px;
+}
+
+.img-choose-pet-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+    .img-choose-pet-container a {
+        width: 48.5%;
+    }
+
+        .img-choose-pet-container a:first-child {
+            -webkit-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .img-choose-pet-container a img {
+            width: 100%;
+        }
+
+        .img-choose-pet-container a:first-child:hover {
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+
+        .img-choose-pet-container a:last-child {
+            -webkit-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+            .img-choose-pet-container a:last-child:hover {
+                -webkit-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+/*=========================== DANH MUC SAN PHAM ==============================*/
+/* Container chính */
+.category-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Thanh cuộn ngang */
+.category-scrollbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+    width: 98%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 5vh 0;
+    cursor: -webkit-grab;
+    cursor: grab;
+    margin: 20px auto;
+}
+
+    .category-scrollbar.dragging {
+        cursor: -webkit-grabbing;
+        cursor: grabbing;
+    }
+
+    /* Ẩn thanh cuộn mặc định */
+    .category-scrollbar::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .category-scrollbar::-webkit-scrollbar-track {
+        background: #ddd;
+        border-radius: 3px;
+    }
+
+    .category-scrollbar::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 3px;
+    }
+
+        .category-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #666;
+        }
+
+/* Các mục (item) */
+.category-item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 250px;
+    flex: 0 0 250px;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+    .category-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -webkit-transition: -webkit-transform 0.3s ease-in-out;
+        transition: -webkit-transform 0.3s ease-in-out;
+        -o-transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    }
+
+    .category-item:hover img {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+/* Thông tin nằm trên ảnh */
+.category-info {
+    position: absolute;
+    bottom: 2vh;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.category-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/*======================================= SHOP CHO CUNG ============================ */
+.dog-shop-container {
+    margin-top: 20px;
+}
+
+.product-list-dog {
+    position: relative;
+    background-color: var(--main-color);
+    margin: 0 20px 20px;
+    border-radius: 15px;
+    padding: 10px 5px 3px;
+    text-align: center;
+}
+
+.dog-say-hi {
+    position: absolute;
+    top: -145px;
+    left: 70px;
+}
+
+.title-container {
+    margin-bottom: 20px;
+}
+
+.dog-shop-container .title-container .title-container-group p {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.product-list-dog .btn {
+    display: block;
+    width: 190px;
+    background-color: white;
+    color: var(--main-color);
+    margin: 15px auto 20px;
+}
+/*======================================= SHOP MEO CUNG ============================ */
+.cat-shop-container {
+    margin-top: 90px;
+}
+
+.product-list-cat {
+    position: relative;
+    background-color: var(--main-color);
+    margin: 0 20px;
+    border-radius: 15px;
+    padding: 10px 5px 3px;
+    text-align: center;
+}
+
+.cat-say-hi {
+    position: absolute;
+    top: -145px;
+    right: 10vw;
+}
+
+.title-container {
+    margin-bottom: 20px;
+}
+
+.cat-shop-container .title-container .title-container-group p {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.product-list-cat .btn {
+    display: block;
+    width: 190px;
+    background-color: white;
+    color: var(--main-color);
+    margin: 15px auto 20px;
+}
+/*================== DANH CHO PET YEU ==================*/
+.product-list {
+    position: relative;
+    background-color: white;
+    margin: 0 20px 20px;
+    border-radius: 15px;
+    padding: 10px 5px 3px;
+    text-align: center;
+}
+
+    .product-list .btn {
+        display: block;
+        width: 190px;
+        background-color: var(--main-color);
+        color: white;
+        margin: 15px auto 20px;
+    }
+/*==================== THUONG HIEU ======================*/
+.brand-container .title-container .title-container-group img {
+    height: 40px;
+}
+
+.brand-list {
+    margin: 0 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+    .brand-list img {
+        width: 20vw;
+    }
+/* =================== MO TA SHOP VA VIDEO =====================*/
+.desc-shop-container {
+    background-color: white;
+    padding: 10px 12vw 10px;
+}
+
+    .desc-shop-container .title-container .title-container-group p {
+        margin-bottom: 20px;
+    }
+
+    .desc-shop-container .desc-shop-desc {
+        font-size: 3vh;
+        font-weight: 500;
+        text-align: center;
+        word-spacing: 2px;
+    }
+
+.youtube-container {
+    text-align: center;
+    margin: 0;
+}
+
+.youtube-container {
+    background-color: white;
+}
+/* Video luôn giữ tỷ lệ 16:9 */
+.video-wrapper {
+    position: relative;
+    width: 100%; /* Độ rộng tối đa */
+    margin: 0 auto;
+    padding-top: 56.25%; /* Tỷ lệ 16:9 (9 / 16 = 0.5625) */
+    background-color: white;
+}
+
+    /* Iframe được giữ tỷ lệ */
+    .video-wrapper iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        height: 80%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); /* Căn giữa */
+    }
+
+.to-top-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none; /* Ẩn ban đầu */
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 10000;
+}
+
+    .to-top-icon:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+
+/*========================================= RESPONSIVE =================================*/
+/*================================================== DESKTOP ====================================================*/
+@media (min-width: 1025px) {
+}
+/*================================================== IPAD ================================================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /*========= TIEU DE =======*/
+
+    .title-container .title-container-group img {
+        height: 30px;
+    }
+
+    .title-container .title-container-group p {
+        font-size: 1.2rem;
+    }
+    /*========= BUTTON ==========*/
+    .btn {
+        padding: 10px 20px;
+        color: white;
+        font-size: 0.7rem;
+        margin: 10px auto;
+    }
+    /* ============ Khung chứa các thẻ sản phẩm ============*/
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 8px;
+    }
+    /* Thiết kế cho thẻ sản phẩm */
+    .product-card {
+        border-radius: 5px;
+    }
+
+        .product-card:hover {
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card:focus {
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+    /* Đóng gói ảnh và button */
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        aspect-ratio: 1 / 1; /* Tự động giữ width = height */
+    }
+
+    /* Button Xem ngay, ẩn bên dưới ảnh ban đầu */
+    .view-now {
+        position: absolute;
+        bottom: -50px; /* ẩn bên dưới */
+        left: 50%;
+        font-size: 0.8rem;
+        width: 100%;
+        padding: 7px 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .product-card:hover .view-now {
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    .product-card:hover .product-price {
+        color: var(--main-color);
+    }
+
+    .product-card:focus .view-now {
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    .product-card:focus .product-price {
+        color: var(--main-color);
+    }
+
+    .product-details {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    /* Giới hạn hiển thị tên sản phẩm chỉ 2 dòng với ellipsis */
+    .product-name {
+        font-size: 0.8rem;
+    }
+
+    /* Giá sản phẩm giới hạn 1 dòng */
+    .product-price {
+        font-size: 0.85rem;
+    }
+    /*=====CAN CHINH SLIDE======*/
+    .dots-container {
+        bottom: 3vw;
+        right: 40%;
+    }
+
+    .dot {
+        padding: 0.3vh;
+    }
+
+    .active-dot {
+        width: 10vw;
+    }
+
+    .slider-left,
+    .slider-right {
+        width: 10vw;
+    }
+    /*========= FEATURED SECTION ==============*/
+    .feature-section-container {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    /*=========== description o duoi =============*/
+
+    .feature-section-desc .desc-container p {
+        font-size: 1rem;
+    }
+
+    .feature-section-desc .desc-container img {
+        height: 28px;
+    }
+    /*=========== LUA CHON MUA SAM THEO THU CUNG =============*/
+    .shop-by-pet-container {
+        margin-top: -20px;
+    }
+
+    .img-choose-pet-container {
+        margin-top: -3px;
+    }
+    /*=========== DANH MUC SAN PHAM ============*/
+    /* Container chính */
+    .category-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: -17px;
+        width: 100%;
+    }
+
+    /* Thanh cuộn ngang */
+    .category-scrollbar {
+        padding: 0vh 0 2vh;
+        margin-top: 0px;
+    }
+
+    /* Các mục (item) */
+    .category-item {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 180px;
+        flex: 0 0 180px;
+    }
+
+    /* Thông tin nằm trên ảnh */
+    .category-info {
+        bottom: 1vh;
+    }
+
+    .category-name {
+        font-size: 0.8rem;
+    }
+    /*================= SHOP CHO CUNG ================= */
+    .dog-shop-container {
+        margin-top: -10px;
+    }
+
+    .dog-say-hi {
+        position: absolute;
+        top: -92px;
+        left: 50px;
+        height: 100px;
+    }
+
+    .dog-shop-container .title-container .title-container-group p {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .product-list-dog .btn {
+        display: block;
+        width: 170px;
+        font: 0.8rem;
+    }
+    /*================= SHOP MEO CUNG ================= */
+    .cat-shop-container {
+        margin-top: -10px;
+    }
+
+    .cat-say-hi {
+        position: absolute;
+        top: -92px;
+        right: 50px;
+        height: 100px;
+    }
+
+    .cat-shop-container .title-container .title-container-group p {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .product-list-cat .btn {
+        display: block;
+        width: 170px;
+        font: 0.8rem;
+    }
+    /*============= DANH CHO PET YEU =========*/
+    .product-list {
+        margin-top: 0px;
+        padding: 0px;
+    }
+    /*============= THUONG HIEU ============*/
+    .brand-container .title-container .title-container-group img {
+        height: 40px;
+    }
+
+    .brand-list {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 50px 1fr;
+        grid-template-columns: repeat(2, 1fr); /* 2 phần tử mỗi hàng */
+        gap: 50px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 80vw;
+    }
+
+        .brand-list img {
+            width: 40vw;
+        }
+    /* ========= MO TA SHOP VA VIDEO ==========*/
+    .desc-shop-container {
+        background-color: white;
+        padding: 10px 12vw 10px;
+    }
+
+        .desc-shop-container .title-container .title-container-group p {
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            text-align: center;
+            line-height: 2rem;
+        }
+
+        .desc-shop-container .desc-shop-desc {
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-align: center;
+            word-spacing: 2px;
+        }
+
+    .youtube-container {
+        text-align: center;
+        margin: 0;
+    }
+
+    .youtube-container {
+        background-color: white;
+    }
+    /* Video luôn giữ tỷ lệ 16:9 */
+    .video-wrapper {
+        position: relative;
+        width: 100%; /* Độ rộng tối đa */
+        margin: 0 auto;
+        padding-top: 56.25%; /* Tỷ lệ 16:9 (9 / 16 = 0.5625) */
+        background-color: white;
+    }
+
+        /* Iframe được giữ tỷ lệ */
+        .video-wrapper iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            height: 80%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); /* Căn giữa */
+        }
+}
+
+/* ==================================== MOBILE =====================================*/
+@media (max-width: 767px) {
+    /*========= TIEU DE =======*/
+    .title-container {
+        margin-top: 20px;
+    }
+
+        .title-container .title-container-group img {
+            height: 24px;
+        }
+
+        .title-container .title-container-group p {
+            font-size: 0.8rem;
+        }
+    /*========= BUTTON ==========*/
+    .btn {
+        padding: 6px 15px;
+        color: white;
+        font-size: 0.5rem;
+        margin: 0px auto;
+    }
+    /* ============ Khung chứa các thẻ sản phẩm ============*/
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 1px;
+    }
+    /* Thiết kế cho thẻ sản phẩm */
+    .product-card {
+        border-radius: 5px;
+    }
+
+        .product-card:hover {
+            -webkit-transform: scale(1.02);
+            -ms-transform: scale(1.02);
+            transform: scale(1.02);
+            -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card:focus {
+            -webkit-transform: scale(1.02);
+            -ms-transform: scale(1.02);
+            transform: scale(1.02);
+            -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+    /* Button Xem ngay, ẩn bên dưới ảnh ban đầu */
+    .view-now {
+        position: absolute;
+        bottom: -50px; /* ẩn bên dưới */
+        left: 50%;
+        font-size: 0.8rem;
+        width: 100%;
+        padding: 7px 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .product-card:hover .view-now {
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    .product-card:hover .product-price {
+        color: var(--main-color);
+    }
+
+    .product-card:focus .view-now {
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    .product-card:focus .product-price {
+        color: var(--main-color);
+    }
+
+    .product-details {
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    /* Giới hạn hiển thị tên sản phẩm chỉ 2 dòng với ellipsis */
+    .product-name {
+        font-size: 0.7rem;
+        letter-spacing: 0px;
+    }
+
+    /* Giá sản phẩm giới hạn 1 dòng */
+    .product-price {
+        font-size: 0.65rem;
+    }
+    /*=====CAN CHINH SLIDE======*/
+    .dots-container {
+        bottom: 3vw;
+        right: 40%;
+    }
+
+    .dot {
+        padding: 0.3vh;
+    }
+
+    .active-dot {
+        width: 10vw;
+    }
+
+    .slider-left,
+    .slider-right {
+        width: 8vw;
+    }
+
+    /*========= FEATURED SECTION ==============*/
+    .feature-section-container {
+        margin-top: 10px;
+        width: 100%;
+    }
+    /*========Img o tren================*/
+    .feature-section-img {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 1vw;
+    }
+
+        .feature-section-img img {
+            width: calc((100% - 2vw) / 3);
+            height: auto;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+    /*======= description o duoi =======*/
+
+    .feature-section-desc {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+        .feature-section-desc .desc-container {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+            .feature-section-desc .desc-container p {
+                font-size: 0.5rem;
+            }
+
+            .feature-section-desc .desc-container img {
+                height: 25px;
+                padding: 5px;
+            }
+    /*=========== LUA CHON MUA SAM THEO THU CUNG =============*/
+    .shop-by-pet-container {
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+
+    .img-choose-pet-container {
+        margin-top: -8px;
+    }
+
+    /*=========== DANH MUC SAN PHAM ============*/
+    /* Container chính */
+    .category-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Thanh cuộn ngang */
+    .category-scrollbar {
+        padding: 0vh 0 2vh;
+        margin-top: -8px;
+    }
+
+    /* Các mục (item) */
+    .category-item {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 130px;
+        flex: 0 0 130px;
+    }
+
+    /* Thông tin nằm trên ảnh */
+    .category-info {
+        bottom: 1vh;
+    }
+
+    .category-name {
+        font-size: 0.6rem;
+    }
+    /*================= SHOP CHO CUNG ================= */
+    .dog-shop-container {
+        margin-top: 15px;
+    }
+
+    .dog-say-hi {
+        position: absolute;
+        top: -46px;
+        left: 20px;
+        height: 50px;
+    }
+
+    .dog-shop-container .title-container {
+        margin-bottom: 5px;
+    }
+
+        .dog-shop-container .title-container .title-container-group p {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+    .product-list-dog .btn {
+        display: block;
+        width: 100px;
+        font: 0.7rem;
+        padding: 10px;
+    }
+
+    .product-list-dog {
+        position: relative;
+        background-color: var(--main-color);
+        margin: 0 10px 20px;
+        border-radius: 15px;
+        padding: 10px 10px 3px;
+        text-align: center;
+    }
+    /*================= SHOP MEO CUNG ================= */
+    .cat-shop-container {
+        margin-top: 15px;
+    }
+
+    .cat-say-hi {
+        position: absolute;
+        top: -46px;
+        right: 20px;
+        height: 50px;
+    }
+
+    .cat-shop-container .title-container {
+        margin-bottom: 5px;
+    }
+
+        .cat-shop-container .title-container .title-container-group p {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+    .product-list-cat .btn {
+        display: block;
+        width: 100px;
+        font: 0.7rem;
+        padding: 10px;
+    }
+
+    .product-list-cat {
+        position: relative;
+        background-color: var(--main-color);
+        margin: 0 10px 20px;
+        border-radius: 15px;
+        padding: 10px 10px 3px;
+        text-align: center;
+    }
+    /*================== DANH CHO PET YEU ==================*/
+    .product-list {
+        margin-top: -20px;
+        padding: 0px;
+    }
+
+        .product-list .btn {
+            display: block;
+            width: 120px;
+            padding: 10px 20px;
+            background-color: var(--main-color);
+            color: white;
+            margin: 10px auto 20px;
+            padding: 10px;
+        }
+    /*============= THUONG HIEU ============*/
+    .brand-container .title-container .title-container-group img {
+        height: 40px;
+    }
+
+    .brand-list {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 50px 1fr;
+        grid-template-columns: repeat(2, 1fr); /* 2 phần tử mỗi hàng */
+        gap: 50px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-left: 15vw;
+        max-width: 80vw;
+    }
+
+        .brand-list img {
+            width: 30vw;
+        }
+    /* ========= MO TA SHOP VA VIDEO ==========*/
+    .desc-shop-container {
+        background-color: white;
+        padding: 10px 12vw 10px;
+    }
+
+        .desc-shop-container .title-container .title-container-group p {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 1.7rem;
+        }
+
+        .desc-shop-container .desc-shop-desc {
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-align: center;
+            word-spacing: 2px;
+        }
+
+    .youtube-container {
+        text-align: center;
+        margin: 0;
+    }
+
+    .youtube-container {
+        background-color: white;
+    }
+    /* Video luôn giữ tỷ lệ 16:9 */
+    .video-wrapper {
+        position: relative;
+        width: 100%; /* Độ rộng tối đa */
+        margin: 0 auto;
+        padding-top: 56.25%; /* Tỷ lệ 16:9 (9 / 16 = 0.5625) */
+        background-color: white;
+    }
+
+        /* Iframe được giữ tỷ lệ */
+        .video-wrapper iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            height: 80%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); /* Căn giữa */
+        }
+}
+
+/*========================CSS PRODUCT========================================*/
+/* ============ Khung chứa các thẻ sản phẩm ============*/
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cột trên mỗi hàng */
+    gap: 15px; /* Khoảng cách giữa các sản phẩm */
+    padding: 20px;
+}
+
+/* Thiết kế cho thẻ sản phẩm */
+.product-card {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    transform-origin: bottom;
+    color: inherit;
+    text-decoration: none;
+}
+
+    .product-card:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+/* Đóng gói ảnh và button */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Tự động giữ width = height */
+}
+
+/* Button Xem ngay, ẩn bên dưới ảnh ban đầu */
+.view-now {
+    position: absolute;
+    bottom: -50px; /* ẩn bên dưới */
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: var(--main-color);
+    color: #fff;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0;
+    -webkit-transition: bottom 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    -o-transition: bottom 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    transition: bottom 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.product-card:hover .view-now {
+    bottom: 0px;
+    opacity: 1;
+}
+
+.product-card:hover .product-price {
+    color: var(--main-color);
+}
+
+.product-image {
+    width: 100%;
+    height: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều cao của khung */
+    object-fit: cover; /* Cắt phần dư để ảnh vừa khung */
+    display: block;
+}
+
+.product-details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Giới hạn hiển thị tên sản phẩm chỉ 2 dòng với ellipsis */
+.product-name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 1.5px;
+    line-height: 1.1rem;
+    height: 2.2rem;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-transform: capitalize;
+}
+
+/* Giá sản phẩm giới hạn 1 dòng */
+.product-price {
+    font-size: 1rem;
+    color: #555;
+    font-weight: 600;
+    margin: 8px auto 0;
+    height: 1.2em; /* 1 dòng */
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    letter-spacing: 1.5px;
+}
+/*========================================= RESPONSIVE PRODUCT =================================*/
+/*================================================== IPAD ================================================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+    /* ============ Khung chứa các thẻ sản phẩm ============*/
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 8px;
+    }
+    /* Thiết kế cho thẻ sản phẩm */
+    .product-card {
+        border-radius: 5px;
+    }
+
+        .product-card:hover {
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card:focus {
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+    /* Đóng gói ảnh và button */
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        aspect-ratio: 1 / 1; /* Tự động giữ width = height */
+    }
+
+    /* Button Xem ngay, ẩn bên dưới ảnh ban đầu */
+    .view-now {
+        position: absolute;
+        bottom: -50px; /* ẩn bên dưới */
+        left: 50%;
+        font-size: 0.8rem;
+        width: 100%;
+        padding: 7px 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .product-card:hover .view-now {
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    .product-card:hover .product-price {
+        color: var(--main-color);
+    }
+
+    .product-card:focus .view-now {
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    .product-card:focus .product-price {
+        color: var(--main-color);
+    }
+
+    .product-details {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    /* Giới hạn hiển thị tên sản phẩm chỉ 2 dòng với ellipsis */
+    .product-name {
+        font-size: 0.8rem;
+    }
+
+    /* Giá sản phẩm giới hạn 1 dòng */
+    .product-price {
+        font-size: 0.85rem;
+    }
+}
+
+/* ==================================== MOBILE =====================================*/
+@media (max-width: 767px) {
+
+    /* ============ Khung chứa các thẻ sản phẩm ============*/
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 1px;
+    }
+    /* Thiết kế cho thẻ sản phẩm */
+    .product-card {
+        border-radius: 5px;
+    }
+
+        .product-card:hover {
+            -webkit-transform: scale(1.02);
+            -ms-transform: scale(1.02);
+            transform: scale(1.02);
+            -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card:focus {
+            -webkit-transform: scale(1.02);
+            -ms-transform: scale(1.02);
+            transform: scale(1.02);
+            -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+    /* Button Xem ngay, ẩn bên dưới ảnh ban đầu */
+    .view-now {
+        position: absolute;
+        bottom: -50px; /* ẩn bên dưới */
+        left: 50%;
+        font-size: 0.8rem;
+        width: 100%;
+        padding: 7px 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .product-card:hover .view-now {
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    .product-card:hover .product-price {
+        color: var(--main-color);
+    }
+
+    .product-card:focus .view-now {
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    .product-card:focus .product-price {
+        color: var(--main-color);
+    }
+
+    .product-details {
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    /* Giới hạn hiển thị tên sản phẩm chỉ 2 dòng với ellipsis */
+    .product-name {
+        font-size: 0.7rem;
+        letter-spacing: 0px;
+    }
+
+    /* Giá sản phẩm giới hạn 1 dòng */
+    .product-price {
+        font-size: 0.65rem;
+    }
+}

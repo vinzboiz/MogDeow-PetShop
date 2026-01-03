@@ -1,0 +1,225 @@
+﻿/* Favorite - Danh sách sản phẩm yêu thích */
+
+.favorite-section {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    min-height: 80vh;
+}
+
+.favorite-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    overflow-x: auto;
+}
+
+.favorite-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.no-favorite {
+    font-size: 18px;
+    text-align: center;
+    color: #666;
+    padding: 20px;
+}
+
+.favorite-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.favorite-header {
+    display: grid;
+    grid-template-columns: 100px 200px 1fr 150px 160px;
+    font-weight: bold;
+    color: #444;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+    .favorite-header span {
+        display: flex;
+        align-items: center;
+        margin-left: 18px;
+        text-align:center;
+    }
+
+/* CARD mỗi sản phẩm */
+.favorite-card {
+    display: grid;
+    grid-template-columns: 100px 200px 1fr 150px 160px;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 12px;
+    transition: box-shadow 0.3s ease;
+}
+
+    .favorite-card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+.favorite-header,
+.favorite-card {
+    display: grid;
+    grid-template-columns: 100px 200px 1fr 150px 160px;
+    gap: 12px;
+    align-items: center;
+}
+
+
+.favorite-img-wrapper {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.favorite-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+    .favorite-img:hover {
+        transform: scale(1.05);
+    }
+
+.favorite-name {
+    font-weight: 600;
+    color: #333;
+    padding: 0px;
+    font-size:0.9rem;
+
+}
+
+.favorite-desc {
+    color: #555;
+    font-size: 14px;
+    padding: 0 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.favorite-price {
+    font-weight: bold;
+    color: #d35400;
+    text-align: center;
+}
+
+.favorite-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-detail {
+    padding: 6px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+    .btn-detail:hover {
+        background-color: #2980b9;
+    }
+
+.remove-fav-btn {
+    padding: 6px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+    .remove-fav-btn:hover {
+        background-color: #c0392b;
+    }
+
+/* Responsive Tablet */
+@media (max-width: 1024px) {
+    .favorite-header,
+    .favorite-card {
+        grid-template-columns: 80px 150px 1fr 100px 130px;
+    }
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    .favorite-header {
+        display: none;
+    }
+
+    .favorite-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 20px;
+    }
+
+        .favorite-card > div {
+            margin-bottom: 10px;
+        }
+
+    .favorite-img-wrapper {
+        margin: 0 auto 12px;
+    }
+
+    .favorite-name,
+    .favorite-desc,
+    .favorite-price,
+    .favorite-actions {
+        padding: 4px 0;
+    }
+
+    .favorite-actions {
+        flex-direction: column;
+    }
+
+    .btn-detail,
+    .remove-fav-btn {
+        width: 100%;
+    }
+}
+
+/* Tiny screens */
+@media (max-width: 480px) {
+    .favorite-title {
+        font-size: 22px;
+    }
+
+    .favorite-container {
+        padding: 20px 12px;
+    }
+
+    .btn-detail,
+    .remove-fav-btn {
+        font-size: 13px;
+    }
+
+    .favorite-price {
+        font-size: 15px;
+    }
+}

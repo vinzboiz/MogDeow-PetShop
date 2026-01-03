@@ -1,0 +1,928 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+:root {
+    --main-color: #ff6464;
+    --title-color: #fcae53;
+}
+/*========LAYOUT===========*/
+
+.layout {
+    visibility: hidden; /* Ẩn nhưng vẫn giữ không gian */
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    -webkit-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+    .layout.active {
+        visibility: visible; /* Hiển thị trở lại */
+        opacity: 1;
+    }
+
+/*=====================header=======================*/
+.header {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    background-color: var(--main-color);
+    padding: 2vh 2vw 0px;
+    z-index: 998;
+}
+/*=====================logo website=====================*/
+.header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Có thể giới hạn max-width nếu muốn */
+
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header-left img {
+    cursor: pointer;
+    height: 130px;
+    padding: 10px;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+    .header-left img:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+/*=================header right=========================*/
+.header-right {
+    margin: 20px 0px 0px;
+    width: auto;
+}
+/*==================header top=====================*/
+.header-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 60px;
+}
+
+/* ======= Thanh Tìm Kiếm ======= */
+.search-container {
+    position: relative;
+}
+
+    .search-container form {
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 30px;
+        padding: 5px 15px;
+        border: 2px solid #ff6b6b;
+        width: 400px;
+    }
+
+        .search-container form input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 14px;
+            padding: 8px;
+        }
+
+        .search-container form button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+            .search-container form button img {
+                width: 20px;
+                height: 20px;
+            }
+
+.cart-icon {
+    width: 28px;
+    height: auto;
+}
+
+.cart-count-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    width: 20px; /* ✅ Chiều rộng cố định */
+    height: 20px; /* ✅ Chiều cao cố định */
+    font-size: 0.65rem;
+    border-radius: 50%; /* ✅ Làm tròn */
+    font-weight: bold;
+    line-height: 20px; /* ✅ Canh chữ giữa theo chiều dọc */
+    text-align: center;
+    z-index: 10;
+}
+/* ======= Danh Sách Gợi Ý ======= */
+#suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 350px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+    #suggestions li {
+        padding: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+        #suggestions li:hover {
+            background: #ff6b6b;
+            color: white;
+        }
+
+
+/*====hotline====*/
+.hotline-container {
+    width: auto;
+    min-width: 150px;
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+    .hotline-container .title {
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 7px;
+        letter-spacing: 1px;
+    }
+
+    .hotline-container a {
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+    }
+/*=================HOVER USER=====================*/
+/* Ẩn menu dropdown mặc định */
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    padding: 14px 10px;
+    gap: 10px;
+    position: absolute;
+    right: 0px;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 3px;
+}
+
+/* Khi hover thì dropdown hiện ra */
+.hover-dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+/* Căn chỉnh icon và dropdown */
+.hover-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.user-icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.user-img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    border-radius: 50%; /* ✅ Làm tròn */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+
+    .user-img:hover {
+        transform: scale(1.1); /* Nhẹ nhàng nổi bật khi hover */
+    }
+
+.user-name {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+header-menu-list hr {
+    border: none;
+    border-top: 6px solid #ddd;
+    width: 90%;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 10px;
+    color: white;
+    background-color: var(--main-color);
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+    .dropdown-item:hover,
+    button.dropdown-item:hover {
+        background-color: #f83b3b;
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+form {
+    margin: 0;
+}
+
+.user-greeting {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.3rem;
+    margin: 10px auto;
+    font-weight: 500;
+    padding-bottom: 6px;
+    letter-spacing: 1.3px;
+    border-bottom: 2px solid #eee;
+}
+
+
+/*====icon list====*/
+.icon-container {
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+    .icon-container a img {
+        height: 30px;
+        cursor: pointer;
+        -webkit-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+
+    .icon-container img:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+/*================header bottom================*/
+.header-bottom {
+    margin-top: 30px;
+}
+
+.header-menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+    .header-menu-list li {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 8px;
+        -webkit-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        padding: 15px 20px 10px;
+        -webkit-transform-origin: bottom;
+        -ms-transform-origin: bottom;
+        transform-origin: bottom;
+    }
+
+    .header-menu-list .choose-menu-list:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        background-color: #ffc4ba;
+    }
+
+    .header-menu-list li img {
+        margin: auto 0px;
+        height: 23px;
+    }
+
+    .header-menu-list li a {
+        margin: auto 0px;
+        font-size: 0.9rem;
+        text-decoration: none;
+        font-weight: 800;
+        color: white;
+        text-transform: uppercase;
+    }
+    /*===drop down cua danh sach bottom===*/
+    .header-menu-list .choose-menu-list .dropdown {
+        display: none;
+        position: absolute;
+        background-color: white;
+        top: 100%;
+        left: 0;
+        width: auto;
+        height: auto;
+        max-width: 400px;
+        min-width: 200px;
+        min-height: 200px;
+        border-radius: 0px 0px 10px 10px;
+        -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .header-menu-list .choose-menu-list:hover .dropdown {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .header-menu-list li .dropdown .choose-dropdown-list {
+        cursor: pointer;
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
+        transition: 0.4s ease-in-out;
+    }
+
+        .header-menu-list li .dropdown .choose-dropdown-list a {
+            color: var(--main-color);
+            text-transform: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin: auto 0px;
+            -webkit-transition: 0.4s ease-in-out;
+            -o-transition: 0.4s ease-in-out;
+            transition: 0.4s ease-in-out;
+        }
+
+        .header-menu-list li .dropdown .choose-dropdown-list img {
+            margin: auto 0px;
+            margin-left: auto;
+            height: 30px;
+        }
+
+        .header-menu-list li .dropdown .choose-dropdown-list:hover {
+            background-color: var(--main-color);
+        }
+
+            .header-menu-list li .dropdown .choose-dropdown-list:hover a {
+                color: white;
+            }
+/* ----------------- Cart Sidebar Styles ----------------- */
+.cart-sidebar {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    top: 50%;
+    right: -100%; /* ẩn ban đầu */
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 300px;
+    height: auto;
+    min-height: 90vh;
+    max-height: 600px;
+    background: #fff;
+    -webkit-box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    -webkit-transition: right 1s ease;
+    -o-transition: right 1s ease;
+    transition: right 1s ease;
+    z-index: 1000;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+    .cart-sidebar.active {
+        right: 20px; /* khi mở, sidebar trượt vào */
+    }
+
+.cart-sidebar-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.cart-sidebar .cart-sidebar-header img {
+    position: absolute;
+    top: 25px;
+    left: 25px; /* Luôn giữ ở góc phải */
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+    .cart-sidebar .cart-sidebar-header img:hover {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+.cart-sidebar-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 50px;
+    gap: 30px;
+}
+
+    .cart-sidebar-content h2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .cart-sidebar-content p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 1rem;
+        line-height: 1.3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+.btn-cart-sidebar {
+    margin: 20px auto;
+    padding: 15px 25px;
+    background-color: var(--main-color);
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+    .btn-cart-sidebar:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+/*======================HAMBURGER MENU ICON VA SIDEBAR===============================*/
+.hamburger-menu-container img {
+    height: 30px;
+    margin: 20px 0px 0px;
+    cursor: pointer;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+    .hamburger-menu-container img:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+.menu-sidebar {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    top: 20%;
+    left: -100%; /* ẩn ban đầu */
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50vw;
+    height: auto;
+    max-height: 600px;
+    background: #fff;
+    -webkit-box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    -webkit-transition: left 1s ease;
+    -o-transition: left 1s ease;
+    transition: left 1s ease;
+    z-index: 1000;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+    .menu-sidebar.active {
+        left: 20px; /* khi mở, sidebar trượt vào */
+    }
+
+.menu-sidebar-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu-sidebar .menu-sidebar-header img {
+    position: absolute;
+    top: 25px;
+    right: 25px; /* Luôn giữ ở góc phải */
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+    .menu-sidebar .menu-sidebar-header img:hover {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+/*===========Noi dung menu sidebar========*/
+.menu-sidebar-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.choose-menu-list {
+    cursor: pointer;
+}
+
+.menu-sidebar-content .header-menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+}
+
+    .menu-sidebar-content .header-menu-list li a {
+        color: black;
+        font-size: 0.8rem;
+        font-weight: 600;
+        -webkit-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+
+    .menu-sidebar-content .header-menu-list li:hover a {
+        color: white;
+    }
+
+.choose-menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.choose-dropdown-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+/* dropdown accessories */
+.dropdown-accesories {
+    display: none;
+}
+
+    .dropdown-accesories.active {
+        display: block;
+    }
+
+/* drop down thu cung */
+.dropdown-pet {
+    display: none;
+}
+
+    .dropdown-pet.active {
+        display: block;
+    }
+
+.menu-sidebar-content .header-menu-list ul.dropdown-accesories li a,
+.menu-sidebar-content .header-menu-list ul.dropdown-pet li a {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.menu-sidebar-content .header-menu-list ul.dropdown-accesories li:hover,
+.menu-sidebar-content .header-menu-list ul.dropdown-pet li:hover {
+    background-color: var(--main-color);
+}
+
+/*========================================= RESPONSIVE =================================*/
+/* Desktop: máy tính để bàn */
+@media (min-width: 1025px) {
+    .desk-only {
+        display: block;
+    }
+
+    .tablet-mobile-only {
+        display: none;
+    }
+}
+/*============================ iPad: thiết bị máy tính bảng====================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .desk-only {
+        display: none;
+    }
+
+    .tablet-mobile-only {
+        display: block;
+    }
+
+    .header {
+        padding: 0vh 2vw;
+    }
+
+    .hamburger-menu-container img {
+        height: 30px;
+        margin: 20px 0px 0px;
+    }
+    /* Ẩn hoàn toàn phần tử mà không chiếm không gian */
+    .icon-container #open-user {
+        display: none;
+    }
+
+    .icon-container {
+        width: auto;
+    }
+
+    .header-right {
+        margin: 20px 0px 0px;
+        width: auto;
+    }
+
+    .header-left img {
+        cursor: pointer;
+        height: 100px;
+        padding: 10px;
+        -webkit-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+
+    .cart-sidebar {
+        height: auto;
+        min-height: 50vh;
+        top: 30%;
+    }
+
+        .cart-sidebar.active {
+            right: 20px; /* khi mở, sidebar trượt vào */
+        }
+
+    .menu-sidebar {
+        width: 60vw;
+        top: 35%;
+    }
+
+        .menu-sidebar.active {
+            left: 20px; /* khi mở, sidebar trượt vào */
+        }
+
+    .search-container form {
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 30px;
+        padding: 5px 15px;
+        border: 2px solid #ff6b6b;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* ====================Mobile: thiết bị điện thoại =================*/
+@media (max-width: 767px) {
+    .desk-only {
+        display: none;
+    }
+
+    .tablet-mobile-only {
+        display: block;
+    }
+
+    .header {
+        padding: 0vh 2vw;
+    }
+
+    .header-left img {
+        cursor: pointer;
+        height: 65px;
+        padding: 5px;
+        -webkit-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+
+    /* Ẩn hoàn toàn phần tử mà không chiếm không gian */
+    .icon-container #open-user {
+        display: none;
+    }
+
+    .icon-container {
+        width: auto;
+    }
+
+    .header-right {
+        margin: 20px 0px 0px;
+        width: auto;
+    }
+
+    .cart-sidebar {
+        height: auto;
+        min-height: 50vh;
+        top: 3%;
+        right: -100%; /* ẩn ban đầu */
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+        .cart-sidebar.active {
+            right: 20px; /* khi mở, sidebar trượt vào */
+        }
+
+    .menu-sidebar {
+        width: 80%;
+        top: 3%;
+        right: -100%; /* ẩn ban đầu */
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+        .menu-sidebar.active {
+            left: 10px; /* khi mở, sidebar trượt vào */
+            padding: 5px;
+        }
+
+    .icon-container img {
+        height: 23px;
+    }
+
+    .hamburger-menu-container img {
+        height: 23px;
+    }
+
+    /* ======= Thanh Tìm Kiếm ======= */
+    .search-container {
+        position: relative;
+    }
+
+        .search-container form {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 30px;
+            padding: 0px 10px;
+            border: 2px solid #ff6b6b;
+            width: 100%;
+            margin: 15px auto;
+        }
+
+            .search-container form input {
+                border: none;
+                outline: none;
+                width: 100%;
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            .search-container form button {
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+
+                .search-container form button img {
+                    width: 20px;
+                    height: 20px;
+                }
+
+    choose-menu-list button {
+        display: block;
+        width: 100%;
+        color: white;
+        font-size: 1rem;
+    }
+}

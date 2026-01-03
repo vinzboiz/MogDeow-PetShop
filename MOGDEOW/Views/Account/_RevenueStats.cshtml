@@ -1,0 +1,137 @@
+﻿@model MOGDEOW.Models.ViewModels.AccountViewModel
+
+@{
+    var topRange = Context.Request.Query["topRange"].ToString();
+    var fromDate = Context.Request.Query["fromDate"].ToString();
+    var toDate = Context.Request.Query["toDate"].ToString();
+    var selectedTypeId = Context.Request.Query["selectedTypeId"].ToString();
+}
+
+<div class="account-order-summary">
+    <h4 class="order-title">📊 Thống kê doanh thu</h4>
+
+    <!-- Bộ lọc nâng cao -->
+    <form method="get" asp-action="Index" class="order-filter-form">
+        <input type="hidden" name="section" value="revenuestats" />
+
+        <label for="topRange">Chọn khoảng:</label>
+        <select name="topRange" class="date-input">
+            <option value="">-- Tùy chọn --</option>
+            <option value="today" selected="@(topRange == "today" ? "selected" : null)">Hôm nay</option>
+            <option value="month" selected="@(topRange == "month" ? "selected" : null)">Tháng này</option>
+            <option value="year" selected="@(topRange == "year" ? "selected" : null)">Năm nay</option>
+        </select>
+
+        <label for="selectedTypeId">Loại sản phẩm:</label>
+        <select name="selectedTypeId" class="date-input">
+            <option value="">-- Tất cả --</option>
+            @foreach (var type in Model.ProductTypes)
+            {
+                <option value="@type.ProductTypeID" selected="@(selectedTypeId == type.ProductTypeID.ToString() ? "selected" : null)">
+                    @type.ProductTypeName
+                </option>
+            }
+        </select>
+
+
+        <label for="fromDate">Từ ngày:</label>
+        <input type="date" name="fromDate" class="date-input" value="@fromDate" />
+
+        <label for="toDate">Đến ngày:</label>
+        <input type="date" name="toDate" class="date-input" value="@toDate" />
+
+        <button type="submit" class="btn-filter">🔍 Áp dụng</button>
+    </form>
+
+    <!-- Tổng quan doanh thu -->
+    @if (string.IsNullOrEmpty(topRange) && string.IsNullOrEmpty(fromDate) && string.IsNullOrEmpty(toDate) && string.IsNullOrEmpty(selectedTypeId))
+{
+    <div class="no-filter-info">
+        <p>📢 Vui lòng chọn khoảng thời gian hoặc loại sản phẩm để xem thống kê doanh thu.</p>
+    </div>
+}
+else
+{
+    <div class="revenue-summary">
+        <p><strong>Tổng doanh thu:</strong> <span class="revenue-total">@Model.TotalRevenue.ToString("N0") VNĐ</span></p>
+        <p><strong>Số đơn hoàn tất:</strong> <span class="revenue-orders">@Model.TotalCompletedOrders</span></p>
+        <p>
+            <strong>Doanh thu trung bình/đơn:</strong>
+            <span class="revenue-average">
+                @((Model.TotalRevenue / (Model.TotalCompletedOrders == 0 ? 1 : Model.TotalCompletedOrders)).ToString("N0")) VNĐ
+            </span>
+        </p>
+    </div>
+}
+    <!-- Biểu đồ -->
+    <div class="chart-container">
+        @if (Model.RevenueDates != null && Model.RevenueDates.Any())
+        {
+            <canvas id="revenueChart" style="max-height: 400px;"></canvas>
+        }
+        else
+        {
+            <p class="no-order">⚠️ Không có dữ liệu để hiển thị biểu đồ.</p>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    @if (Model.RevenueDates != null && Model.RevenueDates.Any())
+    {
+        <script>
+            const ctx = document.getElementById('revenueChart').getContext('2d');
+            const chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: @Html.Raw(Json.Serialize(Model.RevenueDates)),
+                    datasets: [{
+                        label: 'Doanh thu theo ngày',
+                        data: @Html.Raw(Json.Serialize(Model.RevenueValues)),
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: '#f87171',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            labels: {
+                                font: {
+                                    size: 14
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function (value) {
+                                    return value.toLocaleString("vi-VN") + " đ";
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        </script>
+    }
+}
+<style>
+    .no-filter-info {
+    background-color: #fef3c7;
+    border-left: 5px solid #f59e0b;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    color: #92400e;
+    font-weight: 600;
+    font-size: 16px;
+}
+</style>

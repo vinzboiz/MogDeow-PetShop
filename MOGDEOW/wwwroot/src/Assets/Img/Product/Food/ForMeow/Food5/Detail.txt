@@ -1,0 +1,9 @@
+ProductName: Soup cho mèo CIAO Scallop & Chicken vị sò điệp và thịt gà
+
+ProductDetail: CIAO Scallop & Chicken là súp dinh dưỡng cao cấp dành cho mèo, được làm từ sò điệp và thịt gà tươi ngon, mang đến hương vị hấp dẫn và bổ dưỡng. Công thức giàu protein, giúp hỗ trợ cơ bắp, tăng cường hệ miễn dịch và cung cấp năng lượng cho mèo cưng.
+
+Soup có kết cấu sánh mịn, dễ ăn và dễ tiêu hóa, đặc biệt phù hợp với mèo con, mèo già hoặc mèo kén ăn. Thành phần bổ sung Taurine, Vitamin E và Omega-3, giúp bảo vệ mắt sáng khỏe, duy trì làn da mềm mượt và lông bóng đẹp.
+
+Không chứa chất bảo quản nhân tạo, CIAO Scallop & Chicken là lựa chọn hoàn hảo để bổ sung nước, giúp mèo hấp thụ dưỡng chất tốt hơn và mang đến một bữa ăn thơm ngon, đầy đủ dinh dưỡng.
+
+ProductPrice: 25.000₫

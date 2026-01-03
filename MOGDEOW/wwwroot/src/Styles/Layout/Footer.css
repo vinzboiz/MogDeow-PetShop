@@ -1,0 +1,216 @@
+
+.footer {
+    background-color: #ff6464;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 20px;
+    min-width: 280px;
+    text-align: left;
+}
+
+.footer-logo {
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+.footer-section h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section email {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.footer-section .phone,
+.footer-section .map {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+    .footer-section ul li {
+        margin-bottom: 12px; /* Thêm khoảng cách giữa các dòng */
+    }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+            .footer-section ul li a:hover {
+                text-decoration: underline;
+            }
+
+.social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+}
+
+    .social-icons li {
+        margin-right: 15px;
+    }
+
+    .social-icons img {
+        width: 35px;
+        height: auto;
+    }
+
+.certification-logo {
+    width: 120px;
+    margin-top: 15px;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+/*========================================= RESPONSIVE =================================*/
+/*================================================== DESKTOP ====================================================*/
+@media (min-width: 1025px) {
+}
+/*================================================== IPAD ================================================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* ==================================== MOBILE =====================================*/
+@media (max-width: 767px) {
+
+    .footer {
+        background-color: #ff6464;
+        color: white;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .footer-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 20px;
+    }
+
+    .footer-section {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding: 10px;
+        min-width: 280px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 140px;
+        margin-bottom: 25px;
+    }
+
+    .footer-section h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .footer-section p {
+        font-size: 0.8rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-section ul li {
+            margin-bottom: 12px; /* Thêm khoảng cách giữa các dòng */
+        }
+
+            .footer-section ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+                text-decoration: none;
+            }
+
+                .footer-section ul li a:hover {
+                    text-decoration: underline;
+                }
+
+    .social-icons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+        margin-top: 20px;
+    }
+
+        .social-icons li {
+            margin-right: 15px;
+        }
+
+        .social-icons img {
+            width: 35px;
+            height: auto;
+        }
+
+    .certification-logo {
+        width: 120px;
+        margin-top: 15px;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+        font-size: 14px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}

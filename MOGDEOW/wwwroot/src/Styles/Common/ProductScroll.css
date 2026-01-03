@@ -1,0 +1,181 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: #ff6464;
+  --title-color: #fcae53;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Thiết kế cho thẻ sản phẩm */
+.product-card-scroll {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 250px;
+  flex: 0 0 250px; /* Cố định chiều rộng */
+  height: 340px; /* Chiều cao cố định */
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+
+  text-align: center;
+
+  -webkit-transition: 0.5s ease-in-out;
+
+  -o-transition: 0.5s ease-in-out;
+
+  transition: 0.5s ease-in-out;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+
+  color: inherit;
+  text-decoration: none;
+}
+.product-card-scroll:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+/* Đóng gói ảnh và button */
+.image-container-scroll {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Button Xem ngay, ẩn bên dưới ảnh ban đầu */
+.view-now-scroll {
+  position: absolute;
+  bottom: -50px; /* ẩn bên dưới */
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: var(--main-color);
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0;
+  -webkit-transition: bottom 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  -o-transition: bottom 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  transition: bottom 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+/* Khi hover vào vùng chứa ảnh, button di chuyển lên và hiện ra */
+.product-card-scroll:hover .view-now-scroll {
+  bottom: 0px;
+  opacity: 1;
+}
+
+.product-image-scroll {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-details-scroll {
+  padding: 10px;
+}
+
+/* Giới hạn hiển thị tên sản phẩm chỉ 2 dòng với ellipsis */
+.product-name-scroll {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.1rem;
+  height: 2.4rem;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-transform: capitalize;
+}
+
+/* Giá sản phẩm giới hạn 1 dòng */
+.product-price-scroll {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 8px auto 0;
+  height: 1.2em; /* 1 dòng */
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.product-card-scroll:hover .product-price-scroll {
+  color: var(--main-color);
+}
+/*========================================= RESPONSIVE =================================*/
+/*================================================== DESKTOP ====================================================*/
+@media (min-width: 1025px) {
+}
+/*================================================== IPAD ================================================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Thiết kế cho thẻ sản phẩm */
+  .product-card-scroll {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px; /* Cố định chiều rộng */
+    height: 290px; /* Chiều cao cố định */
+  }
+
+  /* Giới hạn hiển thị tên sản phẩm chỉ 2 dòng với ellipsis */
+  .product-name-scroll {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  /* Giá sản phẩm giới hạn 1 dòng */
+  .product-price-scroll {
+    font-size: 0.8rem;
+  }
+  .view-now {
+    font-size: 0.8rem;
+  }
+}
+
+/* ==================================== MOBILE =====================================*/
+@media (max-width: 767px) {
+  /* Thiết kế cho thẻ sản phẩm */
+  .product-card-scroll {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 150px;
+    flex: 0 0 150px; /* Cố định chiều rộng */
+    height: 240px; /* Chiều cao cố định */
+  }
+
+  /* Giới hạn hiển thị tên sản phẩm chỉ 2 dòng với ellipsis */
+  .product-name-scroll {
+    font-size: 0.65rem;
+    font-weight: 600;
+  }
+
+  /* Giá sản phẩm giới hạn 1 dòng */
+  .product-price-scroll {
+    font-size: 0.65rem;
+  }
+  .view-now-scroll {
+    font-size: 0.65rem;
+  }
+}

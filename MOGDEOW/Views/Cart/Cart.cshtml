@@ -1,0 +1,228 @@
+﻿@model IEnumerable<MOGDEOW.DTOs.CartDetailDTO>
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Giỏ Hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/Products/Cart.css
+    " asp-append-version="true" />
+}
+@{
+    var culture = new System.Globalization.CultureInfo("vi-VN");
+}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<div class="container-cart">
+    <div class="title-cart">GIỎ HÀNG CỦA BẠN</div>
+
+    <form method="post" asp-action="CheckOutSelected" asp-controller="Cart" id="checkoutForm">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="selectAll" /></th>
+                    <th>Sản Phẩm</th>
+                    <th>Đơn Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Tổng</th>
+                    <th>Thao Tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr id="row_@item.ProductID">
+                        <!-- Sản phẩm -->
+                        <td>
+                            <input type="checkbox" name="selectedProductIds" value="@item.ProductID" class="select-item" />
+                        </td>
+                        <td>
+                            <div class="product-info">
+                                <img src="@item.ProductImage"/>
+                                <div class="product-details">
+                                    <p class="product-name">@item.ProductName</p>
+                                    <p class="product-id">Mã Sản Phẩm: @item.ProductID</p>
+                                </div>
+                            </div>
+                        </td>
+
+                        <!-- Đơn giá -->
+
+                        <td>
+                            <div class="product-price">
+
+                                <p>  @(item.ProductPrice.ToString("N0", culture))</p>
+                                <span>VNĐ</span>
+                            </div>
+                        </td>
+
+                        <!-- Số lượng -->
+                        <td>
+                            @if (item.IsOutOfStock)
+                            {
+                                <span style="color: red;">Hết hàng</span>
+                            }
+                            else
+                            {
+                                <div class="quantity-wrapper">
+                                    <button type="button" class="btn-decrease">−</button>
+                                    <input type="number" class="quantity-input" name="quantities[@item.ProductID]" data-id="@item.ProductID" value="@item.Quantity" min="1" max="@item.MaxAvailable" />
+                                    <button type="button" class="btn-increase">+</button>
+                                </div>
+                               
+                            }
+                        </td>
+
+                        <!-- Tổng tiền -->
+                        <td>
+                            <div class="total-price">
+
+                                <p> @((item.ProductPrice * item.Quantity).ToString("N0", culture)) </p>
+
+                                <span>VNĐ</span>
+                            </div>
+                        </td>
+
+                        <!-- Thao tác -->
+                        <td id="row_@item.ProductID">
+                            <div class="btn-container">
+                                    <input type="hidden" name="productId" value="@item.ProductID" />
+                                <button type="button" class="btn delete" data-id="@item.ProductID">Xóa</button>
+                                <a class="btn view-now" href="@Url.Action("ProductDetail", "Product", new { id = @item.ProductID })">Xem ngay</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <div class="price-summary-container">
+                <p>Tổng tiền:</p>
+                <span>@Model.Sum(p => p.ProductPrice * p.Quantity).ToString("N0", culture) VNĐ</span>
+             </div>
+
+            <div class="button-group">
+                <a class="btn back" href="@Url.Action("Index", "Product")">Tiếp tục mua sắm</a>
+                <button type="submit" class="btn checkout">Thanh Toán</button>
+            </div>
+        </div>
+    </form>
+</div>
+@section Scripts {
+    <script>
+        // Gắn sự kiện DOM
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Sự kiện tăng/giảm số lượng bằng event delegation
+            document.querySelectorAll(".btn-increase, .btn-decrease").forEach(btn => {
+                btn.addEventListener("click", function () {
+                    const row = this.closest("tr");
+                    const input = row.querySelector(".quantity-input");
+                    const productId = input.dataset.id;
+                    const max = parseInt(input.max);
+                    let quantity = parseInt(input.value);
+
+                     if (this.classList.contains("btn-increase")) {
+            if (quantity < max) {
+                quantity++;
+            } else {
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Số lượng tối đa!',
+                    text: 'Bạn đã chọn số lượng tối đa có thể mua.',
+                    confirmButtonText: 'OK',
+                    confirmButtonColor: '#d33'
+                });
+                return;
+            }
+        }
+
+        if (this.classList.contains("btn-decrease")) {
+            if (quantity > 1) {
+                quantity--;
+            } else {
+                Swal.fire({
+                    icon: 'question',
+                    title: 'Xóa sản phẩm?',
+                    text: 'Bạn có muốn xóa sản phẩm này khỏi giỏ hàng không?',
+                    showCancelButton: true,
+                    confirmButtonColor: '#d33',
+                    cancelButtonColor: '#3085d6',
+                    confirmButtonText: 'Xóa',
+                    cancelButtonText: 'Hủy'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Gọi ajax xóa sản phẩm
+                        $.post('/Cart/RemoveFromCartAjax', { productId }, function (res) {
+                            if (res.success) {
+                                $('#row_' + productId).remove();
+                                $('#cartCount').text(res.totalQuantity);
+                                updateCartTotal();
+                            }
+                        });
+                    }
+                });
+                return;
+            }
+        }
+
+                    updateQuantityAjax(productId, quantity, input, row);
+                });
+            });
+
+            // Hàm gọi AJAX cập nhật số lượng
+            function updateQuantityAjax(productId, quantity, input, row) {
+                $.ajax({
+                    url: '/Cart/UpdateQuantityAjax',
+                    method: 'POST',
+                    data: { productId: productId, quantity: quantity },
+                    success: function (res) {
+                        if (res.success) {
+                            input.value = res.quantity;
+                            row.querySelector(".total-price p").innerText = res.subtotal.toLocaleString('vi-VN');
+                            document.querySelector(".price-summary-container span").innerText = res.totalCartPrice.toLocaleString('vi-VN') + " VNĐ";
+                            document.getElementById("cartCount").innerText = res.totalQuantity;
+                        }
+                    }
+                });
+            }
+
+            // Xóa sản phẩm bằng AJAX
+        $(document).on('click', '.btn.delete', function (e) {
+            e.preventDefault();
+            const productId = $(this).data('id');
+            if (!confirm("Bạn có chắc muốn xóa sản phẩm này?")) return;
+
+            $.post('/Cart/RemoveFromCartAjax', { productId }, function (res) {
+                if (res.success) {
+                    $('#row_' + productId).remove();
+                    $('#cartCount').text(res.totalQuantity);
+                    updateCartTotal();
+                }
+            });
+        });
+
+            // Hàm cập nhật tổng tiền sau khi xoá
+            function updateCartTotal() {
+                let total = 0;
+                document.querySelectorAll(".total-price p").forEach(cell => {
+                    total += parseInt(cell.innerText.replace(/\D/g, ""));
+                });
+                document.querySelector(".price-summary-container span").innerText = total.toLocaleString('vi-VN') + " VNĐ";
+            }
+
+            // Chọn tất cả checkbox
+            const selectAll = document.getElementById("selectAll");
+            if (selectAll) {
+                selectAll.addEventListener("change", function () {
+                    const isChecked = this.checked;
+                    document.querySelectorAll(".select-item").forEach(cb => cb.checked = isChecked);
+                });
+            }
+        });
+    </script>
+}
+

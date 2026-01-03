@@ -1,0 +1,57 @@
+﻿@model MOGDEOW.Models.ViewModels.AccountViewModel
+@{
+    ViewData["Title"] = "Chi Tiết Hóa Đơn";
+
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/Account/_BillDetail.css" asp-append-version="true" />
+}
+<div class="background-container">
+    <div class="receipt-wrapper">
+        <div class="bill-detail-container">
+            <div class="bill-header">🧾 Chi tiết hóa đơn</div>
+
+            <!-- Thông tin người nhận -->
+            <div class="buyer-info">
+                <h6><strong>👤 Người nhận:</strong> @Model.Bill.ReceiverName</h6>
+                <p><strong>📞 Số điện thoại:</strong> @Model.Bill.ReceiverPhone</p>
+                <p><strong>📍 Địa chỉ:</strong> @Model.Bill.ShippingAddress</p>
+            </div>
+
+            <!-- Chi tiết hóa đơn -->
+            @if (Model.BillDetails == null || !Model.BillDetails.Any())
+            {
+                <p class="bill-error">❌ Không tìm thấy chi tiết hóa đơn!</p>
+            }
+            else
+            {
+                <table class="bill-table">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Đơn giá</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var detail in Model.BillDetails)
+                        {
+                            <tr>
+                                <td>@detail.Product.ProductName</td>
+                                <td>@detail.Quantity</td>
+                                <td>@detail.Price.ToString("N0") VNĐ</td>
+                                <td>@((detail.Quantity * detail.Price).ToString("N0")) VNĐ</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+
+            <!-- Nút quay lại -->
+            <a href="javascript:history.back()" class="btn-back">⬅️ Quay lại</a>
+        </div>
+        <img src="~/src/Assets/Icon/Common/bottom-receipt.png" alt="bottom-receipt" class="bottom-receipt" />
+    </div>
+</div>

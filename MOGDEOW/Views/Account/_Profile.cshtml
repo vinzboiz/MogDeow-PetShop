@@ -1,0 +1,128 @@
+﻿@model MOGDEOW.Models.User
+
+
+<div class="account-card">
+    <div class="account-card-header">Thông tin tài khoản</div>
+    <!-- Thông báo -->
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+
+    <div class="account-card-body">
+
+        <!-- Form cập nhật hồ sơ -->
+        <form method="post" asp-action="UpdateProfile" enctype="multipart/form-data" class="account-form" id="updateForm">
+            <input type="hidden" name="UserID" value="@Model.UserID" />
+
+            @if (!string.IsNullOrEmpty(Model.UserImg))
+            {
+                <div class="account-form-group">
+                    <h2>Ảnh hiện tại:</h2>
+                    <img id="currentImage" src="~/src/Assets/Img/User/@Model.UserImg" alt="Ảnh cũ" style="max-width: 200px;" />
+                    <img id="previewImg" src="#" alt="Ảnh mới" style="display: none; max-width: 200px;" />
+                </div>
+            }
+            <div class="account-form-group">
+                <input type="file" name="imageFile" id="imageUpload" class="account-input-file" accept="image/*" />
+                <label for="imageUpload" class="custom-upload-btn" style="color:white">Chọn ảnh mới</label>
+                <p id="uploadStatus" style="color:green; display:none; font-weight:bold;"></p>
+            </div>
+
+            <div class="account-form-group">
+                <label>Họ tên:</label>
+                <input type="text" name="UserName" value="@Model.UserName" class="account-input" required />
+            </div>
+            <div class="account-form-group">
+                <label>Email:</label>
+                <input type="email" name="Email" value="@Model.Email" class="account-input" readonly />
+            </div>
+            <div class="account-form-group">
+                <label>Số điện thoại:</label>
+                <input type="text" name="PhoneNumber" value="@Model.PhoneNumber" class="account-input" required />
+            </div>
+            <div class="account-form-group">
+                <label>Địa chỉ:</label>
+                <input type="text" name="Address" value="@Model.Address" class="account-input" required />
+            </div>
+
+            <button type="submit" class="account-button account-btn-success">Cập nhật</button>
+        </form>
+
+        <hr>
+
+        <!-- Form thay đổi mật khẩu -->
+        <div class="account-password-form">
+            <h4>Thay đổi mật khẩu</h4>
+            <form method="post" asp-action="ChangePassword" class="account-form">
+                <div class="account-form-group">
+                    <label>Mật khẩu hiện tại:</label>
+                    <input type="password" name="currentPassword" required>
+                </div>
+                <div class="account-form-group">
+                    <label>Mật khẩu mới:</label>
+                    <input type="password" name="newPassword" required>
+                </div>
+                <div class="account-form-group">
+                    <label>Nhập lại mật khẩu:</label>
+                    <input type="password" name="confirmPassword" required>
+                </div>
+                <button type="submit" class="account-button account-btn-danger">Đổi mật khẩu</button>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        // Xem trước ảnh
+            document.addEventListener("DOMContentLoaded", function () {
+            const input = document.getElementById('imageUpload');
+            const preview = document.getElementById('previewCurrentImage'); 
+            const status = document.getElementById('uploadStatus');
+
+            input.addEventListener('change', function () {
+                const file = this.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        preview.setAttribute("src", e.target.result);
+                        status.textContent = "Đã tải ảnh thành công ✅";
+                        status.style.display = "block";
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        });
+
+        // Kiểm tra số điện thoại
+        document.getElementById("updateForm").addEventListener("submit", function (e) {
+            const phone = document.querySelector("input[name='PhoneNumber']").value;
+            const regexPhone = /^0\d{9}$/;
+            if (!regexPhone.test(phone)) {
+                alert("Số điện thoại phải bắt đầu bằng 0 và có đúng 10 số!");
+                e.preventDefault();
+            }
+        });
+
+        // Kiểm tra mật khẩu mới
+        document.getElementById("changePassForm").addEventListener("submit", function (e) {
+            const newPass = document.querySelector("input[name='newPassword']").value;
+            const confirmPass = document.querySelector("input[name='confirmPassword']").value;
+            const regexPass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{6,}$/;
+
+            if (!regexPass.test(newPass)) {
+                alert("Mật khẩu mới phải từ 6 ký tự trở lên, có chữ hoa, chữ thường, số và ký tự đặc biệt!");
+                e.preventDefault();
+                return;
+            }
+            if (newPass !== confirmPass) {
+                alert("Mật khẩu xác nhận không khớp!");
+                e.preventDefault();
+            }
+        });
+    </script>
+}

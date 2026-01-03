@@ -1,0 +1,9 @@
+ProductName: Thức ăn cho mèo con ROYAL CANIN Kitten
+
+ProductDetail: ROYAL CANIN Kitten là dòng thức ăn cao cấp được thiết kế dành riêng cho mèo con từ 2 đến 12 tháng tuổi, giúp hỗ trợ sự phát triển toàn diện trong giai đoạn tăng trưởng quan trọng. Công thức giàu protein dễ tiêu hóa, vitamin và khoáng chất thiết yếu, giúp tăng cường hệ miễn dịch, phát triển cơ bắp và duy trì sức khỏe xương khớp.
+
+Thức ăn chứa DHA, Omega-3, Omega-6, giúp phát triển trí não và duy trì bộ lông mềm mượt. Hạt thức ăn có kích thước nhỏ, dễ nhai và phù hợp với răng của mèo con, giúp chúng ăn ngon miệng hơn. Đặc biệt, công thức hỗ trợ hệ tiêu hóa nhạy cảm của mèo con, giúp hấp thụ dinh dưỡng tối đa mà không gây rối loạn tiêu hóa.
+
+Với thành phần chất lượng cao và công thức chuyên biệt, ROYAL CANIN Kitten là lựa chọn lý tưởng để đảm bảo sự phát triển khỏe mạnh và toàn diện cho mèo con của bạn.
+
+ProductPrice: 130.000₫

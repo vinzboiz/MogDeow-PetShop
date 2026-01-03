@@ -1,0 +1,21 @@
+﻿@model List<string>
+
+@if (Model != null && Model.Any())
+{
+    <div class="search-suggestions">
+        <ul>
+            @foreach (var suggestion in Model)
+            {
+                <li>
+                    <a href="@Url.Action("Index", "Product", new { search = suggestion })">
+                        @suggestion
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+}
+else
+{
+    <p>Không có gợi ý tìm kiếm.</p>
+}

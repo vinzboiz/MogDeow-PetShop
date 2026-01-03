@@ -1,0 +1,2057 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\favicon\\android-chrome-192x192.png",
+      "PackagePath": "staticwebassets\\favicon\\android-chrome-192x192.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\favicon\\android-chrome-512x512.png",
+      "PackagePath": "staticwebassets\\favicon\\android-chrome-512x512.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\favicon\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\favicon\\apple-touch-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\favicon\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\favicon\\favicon-16x16.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\favicon\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\favicon\\favicon-32x32.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\favicon\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\favicon\\site.webmanifest",
+      "PackagePath": "staticwebassets\\favicon\\site.webmanifest"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Common\\bottom-receipt.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Common\\bottom-receipt.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Common\\to-top-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Common\\to-top-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Footer\\dmca_protected.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Footer\\dmca_protected.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Footer\\face-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Footer\\face-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Footer\\insta-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Footer\\insta-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Footer\\x-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Footer\\x-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Footer\\youtube-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Footer\\youtube-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\About-Icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\About-Icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\Accessories-Icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\Accessories-Icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\Cart-Icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\Cart-Icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\Cat-icon-Icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\Cat-icon-Icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\Contact-Icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\Contact-Icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\Dog-icon-Icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\Dog-icon-Icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\Heart-Icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\Heart-Icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\Home-Icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\Home-Icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\Pet-Food-Icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\Pet-Food-Icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\Pet-Hygiene-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\Pet-Hygiene-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\Pet-Icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\Pet-Icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\Pet-cushion-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\Pet-cushion-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\Pet-medicine-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\Pet-medicine-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\Pet-toy-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\Pet-toy-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\Search-Icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\Search-Icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\User-Icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\User-Icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\close.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\close.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Layout\\Header\\hamburger-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Layout\\Header\\hamburger-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\CheckOut\\bank-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\CheckOut\\bank-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\CheckOut\\cash-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\CheckOut\\cash-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\Contact\\decor-contact.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\Contact\\decor-contact.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\Contact\\decor-top-contact.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\Contact\\decor-top-contact.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\Contact\\face-icon-color.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\Contact\\face-icon-color.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\Contact\\insta-icon-color.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\Contact\\insta-icon-color.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\Contact\\x-icon-color.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\Contact\\x-icon-color.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\Contact\\zalo-icon-color.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\Contact\\zalo-icon-color.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\Home\\gift-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\Home\\gift-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\Home\\heart-icon-filled.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\Home\\heart-icon-filled.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\Home\\heart-icon2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\Home\\heart-icon2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\Home\\human-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\Home\\human-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\Home\\map-marker-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\Home\\map-marker-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\Home\\pet-foot-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\Home\\pet-foot-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\Home\\push-pin-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\Home\\push-pin-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Icon\\Pages\\Home\\sticky-icon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Icon\\Pages\\Home\\sticky-icon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\About\\banner-1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\About\\banner-1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\About\\banner-2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\About\\banner-2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\About\\banner-3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\About\\banner-3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\About\\banner-4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\About\\banner-4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\About\\pic1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\About\\pic1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\About\\pic2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\About\\pic2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\About\\pic3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\About\\pic3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\About\\pic4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\About\\pic4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\About\\pic5.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\About\\pic5.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\About\\pic6.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\About\\pic6.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Cart\\decor-cart-page.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Cart\\decor-cart-page.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Banner\\banner-choose-cat.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Banner\\banner-choose-cat.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Banner\\banner-choose-dog.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Banner\\banner-choose-dog.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Banner\\feature-1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Banner\\feature-1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Banner\\feature-2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Banner\\feature-2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Banner\\feature-3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Banner\\feature-3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Category\\cage-category.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Category\\cage-category.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Category\\cat-category.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Category\\cat-category.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Category\\clothes-category.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Category\\clothes-category.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Category\\cushion-category.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Category\\cushion-category.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Category\\dog-category.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Category\\dog-category.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Category\\food-category.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Category\\food-category.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Category\\hygiene-category.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Category\\hygiene-category.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Category\\medicine-category.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Category\\medicine-category.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Category\\toy-category.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Category\\toy-category.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Order\\cat-say-hi.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Order\\cat-say-hi.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Order\\dog-say-hi.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Order\\dog-say-hi.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Order\\product.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Order\\product.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Slide\\slide1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Slide\\slide1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Slide\\slide2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Slide\\slide2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Slide\\slide3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Slide\\slide3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Home\\Slide\\slide4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Home\\Slide\\slide4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess10\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess10\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess10\\star.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess10\\star.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess1\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess1\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess1\\romom1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess1\\romom1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess2\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess2\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess2\\xich1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess2\\xich1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess3\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess3\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess3\\daytudong.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess3\\daytudong.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess4\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess4\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess4\\quanao1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess4\\quanao1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess5\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess5\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess5\\yem.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess5\\yem.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess6\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess6\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess6\\diabay.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess6\\diabay.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess7\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess7\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess7\\chutchit1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess7\\chutchit1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess8\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess8\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess8\\diabaythuong.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess8\\diabaythuong.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess9\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess9\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess9\\ongnoel.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForDog\\Acess9\\ongnoel.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess10\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess10\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess10\\dochoi4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess10\\dochoi4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess1\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess1\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess1\\yem.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess1\\yem.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess2\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess2\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess2\\quanao1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess2\\quanao1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess3\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess3\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess3\\vongco1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess3\\vongco1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess4\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess4\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess4\\batan.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess4\\batan.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess5\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess5\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess5\\binhtudong.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess5\\binhtudong.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess6\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess6\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess6\\cancau1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess6\\cancau1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess7\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess7\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess7\\dochoi1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess7\\dochoi1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess8\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess8\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess8\\dochoi2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess8\\dochoi2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess9\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess9\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess9\\dochoi3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Accessories\\ForMeow\\Acess9\\dochoi3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat10\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat10\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat10\\Sphynx1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat10\\Sphynx1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat10\\Sphynx2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat10\\Sphynx2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat10\\Sphynx3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat10\\Sphynx3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat10\\Sphynx4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat10\\Sphynx4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat1\\Anhlongdai1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat1\\Anhlongdai1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat1\\Anhlongdai2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat1\\Anhlongdai2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat1\\Anhlongdai3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat1\\Anhlongdai3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat1\\Anhlongdai4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat1\\Anhlongdai4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat1\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat1\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat2\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat2\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat2\\Himalaya2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat2\\Himalaya2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat2\\Himalaya3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat2\\Himalaya3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat2\\Himalaya4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat2\\Himalaya4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat2\\Hymalaya1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat2\\Hymalaya1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat3\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat3\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat3\\Ragdoll1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat3\\Ragdoll1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat3\\Ragdoll2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat3\\Ragdoll2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat3\\Ragdoll3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat3\\Ragdoll3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat3\\Ragdoll4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat3\\Ragdoll4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat4\\Batu1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat4\\Batu1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat4\\Batu2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat4\\Batu2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat4\\Batu3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat4\\Batu3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat4\\Batu4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat4\\Batu4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat4\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat4\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat5\\Anhlongngan1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat5\\Anhlongngan1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat5\\Anhlongngan2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat5\\Anhlongngan2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat5\\Anhlongngan3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat5\\Anhlongngan3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat5\\Anhlongngan4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat5\\Anhlongngan4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat5\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat5\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat6\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat6\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat6\\Maincoon1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat6\\Maincoon1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat6\\Maincoon2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat6\\Maincoon2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat6\\Maincoon3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat6\\Maincoon3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat6\\Maincoon4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat6\\Maincoon4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat7\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat7\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat7\\Scotild1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat7\\Scotild1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat7\\Scotild2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat7\\Scotild2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat7\\Scotild3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat7\\Scotild3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat7\\Scotild4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat7\\Scotild4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat8\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat8\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat8\\Munchkin1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat8\\Munchkin1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat8\\Munchkin2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat8\\Munchkin2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat8\\Munchkin3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat8\\Munchkin3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat8\\Munchkin4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat8\\Munchkin4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat9\\Bengal1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat9\\Bengal1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat9\\Bengal2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat9\\Bengal2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat9\\Bengal3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat9\\Bengal3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat9\\Bengal4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat9\\Bengal4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Cat9\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Cat9\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Screenshot 2025-03-14 005510.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Screenshot 2025-03-14 005510.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Screenshot 2025-03-15 162555.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Screenshot 2025-03-15 162555.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Screenshot 2025-03-15 170645.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Screenshot 2025-03-15 170645.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Screenshot 2025-03-24 155532.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Screenshot 2025-03-24 155532.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Screenshot 2025-03-24 155937.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Screenshot 2025-03-24 155937.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\Screenshot 2025-03-25 195323.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\Screenshot 2025-03-25 195323.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Cat\\meocon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Cat\\meocon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog10\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog10\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog10\\Lapxuong1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog10\\Lapxuong1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog10\\Lapxuong2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog10\\Lapxuong2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog10\\Lapxuong3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog10\\Lapxuong3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog10\\Lapxuong4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog10\\Lapxuong4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog1\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog1\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog1\\Phoc1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog1\\Phoc1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog1\\Phoc2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog1\\Phoc2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog1\\Phoc3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog1\\Phoc3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog1\\Phoc4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog1\\Phoc4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog2\\Corgi1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog2\\Corgi1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog2\\Corgi2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog2\\Corgi2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog2\\Corgi3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog2\\Corgi3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog2\\Corgi4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog2\\Corgi4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog2\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog2\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog3\\Chihuahu4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog3\\Chihuahu4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog3\\Chihuahua1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog3\\Chihuahua1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog3\\Chihuahua2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog3\\Chihuahua2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog3\\Chihuahua3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog3\\Chihuahua3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog3\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog3\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog4\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog4\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog4\\Golden.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog4\\Golden.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog4\\Golden2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog4\\Golden2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog4\\Golden3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog4\\Golden3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog4\\Golden4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog4\\Golden4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog5\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog5\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog5\\Shiba1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog5\\Shiba1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog5\\Shiba2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog5\\Shiba2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog5\\Shiba3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog5\\Shiba3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog5\\Shiba4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog5\\Shiba4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog6\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog6\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog6\\Pitbull1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog6\\Pitbull1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog6\\Pitbull2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog6\\Pitbull2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog6\\Pitbull3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog6\\Pitbull3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog6\\Pitbull4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog6\\Pitbull4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog7\\Chowchow1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog7\\Chowchow1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog7\\Chowchow2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog7\\Chowchow2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog7\\Chowchow3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog7\\Chowchow3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog7\\Chowchow4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog7\\Chowchow4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog7\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog7\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog8\\Bichon1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog8\\Bichon1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog8\\Bichon2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog8\\Bichon2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog8\\Bichon3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog8\\Bichon3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog8\\Bichon4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog8\\Bichon4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog8\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog8\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog9\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog9\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog9\\Pug1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog9\\Pug1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog9\\Pug2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog9\\Pug2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog9\\Pug3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog9\\Pug3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Dog\\Dog9\\Pug4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Dog\\Dog9\\Pug4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food10\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food10\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food10\\patethitga.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food10\\patethitga.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food1\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food1\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food1\\banhthuongchodog.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food1\\banhthuongchodog.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food2\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food2\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food2\\Thucanhatchodog.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food2\\Thucanhatchodog.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food3\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food3\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food3\\patechodog.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food3\\patechodog.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food4\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food4\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food4\\suabot.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food4\\suabot.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food5\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food5\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food5\\xucxichganga.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food5\\xucxichganga.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food6\\Botdinhduong.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food6\\Botdinhduong.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food6\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food6\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food7\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food7\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food7\\banhkem.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food7\\banhkem.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food8\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food8\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food8\\thucanhat2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food8\\thucanhat2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food9\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food9\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food9\\patethitbo.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForDog\\Food9\\patethitbo.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food10\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food10\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food10\\suachomeo2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food10\\suachomeo2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food1\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food1\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food1\\pateca.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food1\\pateca.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food2\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food2\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food2\\thucanmeo1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food2\\thucanmeo1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food3\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food3\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food3\\banhthuong1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food3\\banhthuong1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food4\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food4\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food4\\catnip.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food4\\catnip.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food5\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food5\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food5\\soupsodiepga.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food5\\soupsodiepga.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food6\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food6\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food6\\patelon.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food6\\patelon.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food7\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food7\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food7\\sotpate.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food7\\sotpate.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food8\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food8\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food8\\geldinhduong.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food8\\geldinhduong.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food9\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food9\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food9\\xucxichca.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Food\\ForMeow\\Food9\\xucxichca.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing10\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing10\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing10\\dem4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing10\\dem4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing11\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing11\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing11\\dem6.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing11\\dem6.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing12\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing12\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing12\\dem3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing12\\dem3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing13\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing13\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing13\\nha6.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing13\\nha6.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing14\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing14\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing14\\nha5.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing14\\nha5.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing15\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing15\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing15\\housemeo1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing15\\housemeo1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing16\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing16\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing16\\housemeo2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing16\\housemeo2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing17\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing17\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing17\\housemeo4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing17\\housemeo4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing18\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing18\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing18\\housemeo6.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing18\\housemeo6.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing19\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing19\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing19\\chuongmeo1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing19\\chuongmeo1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing1\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing1\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing1\\house1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing1\\house1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing20\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing20\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing20\\chuongmeo2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing20\\chuongmeo2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing2\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing2\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing2\\balo1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing2\\balo1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing3\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing3\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing3\\long1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing3\\long1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing4\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing4\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing4\\tui2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing4\\tui2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing5\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing5\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing5\\nha1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing5\\nha1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing6\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing6\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing6\\nha3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing6\\nha3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing7\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing7\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing7\\nha2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing7\\nha2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing8\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing8\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing8\\dem1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing8\\dem1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing9\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing9\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Housing\\Housing9\\dem2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Housing\\Housing9\\dem2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene10\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene10\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene10\\nhavsmeo1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene10\\nhavsmeo1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene11\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene11\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene11\\Nhavs2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene11\\Nhavs2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene12\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene12\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene12\\nhavs3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene12\\nhavs3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene13\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene13\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene13\\suatammeo1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene13\\suatammeo1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene14\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene14\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene14\\suatammeo2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene14\\suatammeo2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene15\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene15\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene15\\suatamchomeo3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene15\\suatamchomeo3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene1\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene1\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene1\\vesinh1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene1\\vesinh1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene2\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene2\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene2\\vesinh2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene2\\vesinh2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene3\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene3\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene3\\xengxuc.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene3\\xengxuc.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene4\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene4\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene4\\suatam.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene4\\suatam.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene5\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene5\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene5\\suatam2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene5\\suatam2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene6\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene6\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene6\\suatam3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene6\\suatam3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene7\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene7\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene7\\xit1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene7\\xit1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene8\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene8\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene8\\vongchongliem.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene8\\vongchongliem.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene9\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene9\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene9\\nuochoa.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Hygiene\\Hygiene9\\nuochoa.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine10\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine10\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine10\\nhogay1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine10\\nhogay1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine11\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine11\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine11\\nhogiun2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine11\\nhogiun2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine12\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine12\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine12\\trivecho.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine12\\trivecho.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine13\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine13\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine13\\vongvecho.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine13\\vongvecho.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine14\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine14\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine14\\thuocve3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine14\\thuocve3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine15\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine15\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine15\\vongveranmeo.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine15\\vongveranmeo.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine1\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine1\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine1\\thuoctrive1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine1\\thuoctrive1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine2\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine2\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine2\\thuoc2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine2\\thuoc2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine3\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine3\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine3\\vongve.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine3\\vongve.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine4\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine4\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine4\\thuoc3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine4\\thuoc3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine5\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine5\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine5\\vongve2.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine5\\vongve2.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine6\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine6\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine6\\thuocxo.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine6\\thuocxo.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine7\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine7\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine7\\thuocnam.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine7\\thuocnam.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine8\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine8\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine8\\thuocnhomat.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine8\\thuocnhomat.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine9\\Detail.txt",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine9\\Detail.txt"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\Medicine\\Medicine9\\taygiun1.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\Medicine\\Medicine9\\taygiun1.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\Product\\NewProduct\\Screenshot 2025-03-14 005510.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\Product\\NewProduct\\Screenshot 2025-03-14 005510.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\0a2d5489-3dc7-4ff8-a68d-5e3b137297d8.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\0a2d5489-3dc7-4ff8-a68d-5e3b137297d8.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\15100a33-a18d-400f-9135-0d8409db8c40.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\15100a33-a18d-400f-9135-0d8409db8c40.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\1c482c31-6509-400d-ab88-9a1b3e93aeab.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\1c482c31-6509-400d-ab88-9a1b3e93aeab.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\1de5c2bb-3f22-4698-a983-831bb36a21b3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\1de5c2bb-3f22-4698-a983-831bb36a21b3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\219aa33b-23a1-410f-aaa2-801b6fa384ac.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\219aa33b-23a1-410f-aaa2-801b6fa384ac.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\245c1e9c-5562-4b1a-866a-4bca05ba5c68.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\245c1e9c-5562-4b1a-866a-4bca05ba5c68.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\27efba67-8516-4de0-a590-fac9df81b3ed.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\27efba67-8516-4de0-a590-fac9df81b3ed.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\2b263306-2a17-4ee2-a8bb-4b605717dd05.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\2b263306-2a17-4ee2-a8bb-4b605717dd05.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\358dad49-606b-4636-86e8-353f8c96f230.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\358dad49-606b-4636-86e8-353f8c96f230.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\38d7c023-f0d3-45c2-bc05-00240b2868c3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\38d7c023-f0d3-45c2-bc05-00240b2868c3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\40c62682-0b41-440b-9dab-26a907935fb7.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\40c62682-0b41-440b-9dab-26a907935fb7.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\4741bd38-0b45-44aa-ac5a-a740b459a4aa.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\4741bd38-0b45-44aa-ac5a-a740b459a4aa.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\5566fc0f-a533-4aa1-8e70-f71276385bfe.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\5566fc0f-a533-4aa1-8e70-f71276385bfe.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\6045c221-76cf-48e2-91df-02132af5ea20.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\6045c221-76cf-48e2-91df-02132af5ea20.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\72d22b90-edb8-4a9a-9b05-8f625deeb802.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\72d22b90-edb8-4a9a-9b05-8f625deeb802.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\77e2112f-91a4-4e9f-b0b0-abb836297269.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\77e2112f-91a4-4e9f-b0b0-abb836297269.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\893bd0f2-8639-4ae6-aeb6-82d22824d8b4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\893bd0f2-8639-4ae6-aeb6-82d22824d8b4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\979d8c2b-488f-458f-8282-6bab42eb4488.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\979d8c2b-488f-458f-8282-6bab42eb4488.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\9f846043-992f-4444-8993-ce5f0c48423b.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\9f846043-992f-4444-8993-ce5f0c48423b.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\ac894045-dac1-4c96-882f-33d305cabcc4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\ac894045-dac1-4c96-882f-33d305cabcc4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\ada16c4b-6dc2-4478-ae15-b8e12e8f673d.jpeg",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\ada16c4b-6dc2-4478-ae15-b8e12e8f673d.jpeg"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\ae0c5601-11d6-42dd-9d7e-8e52308240c3.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\ae0c5601-11d6-42dd-9d7e-8e52308240c3.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\b8cb920f-1372-40fd-90f7-d7fad2210558.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\b8cb920f-1372-40fd-90f7-d7fad2210558.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\c11ef6c8-b96c-4bc0-8ff7-14f4a15eee6e.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\c11ef6c8-b96c-4bc0-8ff7-14f4a15eee6e.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\c3f33b41-ba70-49f4-9a87-7f93847fa881.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\c3f33b41-ba70-49f4-9a87-7f93847fa881.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\cd1c5f3d-9c1c-4b36-ae99-c4e3daae8aee.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\cd1c5f3d-9c1c-4b36-ae99-c4e3daae8aee.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\d255b011-0ea5-4190-a28a-796d78d948ea.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\d255b011-0ea5-4190-a28a-796d78d948ea.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\d3aa5228-6cff-4921-812f-e4341c8b819f.jpeg",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\d3aa5228-6cff-4921-812f-e4341c8b819f.jpeg"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\e475745c-84ea-4c3a-9177-71101483caa4.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\e475745c-84ea-4c3a-9177-71101483caa4.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\fefd87e2-1ef4-4ab9-8077-7c25999edbef.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\fefd87e2-1ef4-4ab9-8077-7c25999edbef.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Img\\User\\ff56b7e2-f056-47d8-a116-74fd2c2d3f5d.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Img\\User\\ff56b7e2-f056-47d8-a116-74fd2c2d3f5d.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Logo\\Main\\LogoWhite.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Logo\\Main\\LogoWhite.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Logo\\Order\\lazada-logo.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Logo\\Order\\lazada-logo.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Logo\\Order\\shoppe-logo.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Logo\\Order\\shoppe-logo.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Logo\\Order\\tiktok-shop-logo.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Logo\\Order\\tiktok-shop-logo.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Assets\\Logo\\Order\\titki-logo.png",
+      "PackagePath": "staticwebassets\\src\\Assets\\Logo\\Order\\titki-logo.png"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\JavaScripts\\Common\\GoBack.js",
+      "PackagePath": "staticwebassets\\src\\JavaScripts\\Common\\GoBack.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\JavaScripts\\Common\\LoadHeader.js",
+      "PackagePath": "staticwebassets\\src\\JavaScripts\\Common\\LoadHeader.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\JavaScripts\\Common\\Slide.js",
+      "PackagePath": "staticwebassets\\src\\JavaScripts\\Common\\Slide.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\JavaScripts\\Common\\ToTop.js",
+      "PackagePath": "staticwebassets\\src\\JavaScripts\\Common\\ToTop.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\JavaScripts\\Home\\CategoryNavigation.js",
+      "PackagePath": "staticwebassets\\src\\JavaScripts\\Home\\CategoryNavigation.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\JavaScripts\\Home\\CategorySlide.js",
+      "PackagePath": "staticwebassets\\src\\JavaScripts\\Home\\CategorySlide.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\JavaScripts\\Home\\DisplayProduct.js",
+      "PackagePath": "staticwebassets\\src\\JavaScripts\\Home\\DisplayProduct.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\JavaScripts\\Home\\HomeProduct.js",
+      "PackagePath": "staticwebassets\\src\\JavaScripts\\Home\\HomeProduct.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\JavaScripts\\ProductDetail\\ProductDetail.js",
+      "PackagePath": "staticwebassets\\src\\JavaScripts\\ProductDetail\\ProductDetail.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\JavaScripts\\Search\\FilterSidebar.js",
+      "PackagePath": "staticwebassets\\src\\JavaScripts\\Search\\FilterSidebar.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\JavaScripts\\Search\\Search-Sidebar.js",
+      "PackagePath": "staticwebassets\\src\\JavaScripts\\Search\\Search-Sidebar.js"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Layout\\Footer.html",
+      "PackagePath": "staticwebassets\\src\\Layout\\Footer.html"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Layout\\Header.html",
+      "PackagePath": "staticwebassets\\src\\Layout\\Header.html"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Common\\Product.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Common\\Product.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Common\\ProductScroll.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Common\\ProductScroll.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Layout\\Footer.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Layout\\Footer.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Layout\\Header.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Layout\\Header.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Layout\\Layout.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Layout\\Layout.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\About\\Index.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\About\\Index.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Account\\Index.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Account\\Index.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Account\\_BillDetail.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Account\\_BillDetail.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Account\\_ProductStats.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Account\\_ProductStats.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Account\\_RevenueStats.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Account\\_RevenueStats.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Account\\_TodayOrders.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Account\\_TodayOrders.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Contact\\Index.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Contact\\Index.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Favorite\\Index.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Favorite\\Index.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Home\\Index.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Home\\Index.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Login-Signin\\Login.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Login-Signin\\Login.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Login-Signin\\Signin.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Login-Signin\\Signin.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\ProductManage\\Add.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\ProductManage\\Add.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\ProductManage\\Edit.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\ProductManage\\Edit.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\ProductManage\\Index.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\ProductManage\\Index.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Products\\Cart.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Products\\Cart.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Products\\CheckOut.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Products\\CheckOut.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Products\\Index.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Products\\Index.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Products\\OrderSuccess.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Products\\OrderSuccess.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\Products\\ProductDetail.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\Products\\ProductDetail.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\UserManage\\Create.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\UserManage\\Create.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\UserManage\\Edit.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\UserManage\\Edit.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\UserManage\\EditRole.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\UserManage\\EditRole.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Pages\\UserManage\\Index.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Pages\\UserManage\\Index.css"
+    },
+    {
+      "Id": "E:\\Luu_Tru_Code\\HOCTRENTRUONG\\LAPTRINHWEB_C#\\MOGDEOW\\MOGDEOW\\MOGDEOW\\wwwroot\\src\\Styles\\Reset.css",
+      "PackagePath": "staticwebassets\\src\\Styles\\Reset.css"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MOGDEOW.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MOGDEOW.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.MOGDEOW.props",
+      "PackagePath": "build\\MOGDEOW.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.MOGDEOW.props",
+      "PackagePath": "buildMultiTargeting\\MOGDEOW.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.MOGDEOW.props",
+      "PackagePath": "buildTransitive\\MOGDEOW.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

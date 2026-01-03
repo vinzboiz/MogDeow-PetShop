@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MOGDEOW.Models.Bill>
+
+<div class="account-card">
+    <div class="account-card-header">🧾 Hóa đơn của bạn</div>
+
+    <div class="account-card-body">
+        @if (!Model.Any())
+        {
+            <p style="padding: 20px; text-align: center; color: #777;">Bạn chưa có hóa đơn nào.</p>
+        }
+        else
+        {
+            <table class="account-table">
+                <thead>
+                    <tr>
+                        <th>📅 Ngày</th>
+                        <th>💰 Tổng tiền</th>
+                        <th>📌 Trạng thái</th>
+                        <th>🔍 Chi tiết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var bill in Model)
+                    {
+                        <tr>
+                            <td>@bill.Date.ToString("dd/MM/yyyy")</td>
+                            <td class="account-order-total">@bill.Total.ToString("N0") VNĐ</td>
+                            <td>
+                                <span class="status-tag @(bill.Status == "Đã thanh toán" ? "paid" : "pending")">
+                                    @bill.Status
+                                </span>
+                            </td>
+                            <td>
+                                <a asp-controller="Account" asp-action="BillDetail" asp-route-billId="@bill.BillID"
+                                   class="account-button account-btn-info">
+                                    Xem chi tiết
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>

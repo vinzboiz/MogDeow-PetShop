@@ -1,0 +1,285 @@
+﻿/* Container thống kê sản phẩm */
+.product-stats-container {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.4s ease;
+    margin-bottom: 40px;
+    width: 100%;
+
+    overflow-x: auto; /* Cho phép cuộn ngang khi cần thiết */
+}
+
+/* Tiêu đề */
+.stats-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 30px;
+    align-items: center;
+    gap: 10px;
+    text-align:center;  
+}
+
+/* Form lọc */
+.stats-filter-form {
+    display: flex;
+    gap: 30px; /* Giảm khoảng cách giữa các filter */
+    margin-bottom: 35px;
+    background: #f9fafb;
+    padding: 20px 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 15px;
+    color: #333;
+    min-width: 180px;
+    max-width: 220px; /* Giới hạn độ rộng để form không bị kéo dài */
+}
+
+    .filter-group label {
+        margin-bottom: 8px;
+    }
+
+    .filter-group select, .filter-group input {
+        padding: 10px 14px;
+        border-radius: 10px;
+        border: 1.5px solid #ccc;
+        font-size: 15px;
+        transition: 0.3s ease;
+        background: white;
+    }
+
+        .filter-group select:focus, .filter-group input:focus {
+            border-color: var(--main-color);
+            outline: none;
+        }
+
+/* Top sản phẩm bán chạy */
+.top-products {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 14px;
+}
+
+.top-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+    .top-list li {
+        padding: 10px 0;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px dashed #e5e7eb;
+        font-weight: 500;
+    }
+
+.top-name {
+    color: #111;
+}
+
+.top-sold {
+    color: var(--main-color);
+    font-weight: 600;
+}
+.section-title{
+    text-align:center;
+}
+
+.stats-table {
+    width: 100%;
+    border-collapse: collapse; /* Gộp viền để tránh khoảng trống */
+    border-spacing: 0; /* Đảm bảo không có khoảng cách giữa các hàng */
+    padding: 0 20px;
+    table-layout: fixed; /* ✅ ép tất cả các cột theo width đã đặt */
+    margin-top: 20px;
+}
+
+
+    .stats-table th,
+    .stats-table td {
+        line-height:1.5rem;
+        padding: 15px 10px;
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 1px solid #ddd; /* Đảm bảo có đường viền ngăn cách */
+    }
+
+    .stats-table th {
+        color: #777;
+        font-size: 1rem;
+        background-color: #f4f4f4;
+        font-weight: 600;
+        text-transform: capitalize;
+        text-align: center;
+        padding: 20px 10px 10px;
+    }
+
+    /* ==========================
+   CĂN CHỈNH CỘT
+========================== */
+
+        .stats-table th:nth-child(1),
+        .stats-table td:nth-child(1) {
+            width: 35%;
+            text-align: left;
+        }
+
+        .stats-table th:nth-child(2),
+        .stats-table td:nth-child(2) {
+            width: 15%;
+        
+        }
+
+
+        .stats-table th:nth-child(3),
+        .stats-table td:nth-child(3) {
+            width: 8%;
+        }
+
+
+        .stats-table th:nth-child(4),
+        .stats-table td:nth-child(4) {
+            width: 20%;
+        }
+
+        .stats-table th:nth-child(5),
+        .stats-table td:nth-child(5) {
+            width: 12%;
+        }
+    
+
+
+/* ==========================
+   HIỂN THỊ SẢN PHẨM
+========================== */
+
+
+
+.product-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+}
+
+.stats-table td:hover .product-name {
+    white-space: normal; /* Cho phép xuống dòng */
+    overflow: visible;
+    text-overflow: unset;
+}
+
+/* ======================== RESPONSIVE SIDEBAR ======================== */
+/*================================================== DESKTOP ====================================================*/
+@media (min-width: 1025px) {
+}
+/*================================================== IPAD ================================================= */
+@media (min-width: 768px) and (max-width: 1024px){
+
+
+}
+/* ==================================== MOBILE =====================================*/
+@media (max-width: 767px){
+
+    .stats-table {
+        width: 100%;
+        border-collapse: collapse; /* Gộp viền để tránh khoảng trống */
+        border-spacing: 0; /* Đảm bảo không có khoảng cách giữa các hàng */
+        padding: 0 10px;
+        table-layout: fixed; /* ✅ ép tất cả các cột theo width đã đặt */
+        margin-top: 20px;
+    }
+
+
+        .stats-table th,
+        .stats-table td {
+            font-size:0.7rem;
+            line-height: 1.5rem;
+            padding: 8px 2px;
+            text-align: center;
+            vertical-align: middle;
+            border-bottom: 1px solid #ddd; /* Đảm bảo có đường viền ngăn cách */
+        }
+
+        .stats-table th {
+            color: #777;
+            font-size: 0.8rem;
+            background-color: #f4f4f4;
+            font-weight: 600;
+            text-transform: capitalize;
+            text-align: center;
+            padding: 10px 5px 5px;
+        }
+
+            /* ==========================
+   CĂN CHỈNH CỘT
+========================== */
+
+            .stats-table th:nth-child(1),
+            .stats-table td:nth-child(1) {
+                width: 35%;
+                text-align: left;
+            }
+
+            .stats-table th:nth-child(2),
+            .stats-table td:nth-child(2) {
+                width: 15%;
+            }
+
+
+            .stats-table th:nth-child(3),
+            .stats-table td:nth-child(3) {
+                width: 8%;
+            }
+
+
+            .stats-table th:nth-child(4),
+            .stats-table td:nth-child(4) {
+                width: 21%;
+            }
+
+            .stats-table th:nth-child(5),
+            .stats-table td:nth-child(5) {
+                width: 11%;
+            }
+
+
+
+    /* ==========================
+   HIỂN THỊ SẢN PHẨM
+========================== */
+
+
+
+    .product-name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: all 0.3s ease;
+    }
+
+    .stats-table td:hover .product-name {
+        white-space: normal; /* Cho phép xuống dòng */
+        overflow: visible;
+        text-overflow: unset;
+    }
+
+}
+

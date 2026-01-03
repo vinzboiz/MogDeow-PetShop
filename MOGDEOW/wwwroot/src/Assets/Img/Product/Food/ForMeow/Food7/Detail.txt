@@ -1,0 +1,9 @@
+ProductName: Nước sốt pate cho mèo CIAO vị ức gà & cá mòi
+
+ProductDetail: CIAO vị ức gà & cá mòi là nước sốt pate cao cấp dành cho mèo, kết hợp giữa ức gà tươi mềm và cá mòi giàu dinh dưỡng, mang đến hương vị thơm ngon và kích thích vị giác. Công thức giàu protein giúp hỗ trợ cơ bắp săn chắc, cung cấp năng lượng và tăng cường hệ miễn dịch cho mèo cưng.
+
+Nước sốt có kết cấu mềm mịn, dễ ăn và tiêu hóa, đặc biệt phù hợp với mèo con, mèo già hoặc mèo kén ăn. Thành phần bổ sung Taurine, Omega-3 và Vitamin E, giúp bảo vệ thị lực, duy trì làn da khỏe mạnh và bộ lông bóng mượt. Đồng thời, sản phẩm giúp bổ sung nước, hỗ trợ hệ tiêu hóa và ngăn ngừa sỏi thận hiệu quả.
+
+Không chứa chất bảo quản nhân tạo, CIAO vị ức gà & cá mòi là lựa chọn lý tưởng để làm bữa ăn dinh dưỡng hoặc trộn chung với thức ăn hạt, giúp mèo ăn ngon miệng hơn.
+
+ProductPrice: 35.000₫

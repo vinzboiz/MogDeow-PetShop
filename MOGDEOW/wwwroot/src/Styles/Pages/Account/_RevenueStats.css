@@ -1,0 +1,265 @@
+﻿/* --- Vùng thống kê doanh thu chính --- */
+.account-order-summary {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: auto;
+    overflow-x: hidden;
+    animation: fadeIn 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Tiêu đề chính --- */
+.order-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* --- Form lọc thời gian --- */
+.order-filter-form {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 30px;
+    background: #f9fafb;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .order-filter-form label {
+        font-weight: 600;
+        color: #444;
+    }
+
+.date-input {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1.5px solid #ccc;
+    font-size: 14px;
+    transition: 0.2s ease;
+    min-width: 150px;
+}
+
+    .date-input:focus {
+        border-color: var(--main-color);
+        outline: none;
+    }
+
+.btn-filter {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+    .btn-filter:hover {
+        background-color: #ff4c4c;
+    }
+
+/* --- Thông tin tổng quan --- */
+.revenue-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fef2f2;
+    border-left: 5px solid var(--main-color);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+    .revenue-summary p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+    }
+
+.revenue-total {
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.revenue-orders {
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.revenue-average {
+    font-weight: 700;
+    color: #10b981;
+}
+
+/* --- Biểu đồ --- */
+.chart-container {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+    margin-top: 10px;
+}
+
+/* --- Animation chung --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Tổng container --- */
+.account-order-summary {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: auto;
+    overflow-x: hidden;
+    animation: fadeIn 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Tiêu đề --- */
+.order-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* --- Form lọc thời gian --- */
+.order-filter-form {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 30px;
+    background: #f9fafb;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .order-filter-form label {
+        font-weight: 600;
+        color: #444;
+    }
+
+.date-input {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1.5px solid #ccc;
+    font-size: 14px;
+    transition: 0.2s ease;
+    min-width: 150px;
+}
+
+    .date-input:focus {
+        border-color: var(--main-color);
+        outline: none;
+    }
+
+.btn-filter {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+    .btn-filter:hover {
+        background-color: #ff4c4c;
+    }
+
+/* --- Vùng tổng doanh thu --- */
+.revenue-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fef2f2;
+    border-left: 5px solid var(--main-color);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    animation: fadeInUp 0.5s ease;
+}
+
+    .revenue-summary p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+    }
+
+.revenue-total {
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.revenue-orders {
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.revenue-average {
+    font-weight: 700;
+    color: #10b981;
+}
+
+/* --- Biểu đồ doanh thu --- */
+.chart-container {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+    max-width: 100%;
+    overflow-x: auto;
+    animation: fadeInUp 0.5s ease;
+}
+
+    /* Responsive cho biểu đồ */
+    .chart-container canvas {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+    }
+

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"] - MOGDEOW</title>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" asp-append-version="true" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/src/Styles/Reset.css" asp-append-version="true"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Link CSS -->
+
+    <link rel="stylesheet" href="~/src/Styles/Layout/Layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/src/Styles/Layout/Header.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/src/Styles/Layout/Footer.css" asp-append-version="true" />
+    @if (TempData["Error"] != null)
+    {
+        <script>
+            alert(@Html.Raw(Json.Serialize(TempData["Error"])));
+        </script>
+    }
+
+
+    @await RenderSectionAsync("Styles", required: false)
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="~/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/favicon/favicon-16x16.png">
+    <link rel="manifest" href="~/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="~/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    @await Html.PartialAsync("_Header")
+    <!--Button to toptop-->
+    <img id="backToTopBtn"
+         src="~/src/Assets/Icon/Common/to-top-icon.png"
+         alt="Lên đầu trang"
+         class="to-top-icon" />
+
+    <main class="container">
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    @await Html.PartialAsync("_Footer")
+
+    <!-- Scripts -->
+
+    <script src="~/src/JavaScripts/Common/ToTop.js" asp-append-version="true"></script>
+   
+    <script src="~/src/JavaScripts/Common/LoadHeader.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

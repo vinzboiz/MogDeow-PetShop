@@ -1,0 +1,176 @@
+﻿
+.account-order-summary {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    padding: 30px 20px;
+    max-width: 800px;
+    overflow-x: hidden;
+    animation: fadeIn 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 25px;
+}
+
+/* Form lọc ngày */
+.order-filter-form {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 35px;
+    background: #f9fafb;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+    .order-filter-form label {
+        font-weight: 600;
+        color: #444;
+    }
+
+.date-input {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1.5px solid #ccc;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+    .date-input:focus {
+        border-color: var(--main-color);
+        outline: none;
+    }
+
+.btn-filter {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 4px 16px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    min-height:40px;
+}
+
+    .btn-filter:hover {
+        background-color: #ff4c4c;
+    }
+
+/* Danh sách */
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Mỗi đơn hàng dạng card */
+.order-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px 25px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+    border-left: 6px solid var(--main-color);
+}
+
+    .order-card:hover {
+        transform: translateY(-2px);
+    }
+
+/* Header đơn hàng */
+.order-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.order-avatar {
+    width: 48px;
+    height: 48px;
+    background-color: #ffeaea;
+    color: var(--main-color);
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(255, 100, 100, 0.1);
+}
+
+.customer-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.order-date {
+    margin: 0;
+    font-size: 13px;
+    color: #777;
+    margin-top: 4px;
+}
+
+/* Nội dung đơn hàng */
+.order-body p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.order-total {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+/* Trạng thái */
+.status-tag {
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+    .status-tag.paid {
+        color: #10b981;
+    }
+
+    .status-tag.pending {
+        color: #f59e0b;
+    }
+
+/* Nút chi tiết */
+.btn-detail {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+    .btn-detail:hover {
+        background-color: #1e40af;
+    }
+
+/* Không có đơn */
+.no-order {
+    color: #b91c1c;
+    background-color: #ffe4e6;
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-weight: 600;
+    margin-top: 20px;
+}

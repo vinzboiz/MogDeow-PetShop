@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Đăng Ký";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/Login-Signin/Signin.css" asp-append-version="true" />
+
+}
+
+<div class="container-signin">
+    <div class="register-container">
+        <h2>Đăng Ký</h2>
+        @if (!ViewData.ModelState.IsValid || ViewBag.ErrorMessage != null)
+        {
+            <div class="validation-errors">
+                @if (ViewBag.ErrorMessage != null)
+                {
+                    <p style="color:red;">@ViewBag.ErrorMessage</p>
+                }
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <p style="color:red;">@error.ErrorMessage</p>
+                }
+            </div>
+        }
+        <form method="post" action="@Url.Action("Register", "User")">
+            <div class="input-group">
+                <label for="username">Tên tài khoản</label>
+                <input type="text" name="UserName" value="@ViewData["UserName"]" placeholder="Tên tài khoản" required />
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="Email" value="@ViewData["Email"]" placeholder="Email" required />
+            </div>
+            <div class="input-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" name="Password" placeholder="Mật khẩu" required />
+            </div>
+            @if (ViewBag.ShowOTP == true)
+            {
+                <div class="input-group">
+                    <label for="otpInput">Mã xác nhận (gửi đến @ViewBag.EmailSent)</label>
+                    <input type="text" name="otpInput" required />
+                </div>
+                <button type="submit">Xác nhận đăng ký</button>
+            }
+            else
+            {
+                <button type="submit">Gửi mã xác nhận</button>
+            }
+        </form>
+        <p>Đã có tài khoản? <a href="@Url.Action("Login", "User")">Đăng nhập</a></p>
+    </div>
+</div>
+<style>
+    .otp-group {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .otp-label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #444;
+    }
+
+    .otp-input {
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 15px;
+        border: 2px solid #ff9999;
+        border-radius: 8px;
+        transition: border-color 0.3s ease;
+    }
+
+        .otp-input:focus {
+            outline: none;
+            border-color: #ff5e5e;
+            box-shadow: 0 0 5px rgba(255, 94, 94, 0.4);
+        }
+
+    .btn-verify {
+        margin-top: 18px;
+        background-color: #ff5e5e;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-verify:hover {
+            background-color: #ff3b3b;
+        }
+
+    .btn-send {
+        background-color: #ff7b7b;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-send:hover {
+            background-color: #ff5e5e;
+        }
+
+</style>

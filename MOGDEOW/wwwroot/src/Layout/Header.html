@@ -1,0 +1,312 @@
+<!--Layout khi mo sidebar-->
+<div class="layout" id="layout-sidebar"></div>
+<!--Header-->
+<div class="header">
+  <div class="header-container">
+    <div class="hamburger-menu-container tablet-mobile-only">
+      <img
+        src="../Assets/Icon/Layout/Header/hamburger-icon.png"
+        alt="hamburger-icon"
+        id="open-menu"
+      />
+    </div>
+    <!--Logo website-->
+    <div class="header-left">
+      <a href="../Pages/Home.html">
+        <img
+          src="../Assets/Logo/Main/LogoWhite.png"
+          alt="logo-website-header"
+        />
+      </a>
+    </div>
+
+    <!--Container header ben phai-->
+    <div class="header-right">
+      <!--Header o tren-->
+      <div class="header-top">
+        <!--Thanh search-->
+
+        <div class="search-container desk-only">
+          <input
+            type="text"
+            id="searchInputHeader"
+            class="search-box"
+            placeholder="Từ khóa...."
+          />
+          <img
+            src="../Assets/Icon/Layout/Header/search-icon.png"
+            alt="search-icon"
+            id="searchButtonHeader"
+          />
+        </div>
+
+        <!--Hotline cua website-->
+        <div class="hotline-container desk-only">
+          <p class="title">Hotline</p>
+          <p class="number-phone">086 205 3894</p>
+        </div>
+        <!--Icon yeu thich, user va gio hang-->
+        <div class="icon-container">
+          <a id="open-user" href="../Pages/Login.html">
+            <img
+              src="../Assets/Icon/Layout/Header/User-Icon.png"
+              alt="User-icon"
+              class="user-icon desk-only"
+          /></a>
+          <a id="open-cart">
+            <img
+              src="../Assets/Icon/Layout/Header/Cart-Icon.png"
+              alt="Cart-icon"
+              class="cart-icon"
+          /></a>
+        </div>
+      </div>
+      <!--Header o duoi-->
+      <div class="header-bottom desk-only">
+        <ul class="header-menu-list">
+          <!--TRANG CHU-->
+          <li class="choose-menu-list">
+            <img
+              src="../Assets/Icon/Layout/Header/Home-Icon.png"
+              alt="Home-icon"
+            />
+            <a id="home" href="../Pages/Home.html">Trang chủ</a>
+          </li>
+          <!--VE CHUNG TOI-->
+          <li class="choose-menu-list">
+            <img
+              src="../Assets/Icon/Layout/Header/About-Icon.png"
+              alt="About-icon"
+            />
+            <a href="../Pages/About.html">Về chúng tôi </a>
+          </li>
+          <!--THU CUNG-->
+          <li class="choose-menu-list">
+            <img
+              src="../Assets/Icon/Layout/Header/Pet-Icon.png"
+              alt="Pet-Icon"
+            />
+            <a data-category="all">Thú cưng </a>
+            <ul class="dropdown">
+              <li class="choose-dropdown-list">
+                <a data-category="dog">Chó cảnh</a>
+                <img
+                  src="../Assets/Icon/Layout/Header/Dog-icon-Icon.png"
+                  alt="Dog icon"
+                />
+              </li>
+              <li class="choose-dropdown-list">
+                <a data-category="cat">Mèo cảnh</a>
+                <img
+                  src="../Assets/Icon/Layout/Header/Cat-icon-Icon.png"
+                  alt="Cat icon"
+                />
+              </li>
+            </ul>
+          </li>
+          <!--PHU KIEN THU CUNG-->
+          <li class="choose-menu-list">
+            <img
+              src="../Assets/Icon/Layout/Header/Accessories-Icon.png"
+              alt="Accessories-icon"
+            />
+            <a data-category="all-accessories">Phụ kiện thú cưng </a>
+            <ul class="dropdown">
+              <li class="choose-dropdown-list">
+                <a data-category="food"
+                  >Thức ăn và thực phẩm dinh dưỡng</a
+                >
+                <img
+                  src="../Assets/Icon/Layout/Header/Pet-Food-Icon.png"
+                  alt="Pet food icon"
+                />
+              </li>
+              <li class="choose-dropdown-list">
+                <a data-category="hygiene">Vệ sinh và chăm sóc</a>
+                <img
+                  src="../Assets/Icon/Layout/Header/Pet-Hygiene-icon.png"
+                  alt="Pet-Hygiene"
+                />
+              </li>
+              <li class="choose-dropdown-list">
+                <a data-category="accessories"
+                  >Đồ dùng, đồ chơi, phụ kiện</a
+                >
+                <img
+                  src="../Assets/Icon/Layout/Header/Pet-toy-icon.png"
+                  alt="Pet-toy"
+                />
+              </li>
+              <li class="choose-dropdown-list">
+                <a data-category="housing">Chuồng, balo, đệm</a>
+                <img
+                  src="../Assets/Icon/Layout/Header/Pet-cushion-icon.png"
+                  alt="Pet-cushion"
+                />
+              </li>
+              <li class="choose-dropdown-list">
+                <a data-category="medicine"
+                  >Thuốc và thực phẩm chức năng</a
+                >
+                <img
+                  src="../Assets/Icon/Layout/Header/Pet-medicine-icon.png"
+                  alt="Pet-medicine"
+                />
+              </li>
+            </ul>
+          </li>
+          <!--HO TRO-->
+          <li class="choose-menu-list">
+            <img
+              src="../Assets/Icon/Layout/Header/Contact-Icon.png"
+              alt="Contact-icon"
+            />
+            <a href="../Pages/Contact.html">Hỗ trợ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Cart-side-bar khi nhan vao icon cart-->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-sidebar-header">
+    <img
+      src="../Assets/Icon/Layout/Header/close.png"
+      alt="close-cart"
+      class="close-cart"
+      id="close-cart"
+    />
+  </div>
+  <div class="cart-sidebar-content">
+    <h2>Giỏ hàng</h2>
+    <p>Chưa có sản phẩm nào trong giỏ hàng.</p>
+    <a href="../Pages/Search.html" class="btn-cart-sidebar" id="shop-now">MUA NGAY</a>
+  </div>
+</div>
+
+<!--Menu-side-bar khi nhan vao icon menus-->
+<div id="menu-sidebar" class="menu-sidebar">
+  <div class="menu-sidebar-header">
+    <img
+      src="../Assets/Icon/Layout/Header/close.png"
+      alt="close-menu"
+      class="close-menu"
+      id="close-menu"
+    />
+  </div>
+  <div class="search-container">
+    <input
+      type="text"
+      id="searchInputSidebar"
+      class="search-box"
+      placeholder="Từ khóa...."
+    />
+    <img
+      id="searchButtonSidebar"
+      src="../Assets/Icon/Layout/Header/Search-Icon.png"
+      alt="Search icon"
+    />
+  </div>
+  <div class="menu-sidebar-content">
+    <ul class="header-menu-list">
+      <!--TRANG CHU-->
+      <li class="choose-menu-list">
+        <a href="../Pages/Home.html">Trang chủ</a>
+        <img src="../Assets/Icon/Layout/Header/Home-Icon.png" alt="Home-icon" />
+      </li>
+      <!--VE CHUNG TOI-->
+      <li class="choose-menu-list">
+        <a href="../Pages/About.html">Về chúng tôi </a>
+        <img
+          src="../Assets/Icon/Layout/Header/About-Icon.png"
+          alt="About-icon"
+        />
+      </li>
+      <!--THU CUNG-->
+      <li class="choose-menu-list" id="open-drop-pet">
+        <a data-category="all-pet">Thú cưng </a>
+        <img src="../Assets/Icon/Layout/Header/Pet-Icon.png" alt="Pet-Icon" />
+      </li>
+      <ul class="dropdown-pet">
+        <li class="choose-dropdown-item">
+          <a data-category="dog">Chó cảnh</a>
+          <img
+            src="../Assets/Icon/Layout/Header/Dog-icon-Icon.png"
+            alt="Dog icon"
+          />
+        </li>
+        <li class="choose-dropdown-item">
+          <a data-category="cat">Mèo cảnh</a>
+          <img
+            src="../Assets/Icon/Layout/Header/Cat-icon-Icon.png"
+            alt="Cat icon"
+          />
+        </li>
+      </ul>
+
+      <!--PHU KIEN THU CUNG-->
+      <li class="choose-menu-list" id="open-drop-accesories">
+        <a data-category="all-accessories">Phụ kiện thú cưng</a>
+        <img
+          src="../Assets/Icon/Layout/Header/Accessories-Icon.png"
+          alt="Accessories-icon"
+        />
+      </li>
+      <ul class="dropdown-accesories">
+        <li class="choose-dropdown-item">
+          <a data-category="food">Thức ăn và thực phẩm dinh dưỡng</a>
+          <img
+            src="../Assets/Icon/Layout/Header/Pet-Food-Icon.png"
+            alt="Pet food icon"
+          />
+        </li>
+        <li class="choose-dropdown-item">
+          <a data-category="hygiene">Vệ sinh và chăm sóc</a>
+          <img
+            src="../Assets/Icon/Layout/Header/Pet-Hygiene-icon.png"
+            alt="Pet-Hygiene"
+          />
+        </li>
+        <li class="choose-dropdown-item">
+          <a data-category="accessories">Đồ dùng, đồ chơi, phụ kiện</a>
+          <img
+            src="../Assets/Icon/Layout/Header/Pet-toy-icon.png"
+            alt="Pet-toy"
+          />
+        </li>
+        <li class="choose-dropdown-item">
+          <a data-category="housing">Chuồng, balo, đệm</a>
+          <img
+            src="../Assets/Icon/Layout/Header/Pet-cushion-icon.png"
+            alt="Pet-cushion"
+          />
+        </li>
+        <li class="choose-dropdown-item">
+          <a data-category="medicine">Thuốc và thực phẩm chức năng</a>
+          <img
+            src="../Assets/Icon/Layout/Header/Pet-medicine-icon.png"
+            alt="Pet-medicine"
+          />
+        </li>
+      </ul>
+
+      <!--HO TRO-->
+      <li class="choose-menu-list">
+        <a href="../Pages/Contact.html">Hỗ trợ</a>
+        <img
+          src="../Assets/Icon/Layout/Header/Contact-Icon.png"
+          alt="Contact-icon"
+        />
+      </li>
+
+      <li class="choose-menu-list">
+        <a href="#">MỤC YÊU THÍCH</a>
+      </li>
+      <li class="choose-menu-list">
+        <a href="#">TÀI KHOẢN</a>
+      </li>
+    </ul>
+  </div>
+</div>

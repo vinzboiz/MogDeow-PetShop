@@ -1,0 +1,97 @@
+﻿@model MOGDEOW.Models.ViewModels.AccountViewModel
+
+<div class="product-stats-container">
+    <h2 class="stats-title">📊 Thống kê sản phẩm</h2>
+
+    <!-- 🔍 Form lọc -->
+    <form method="get" asp-action="Index" asp-controller="Account" class="stats-filter-form">
+        <input type="hidden" name="section" value="productstats" />
+
+        <div class="filter-group">
+            <label for="typeFilter">Lọc theo loại:</label>
+            <select id="typeFilter" name="selectedTypeId" onchange="this.form.submit()">
+                <option value="">-- Tất cả --</option>
+                @foreach (var type in Model.ProductTypes)
+                {
+                    <option value="@type.ProductTypeID" selected="@(Model.SelectedTypeId == type.ProductTypeID ? "selected" : null)">
+                        @type.ProductTypeName
+                    </option>
+                }
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="topFilter">Xem top bán chạy:</label>
+            <select id="topFilter" name="topRange" onchange="this.form.submit()">
+                <option value="">-- Không lọc --</option>
+                <option value="today" selected="@(ViewBag.TopRange == "today" ? "selected" : null)">📅 Hôm nay</option>
+                <option value="month" selected="@(ViewBag.TopRange == "month" ? "selected" : null)">📆 Tháng này</option>
+                <option value="year" selected="@(ViewBag.TopRange == "year" ? "selected" : null)">📊 Năm nay</option>
+            </select>
+        </div>
+
+        <!-- Thêm trường chọn ngày -->
+        <div class="filter-group">
+            <label for="dateFilter">Chọn ngày:</label>
+            <input type="date" id="dateFilter" name="selectedDate" value="@ViewBag.SelectedDate" onchange="this.form.submit()">
+        </div>
+    </form>
+
+    <!-- Top sản phẩm -->
+    @if (!string.IsNullOrEmpty(ViewBag.TopRange))
+    {
+        var topList = ViewBag.TopProducts as IEnumerable<MOGDEOW.Models.Product>;
+
+        if (topList != null && topList.Any())
+        {
+        <div class="top-products">
+            <h5 class="section-title">
+                🔥 Top sản phẩm bán chạy
+                @(
+                    ViewBag.TopRange == "today" ? "hôm nay" :
+                    ViewBag.TopRange == "month" ? "trong tháng" :
+                    "trong năm"
+                    )
+            </h5>
+            <ul class="top-list">
+                    @foreach (var item in topList)
+                {
+                    <li>
+                        <span class="top-name">@item.ProductName</span>
+                        <span class="top-sold">Đã bán: @(item.BillDetails?.Sum(b => b.Quantity) ?? 0)</span>
+                    </li>
+                }
+            </ul>
+        </div>
+        }
+    }
+
+    <!-- Bảng thống kê -->
+    <h5 class="section-title">📋 Bảng thống kê sản phẩm</h5>
+    <div class="stats-summary">🧾 Tổng số lượng sản phẩm đã bán: <strong>@ViewBag.TotalSold</strong></div>
+    <div class="stats-table-container">
+        <table class="stats-table">
+            <thead>
+                <tr>
+                    <th>Tên sản phẩm</th>
+                    <th>Danh mục</th>
+                    <th>SL</th>
+                    <th>Giá</th>
+                    <th>Đã bán</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model.ProductStats)
+                {
+                    <tr>
+                        <td> <p class="product-name">@product.ProductName</p></td>
+                        <td>@product.ProductType?.ProductTypeName</td>
+                        <td>@product.Quantity</td>
+                        <td>@product.ProductPrice.ToString("N0") đ</td>
+                        <td>@(product.BillDetails?.Sum(b => b.Quantity) ?? 0)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

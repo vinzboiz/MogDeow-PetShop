@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Account";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var role = ViewBag.Role as string ?? "unknown";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/Account/Index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/src/Styles/Pages/Account/_TodayOrders.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/src/Styles/Pages/Account/_ProductStats.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/src/Styles/Pages/Account/_RevenueStats.css" asp-append-version="true" />
+}
+
+@model MOGDEOW.Models.ViewModels.AccountViewModel
+
+<div class="account-dashboard">
+    <!-- Sidebar bên trái -->
+    <aside class="sidebar">
+         <div class="sidebar-user-info">
+            <img src="~/src/Assets/Img/User/@Model.User.UserImg" alt="Ảnh người dùng" class="sidebar-avatar" />
+            <h5 class="sidebar-greeting">Chào, @Model.User.UserName!</h5>
+        </div>
+
+        <nav class="sidebar-menu">
+            @if (role == "Admin" || role == "Staff" || role == "Customer")
+            {
+                <a asp-action="Index" asp-route-section="profile" class="sidebar-item @(Model.SelectedSection == "profile" ? "active" : "")">👤 Thông tin tài khoản</a>
+                <a asp-action="Index" asp-route-section="bills" class="sidebar-item @(Model.SelectedSection == "bills" ? "active" : "")">🧾 Hóa đơn của bạn</a>
+            }
+
+            @if (role == "Admin" || role == "Staff")
+            {
+                <a asp-controller="Product" asp-action="Manage" class="sidebar-item">📦 Quản lý sản phẩm</a>
+                <a asp-action="Index" asp-route-section="orders" class="sidebar-item @(Model.SelectedSection == "orders" ? "active" : "")">📊 Thống kê đơn hàng</a>
+                <a asp-action="Index" asp-route-section="productstats" class="sidebar-item @(Model.SelectedSection == "productstats" ? "active" : "")">📈 Thống kê sản phẩm</a>
+            }
+
+            @if (role == "Admin")
+            {
+                <a asp-action="Index" asp-controller="UserManage" class="sidebar-item">👥 Quản lý tài khoản</a>
+                <a asp-action="Index" asp-route-section="revenuestats" class="sidebar-item @(Model.SelectedSection == "revenuestats" ? "active" : "")">💰 Thống kê doanh thu</a>
+             }
+        </nav>
+    </aside>
+
+    <!-- Nội dung chính -->
+    <main class="content">
+        @if (Model.SelectedSection == "profile")
+        {
+            @await Html.PartialAsync("_Profile", Model.User)
+        }
+        else if (Model.SelectedSection == "bills")
+        {
+            @await Html.PartialAsync("_Bills", Model.Bills)
+            @if (Model.BillDetails != null && Model.BillDetails.Any())
+            {
+                @await Html.PartialAsync("_BillDetail", Model.BillDetails)
+            }
+        }
+        else if (Model.SelectedSection == "orders")
+        {
+            @await Html.PartialAsync("_TodayOrders", Model.TodayOrders)
+        }
+        else if (Model.SelectedSection == "productstats")
+        {
+            @await Html.PartialAsync("_ProductStats", Model)
+        }
+        else if (Model.SelectedSection == "revenuestats")
+        {
+            @await Html.PartialAsync("_RevenueStats", Model)
+        }
+        else
+        {
+            <p>Không tìm thấy nội dung phù hợp.</p>
+        }
+    </main>
+</div>
+@section Scripts {
+    <script>
+        const input = document.getElementById('imageUpload');
+        const preview = document.getElementById('previewImg');
+        const currentImage = document.getElementById('currentImage');
+
+        input.addEventListener('change', function () {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                    if (currentImage) {
+                        currentImage.style.display = 'none';
+                    }
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+}

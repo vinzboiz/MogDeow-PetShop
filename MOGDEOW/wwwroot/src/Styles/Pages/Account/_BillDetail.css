@@ -1,0 +1,295 @@
+﻿
+
+.background-container {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: url("../../../Assets/Img/Home/Slide/slide2.png") no-repeat center center/cover;
+    position: relative;
+}
+
+.receipt-wrapper {
+    background: transparent; /* ⛔ Không đặt nền ở đây nếu muốn trong suốt */
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-receipt {
+    width: 95%;
+    max-width: 900px;
+}
+/* ========== Chi tiết hóa đơn ========== */
+.bill-detail-container {
+    background: white; /* ✔️ Tờ hóa đơn trắng */
+    width: 95%;
+    max-width: 500px;
+    padding: 30px 40px 20px;
+    border-top: 7px solid #51D96B;
+    position: relative;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    height: auto;
+}
+
+.bill-header {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 25px;
+    border-left: 5px solid var(--main-color);
+    padding-left: 12px;
+}
+
+/* Thông tin người mua */
+.buyer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffff;
+    border-radius: 12px;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #333;
+}
+
+    .buyer-info p {
+        margin-bottom: 8px;
+    }
+
+.bill-error {
+    color: #c53030;
+    font-weight: 600;
+    background-color: #ffe4e6;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+/* ========== Bảng hóa đơn ========== */
+.bill-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+}
+
+    .bill-table thead th {
+        text-align: left;
+        padding: 14px 20px;
+        background-color: #f3f4f6;
+        font-size: 15px;
+        font-weight: 600;
+        color: #444;
+    }
+
+    .bill-table tbody tr {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        transition: transform 0.2s ease;
+    }
+
+        .bill-table tbody tr:hover {
+            transform: scale(1.01);
+        }
+
+    .bill-table td {
+        padding: 14px 20px;
+        font-size: 15px;
+        color: #333;
+    }
+
+/* ========== Nút quay lại ========== */
+.btn-back {
+    margin-top: 30px;
+    display: inline-block;
+    background-color: var(--main-color);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .btn-back:hover {
+        background-color: #ff4c4c;
+        transform: translateY(-2px);
+    }
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ======================== RESPONSIVE  ======================== */
+/*================================================== DESKTOP ====================================================*/
+@media (min-width: 1025px) {
+}
+/*================================================== IPAD ================================================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .background-container {
+        display: flex;
+        font-family: "Montserrat", sans-serif;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+        background: url("../../../Assets/Img/Home/Slide/slide2.png") no-repeat center center/cover;
+        position: relative;
+    }
+}
+/* ==================================== MOBILE =====================================*/
+@media (max-width: 767px) {
+    .background-container {
+        display: flex;
+        font-family: "Montserrat", sans-serif;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+        background: url("../../../Assets/Img/Home/Slide/slide2.png") no-repeat center center/cover;
+        position: relative;
+    }
+
+    .receipt-wrapper {
+        background: transparent; /* ⛔ Không đặt nền ở đây nếu muốn trong suốt */
+        padding: 20px 0px;
+        display: flex;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-receipt {
+        width: 95%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    /* ========== Chi tiết hóa đơn ========== */
+    .bill-detail-container {
+        background: white; /* ✔️ Tờ hóa đơn trắng */
+        width: 95%;
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 15px 10px 10px;
+        border-top: 7px solid #51D96B;
+        position: relative;
+        text-align: center;
+        font-family: 'Segoe UI', sans-serif;
+        overflow: hidden;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        height: auto;
+    }
+
+    .bill-header {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--main-color);
+        margin-bottom: 25px;
+        border-left: 5px solid var(--main-color);
+        padding-left: 12px;
+    }
+
+    /* Thông tin người mua */
+    .buyer-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #ffff;
+        border-radius: 12px;
+        margin: 0 auto;
+        font-size: 15px;
+        color: #333;
+    }
+
+        .buyer-info p {
+            margin-bottom: 8px;
+        }
+
+    .bill-error {
+        color: #c53030;
+        font-weight: 600;
+        background-color: #ffe4e6;
+        padding: 12px 20px;
+        border-radius: 10px;
+    }
+
+    /* ========== Bảng hóa đơn ========== */
+    .bill-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 12px;
+    }
+
+        .bill-table thead th {
+            text-align: left;
+            padding: 10px 5px;
+            background-color: #f3f4f6;
+            font-size: 15px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .bill-table tbody tr {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            transition: transform 0.2s ease;
+        }
+
+            .bill-table tbody tr:hover {
+                transform: scale(1.01);
+            }
+
+        .bill-table td {
+            padding: 10px 5px;
+            font-size: 15px;
+            color: #333;
+        }
+
+    /* ========== Nút quay lại ========== */
+    .btn-back {
+        margin-top: 30px;
+        display: inline-block;
+        background-color: var(--main-color);
+        color: white;
+        padding: 12px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+        .btn-back:hover {
+            background-color: #ff4c4c;
+            transform: translateY(-2px);
+        }
+
+    /* Animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

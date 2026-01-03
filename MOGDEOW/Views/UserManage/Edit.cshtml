@@ -1,0 +1,94 @@
+﻿@model MOGDEOW.Models.User
+@{
+    ViewData["Title"] = "Chỉnh sửa tài khoản";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/UserManage/Edit.css" asp-append-version="true" />
+}
+
+<div class="edit-container">
+    <div class="edit-header">Chỉnh sửa tài khoản</div>
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert-error">@TempData["Error"]</div>
+    }
+
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="UserID" />
+
+        @if (!string.IsNullOrEmpty(Model.UserImg))
+        {
+            <div class="form-group">
+                <label>Ảnh hiện tại:</label><br />
+                <img id="current-img" src="~/src/Assets/Img/User/@Model.UserImg" alt="Ảnh người dùng" style="max-height: 120px; border-radius: 8px;" />
+            </div>
+        }
+
+        <div class="form-group">
+            <label>Ảnh mới (nếu muốn đổi):</label>
+
+            <!-- Nút chọn ảnh thay vì input hiển thị -->
+            <button type="button" class="btn-upload" onclick="document.getElementById('imageInput').click()">📷 Chọn ảnh mới</button>
+
+            <!-- Input file ẩn -->
+            <input type="file" id="imageInput" name="imageFile" accept="image/*" style="display: none;" onchange="previewImage(event)" />
+
+            <!-- Ảnh preview -->
+            <img id="preview-img" style="display:none; margin-top:10px; max-height:120px; border-radius:8px;" />
+        </div>
+
+
+        <div class="form-group">
+            <label>Họ tên:</label>
+            <input asp-for="UserName" required />
+        </div>
+
+        <div class="form-group">
+            <label>Email:</label>
+            <input asp-for="Email" required />
+        </div>
+
+        <div class="form-group">
+            <label>Địa chỉ:</label>
+            <input asp-for="Address" required />
+        </div>
+
+        <div class="form-group">
+            <label>Số điện thoại:</label>
+            <input asp-for="PhoneNumber" required />
+        </div>
+
+        <div class="form-group">
+            <label>Vai trò:</label>
+            <select asp-for="Role">
+                <option value="Customer">Customer</option>
+                <option value="Staff">Staff</option>
+                <option value="Admin">Admin</option>
+            </select>
+        </div>
+
+        <div class="form-buttons">
+            <button type="submit" class="btn-submit">💾 Lưu thay đổi</button>
+            <a asp-action="Index" class="btn-cancel">❌ Hủy</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        function previewImage(event) {
+            const preview = document.getElementById("preview-img");
+            const file = event.target.files[0];
+
+            if (file) {
+                preview.src = URL.createObjectURL(file);
+                preview.style.display = "block";
+            } else {
+                preview.style.display = "none";
+            }
+        }
+    </script>
+}

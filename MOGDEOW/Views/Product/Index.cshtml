@@ -1,0 +1,117 @@
+﻿@model IEnumerable<MOGDEOW.Models.Product>
+
+@{
+    ViewData["Title"] = "Sản Phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var selectedCategory = ViewData["SelectedCategory"] as string ?? "all";
+    var sort = ViewBag.SortOrder as string ?? "none";
+
+    // Danh sách mức giá chung
+    var allRanges = new List<(int min, int max, string label)>
+    {
+        (0, 1000000, "0đ - 1 triệu"),
+        (1000000, 3000000, "1 triệu - 3 triệu"),
+        (3000000, 5000000, "3 triệu - 5 triệu"),
+        (5000000, 8000000, "5 triệu - 8 triệu"),
+        (8000000, 12000000, "8 triệu - 12 triệu"),
+        (12000000, 20000000, "12 triệu - 20 triệu")
+    };
+
+    // Điều kiện lọc tùy theo danh mục
+    var isDogCat = selectedCategory == "dog" || selectedCategory == "cat";
+    var isAll = selectedCategory == "all";
+
+    // Nếu là "all" thì hiện tất cả, còn lại lọc như yêu cầu
+    var filteredRanges = isAll
+        ? allRanges
+        : allRanges.Where(r => isDogCat ? r.min >= 5000000 : r.max <= 5000000).ToList();
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/Products/Index.css" asp-append-version="true" />
+}
+@{
+    var culture = new System.Globalization.CultureInfo("vi-VN");
+}
+
+<div class="layout-search" id="layout-sidebar-search"></div>
+<!-- Nút mở Sidebar trên Mobile -->
+<button id="filterToggleBtn">Lọc sản phẩm</button>
+
+<div class="container-bottom">
+    <!-- Sidebar bên trái -->
+    <div class="sidebar">
+        <h2>Danh Mục Sản Phẩm</h2>
+        <ul id="categoryList">
+            <li><a href="@Url.Action("Index", "Product", new { category = "all" })">Tất Cả</a></li>
+            <li><a href="@Url.Action("Index", "Product", new { category = "dog" })">Chó Cảnh</a></li>
+            <li><a href="@Url.Action("Index", "Product", new { category = "cat" })">Mèo Cảnh</a></li>
+            <li><a href="@Url.Action("Index", "Product", new { category = "food" })">Thức ăn & Thực phẩm dinh dưỡng</a></li>
+            <li><a href="@Url.Action("Index", "Product", new { category = "hygiene" })">Vệ sinh & Chăm sóc</a></li>
+            <li><a href="@Url.Action("Index", "Product", new { category = "accessories" })">Đồ dùng, Đồ chơi & Phụ kiện</a></li>
+            <li><a href="@Url.Action("Index", "Product", new { category = "housing" })">Chuồng, Balo & Đệm</a></li>
+            <li><a href="@Url.Action("Index", "Product", new { category = "medicine" })">Thuốc & Thực phẩm chức năng</a></li>
+        </ul>
+
+    </div>
+    
+    <!-- Phần sản phẩm bên phải -->
+    <div class="product-section">
+        <div class="product-section-top">
+            <div class="title-result">Danh Sách Sản Phẩm</div>
+
+             <!-- Lọc theo mức giá và sắp xếp -->
+            <form method="get" action="@Url.Action("Index", "Product")">
+                <input type="hidden" name="category" value="@selectedCategory" />
+
+                <select name="sortOrder" onchange="this.form.submit()">
+                    <option value="none" selected="@(sort == "none")">Sắp xếp giá</option>
+                    <option value="asc" selected="@(sort == "asc")">Giá tăng dần</option>
+                    <option value="desc" selected="@(sort == "desc")">Giá giảm dần</option>
+
+                    @foreach (var range in filteredRanges)
+                    {
+                        var value = $"range-{range.min}-{range.max}";
+                        <option value="@value" selected="@(sort == value)">
+                            @range.label
+                        </option>
+                    }
+                </select>
+            </form>
+
+        </div>
+
+        <!-- Hiển thị sản phẩm -->
+        <div id="searchResults" class="product-container">
+            <!-- Hiển thị danh sách sản phẩm -->
+          
+                @if (Model.Any())
+                {
+                    @foreach (var product in Model)
+                    {
+                        // Nếu có ảnh ProductImage thì lấy, nếu không có thì fallback về ảnh danh mục
+                        var imagePath = !string.IsNullOrEmpty(product.ProductImage)
+                        ? Url.Content("~" + product.ProductImage)
+                        : Url.Content($"~/Assets/Img/Home/Category/{product.ProductType.ProductTypeName.ToLower()}-category.png");
+
+                        <div class="product-card" tabindex="0">
+                            <div class="image-container">
+                                <img class="product-image" src="@imagePath" alt="@product.ProductName" />
+                                <a class="view-now" href="@Url.Action("ProductDetail", "Product", new { id = product.ProductID })">Xem ngay</a>
+                            </div>
+                            <div class="product-details">
+                            <p class="product-price">@product.ProductPrice.ToString("N0", culture) đ</p>
+                                <p class="product-name">@product.ProductName</p>
+                            </div>
+                        </div>
+                    }
+
+                }
+                else
+                {
+                    <p>Không tìm thấy sản phẩm nào.</p>
+                }
+           
+        </div>     
+    </div>
+</div>

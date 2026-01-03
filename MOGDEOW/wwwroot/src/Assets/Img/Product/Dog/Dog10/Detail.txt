@@ -1,0 +1,9 @@
+ProductName: Chó Lạp xưởng đen
+
+ProdutDetail: Chó Lạp Xưởng đen (Dachshund) là một giống chó nhỏ nhưng có ngoại hình rất đặc trưng với thân hình dài, đôi chân ngắn và bộ lông đen bóng mượt. Gương mặt đáng yêu với đôi mắt to tròn, đôi tai dài cụp xuống hai bên và chiếc mũi thính giúp chúng trông vừa tinh nghịch vừa thông minh.
+
+Lạp Xưởng nổi tiếng với tính cách năng động, dũng cảm và trung thành. Chúng rất tò mò, thích khám phá và có bản năng săn mồi mạnh mẽ do nguồn gốc là chó săn lửng. Dù nhỏ bé, nhưng chúng không hề nhút nhát, mà ngược lại rất tự tin và đôi khi khá bướng bỉnh.
+
+Chó Lạp Xưởng đen không chỉ là một người bạn đồng hành trung thành mà còn là một chú chó tràn đầy năng lượng, thích chơi đùa và rất tình cảm với chủ. Với ngoại hình dễ thương và tính cách vui tươi, chúng là lựa chọn hoàn hảo cho những ai muốn nuôi một thú cưng nhỏ nhắn nhưng cá tính mạnh mẽ.
+
+ProductPrice: 6.100.000

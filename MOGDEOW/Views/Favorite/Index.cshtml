@@ -1,0 +1,81 @@
+﻿@model List<MOGDEOW.Models.Product>
+@{
+    ViewData["Title"] = "Sản phẩm yêu thích";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/Favorite/Index.css" asp-append-version="true" />
+}
+
+<section class="favorite-section">
+    <div class="favorite-container">
+        <h2 class="favorite-title">❤️ Danh sách sản phẩm yêu thích</h2>
+
+        @if (!Model.Any())
+        {
+            <p class="no-favorite">Bạn chưa yêu thích sản phẩm nào.</p>
+        }
+        else
+        {
+            <div class="favorite-grid">
+                <div class="favorite-header">
+                    <span>Ảnh</span>
+                    <span>Tên</span>
+                    <span>Mô tả</span>
+                    <span>Giá</span>
+                    <span>Hành động</span>
+                </div>
+
+                @foreach (var item in Model)
+                {
+                    <div class="favorite-card" id="fav-@item.ProductID">
+                        <div class="favorite-img-wrapper">
+                            <img src="@Url.Content("~" + item.ProductImage)" alt="@item.ProductName" class="favorite-img" />
+                        </div>
+                        <div class="favorite-name">@item.ProductName</div>
+                        <div class="favorite-desc">
+                            @(item.ProductDetail.Length > 100 ? item.ProductDetail.Substring(0, 100) + "..." : item.ProductDetail)
+                        </div>
+                        <div class="favorite-price">@item.ProductPrice.ToString("N0") VNĐ</div>
+                        <div class="favorite-actions">
+                            <a class="btn-detail" href="@Url.Action("ProductDetail", "Product", new { id = item.ProductID })">Xem chi tiết</a>
+                            <button class="remove-fav-btn" data-id="@item.ProductID" title="Bỏ yêu thích">🗑</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</section>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.remove-fav-btn').click(function () {
+            const productId = $(this).data('id');
+
+            $.ajax({
+                url: '/Favorite/Remove',
+                type: 'POST',
+                data: { productId: productId },
+                success: function (res) {
+                    if (res.success) {
+                        $('#fav-' + productId).fadeOut(300, function () {
+                            $(this).remove();
+                            if ($('.favorite-card').length === 0) {
+                                $('.favorite-grid').remove();
+                                $('.favorite-container').append('<p class="no-favorite">Bạn chưa yêu thích sản phẩm nào.</p>');
+                            }
+                        });
+                    } else {
+                        alert('Lỗi: ' + res.message);
+                    }
+                },
+                error: function () {
+                    alert('Có lỗi xảy ra khi xóa yêu thích.');
+                }
+            });
+        });
+    </script>
+}

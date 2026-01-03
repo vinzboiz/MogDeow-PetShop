@@ -1,0 +1,174 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #ff6464;
+  --title-color: #fcae53;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Thiết kế cho thẻ sản phẩm */
+.product-card {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  color: inherit;
+  text-decoration: none;
+}
+.product-card:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+/* Đóng gói ảnh và button */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Button Xem ngay, ẩn bên dưới ảnh ban đầu */
+.view-now {
+  position: absolute;
+  bottom: -50px; /* ẩn bên dưới */
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: var(--main-color);
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0;
+  -webkit-transition: bottom 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  -o-transition: bottom 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  transition: bottom 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.product-card:hover .view-now {
+  bottom: 0px;
+  opacity: 1;
+}
+.product-card:hover .product-price {
+  color: var(--main-color);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-details {
+  padding: 10px;
+}
+
+/* Giới hạn hiển thị tên sản phẩm chỉ 2 dòng với ellipsis */
+.product-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.1rem;
+  height: 2.2rem;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-transform: capitalize;
+}
+
+/* Giá sản phẩm giới hạn 1 dòng */
+.product-price {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 600;
+  margin: 8px auto 0;
+  height: 1.2em; /* 1 dòng */
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+/*========================================= RESPONSIVE =================================*/
+/*================================================== DESKTOP ====================================================*/
+@media (min-width: 1025px) {
+}
+/*================================================== IPAD ================================================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Thiết kế cho thẻ sản phẩm */
+  .product-card-scroll {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px; /* Cố định chiều rộng */
+    height: 290px; /* Chiều cao cố định */
+  }
+
+  /* Giới hạn hiển thị tên sản phẩm chỉ 2 dòng với ellipsis */
+  .product-name-scroll {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  /* Giá sản phẩm giới hạn 1 dòng */
+  .product-price-scroll {
+    font-size: 0.8rem;
+  }
+  .view-now {
+    font-size: 0.8rem;
+  }
+}
+/* ==================================== MOBILE =====================================*/
+@media (max-width: 767px) {
+  /* Thiết kế cho thẻ sản phẩm */
+  .product-card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 150px;
+    flex: 0 0 150px; /* Cố định chiều rộng */
+    height: 210px; /* Chiều cao cố định */
+    border-radius: 8px;
+  }
+
+  /* Giới hạn hiển thị tên sản phẩm chỉ 2 dòng với ellipsis */
+  .product-name {
+    font-size: 0.65rem;
+    font-weight: 600;
+  }
+
+  /* Giá sản phẩm giới hạn 1 dòng */
+  .product-price {
+    font-size: 0.65rem;
+  }
+  .view-now {
+    font-size: 0.65rem;
+  }
+}

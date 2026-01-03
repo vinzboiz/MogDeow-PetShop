@@ -1,0 +1,92 @@
+﻿@model List<MOGDEOW.Models.Product>
+@using MOGDEOW.Models
+
+@{
+    ViewData["Title"] = "Quản Lý Sản Phẩm";
+    var productTypes = ViewBag.ProductTypes as List<ProductType>;
+
+}
+
+
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/ProductManage/Index.css" asp-append-version="true" />
+}
+
+
+
+<!-- ========== PRODUCT HEADER ========== -->
+<div class="product-header">
+    <span class="product-count">Có tất cả <strong>@Model.Count</strong> sản phẩm</span>
+
+    <form class="product-search" method="get" asp-action="Manage">
+        <input type="text" name="search" class="search-input" placeholder="Nhập tên sản phẩm..." value="@ViewBag.Search" />
+        <select name="productType" class="category-filter">
+            <option value="">Tất cả danh mục</option>
+            @foreach (var type in productTypes)
+            {
+                var isSelected = ViewBag.ProductType == type.ProductTypeName;
+                @Html.Raw($"<option value=\"{type.ProductTypeName}\" {(isSelected ? "selected" : "")}>{type.ProductTypeName}</option>")
+            }
+        </select>
+
+        <button type="submit" class="btn-search">Tìm</button>
+    </form>
+</div>
+
+<!-- NÚT CHUYỂN SANG TRANG THÊM SẢN PHẨM -->
+<div class="btn-top-container">
+    <a asp-action="Add" class="btn add">➕ Thêm sản phẩm mới</a>
+    <a class="btn back" href="@Url.Action("Index", "Account")">↩ Quay lại</a>
+</div>
+
+<!-- ========== BẢNG DANH SÁCH SẢN PHẨM ========== -->
+<div class="table-container">
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Danh mục</th>
+                <th>SL</th>
+                <th>DVT</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model)
+            {
+                <tr>
+                    <td class="truncate-text midle">@p.ProductID</td>
+                    <td>
+                        @{
+                            // Nếu có ảnh ProductImage thì lấy, nếu không có thì fallback về ảnh danh mục
+                            var imagePath = !string.IsNullOrEmpty(p.ProductImage)
+                            ? Url.Content("~" + p.ProductImage)
+                            : Url.Content($"~/Assets/Img/Home/Category/{p.ProductType.ProductTypeName.ToLower()}-category.png");
+                        }
+                        <img class="product-img" src="@imagePath" alt="@p.ProductName" />
+
+                    </td>
+                    <td class="truncate-text">@p.ProductName</td>
+                    <td class="truncate-text midle">@p.ProductPrice.ToString("N0")đ</td>
+                    <td class="truncate-text midle">@p.ProductType?.ProductTypeName</td>
+                    <td class="truncate-text midle">@p.Quantity</td>
+                    <td class="truncate-text midle">@p.DVT</td>
+                    <td>
+                        <div class="group-btn">
+                            <a asp-action="Edit" asp-controller="Product" asp-route-id="@p.ProductID" class="btn-edit">Sửa</a>
+                            <form asp-action="DeleteProduct" asp-controller="Product" asp-route-id="@p.ProductID" method="post"
+                                  onsubmit="return confirm('Bạn có chắc muốn xóa sản phẩm này không?');"
+                                  style="display:inline">
+                                <button type="submit" class="btn-delete">Xóa</button>
+                            </form>
+                        </div>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

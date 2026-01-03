@@ -1,0 +1,126 @@
+﻿@model IEnumerable<MOGDEOW.Models.Bill>
+
+<div class="account-order-summary">
+    <h4 class="order-title">📊 Thống kê đơn hàng</h4>
+
+    <!-- Form lọc theo ngày -->
+    <form method="get" asp-action="Index" class="order-filter-form">
+        <input type="hidden" name="section" value="orders">
+        <label for="selectedDate">Chọn ngày:</label>
+        <input type="date" name="selectedDate" value="@ViewBag.SelectedDate?.ToString("yyyy-MM-dd")" class="date-input" />
+        <button type="submit" class="btn-filter">🔍 Lọc</button>
+    </form>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="order-list">
+            @foreach (var order in Model)
+            {
+                <div class="order-card">
+                    <div class="order-header">
+                        <div class="order-avatar">🧾</div>
+                        <div>
+                            <h5 class="customer-name">@order.User.UserName</h5>
+                            <p class="order-date">@order.Date.ToString("dd/MM/yyyy")</p>
+                        </div>
+                    </div>
+                    <div class="order-body">
+                        <p><strong>Tổng tiền:</strong> <span class="order-total">@order.Total.ToString("N0") VNĐ</span></p>
+                        <p>
+                            <strong>Trạng thái:</strong>
+                            <span class="status-tag @(order.Status == "Đã thanh toán" ? "paid" : "pending")" id="status-@order.BillID">@order.Status</span>
+                        </p>
+                        <a asp-action="BillDetail" asp-controller="Account" asp-route-billId="@order.BillID"
+                           class="btn-detail">Xem chi tiết</a>
+                        @if (order.Status == "Chờ xác nhận" && order.PaymentMethod == "COD" && (string)ViewBag.Role == "Admin")
+                        {
+                            <form asp-action="ConfirmCodPayment" asp-controller="Account" method="post" style="display:inline;">
+                                <input type="hidden" name="billId" value="@order.BillID" />
+                                <input type="hidden" name="selectedDate" value="@ViewBag.SelectedDate" />
+                                <button type="submit" class="btn-confirm">✅ Xác nhận thanh toán</button>
+                            </form>
+                        }
+
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p class="no-order">❌ Không có đơn hàng nào trong ngày này.</p>
+    }
+</div>
+<style>
+    .btn-confirm {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 5px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+        .btn-confirm:hover {
+            background-color: #218838;
+        }
+
+    .status-tag.paid {
+        color: green;
+        font-weight: bold;
+    }
+
+    .status-tag.pending {
+        color: orange;
+        font-weight: bold;
+    }
+
+    .alert-success {
+        color: green;
+        background-color: #e7fbe7;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .alert-danger {
+        color: red;
+        background-color: #ffe0e0;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+</style>
+<script>
+    window.onload = function () {
+    @if (TempData["Success"] != null)
+    {
+        <text>
+                    Swal.fire({
+                        toast: true,
+                        position: 'top-end',
+                        icon: 'success',
+                        title: '@TempData["Success"]',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true
+                    });
+        </text>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <text>
+                    Swal.fire({
+                        toast: true,
+                        position: 'top-end',
+                        icon: 'error',
+                        title: '@TempData["Error"]',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true
+                    });
+        </text>
+    }
+    };
+</script>

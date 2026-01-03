@@ -1,0 +1,28 @@
+﻿@model MOGDEOW.Models.User
+@{
+    ViewData["Title"] = "Phân quyền tài khoản";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/UserManage/EditRole.css" asp-append-version="true" />
+}
+<div class="role-container">
+    <div class="role-header">Phân quyền cho: <strong>@Model.UserName</strong></div>
+
+    <form method="post" asp-action="EditRole" asp-route-id="@Model.UserID">
+        <div class="form-group">
+            <label for="role">Chọn vai trò:</label>
+            <select name="role" id="role">
+                <option value="Customer" selected="@(Model.Role == "Customer")">Khách hàng</option>
+                <option value="Staff" selected="@(Model.Role == "Staff")">Nhân viên</option>
+                <option value="Admin" selected="@(Model.Role == "Admin")">Quản trị viên</option>
+            </select>
+        </div>
+
+        <div class="btn-group">
+            <button type="submit" class="btn-role-submit">✅ Cập nhật quyền</button>
+            <a asp-action="Index" class="btn-cancel">↩ Quay lại</a>
+        </div>
+    </form>
+</div>

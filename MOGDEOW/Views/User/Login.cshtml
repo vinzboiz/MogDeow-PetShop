@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Đăng Nhập";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/src/Styles/Pages/Login-Signin/Login.css" asp-append-version="true" />
+
+}
+
+<div class="container-login">
+    <div class="login-container">
+        <h2>Đăng Nhập</h2>
+        <form method="post" action="@Url.Action("Login", "User")">
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="alert alert-danger" style="color:red; font-weight:bold; margin-bottom:10px;">
+                    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                    {
+                        <div>@error.ErrorMessage</div>
+                    }
+                </div>
+            }
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Nhập email" required />
+            </div>
+            <div class="input-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" name="password" id="password" placeholder="Nhập mật khẩu" required />
+            </div>
+            <button type="submit">Đăng Nhập</button>
+        </form>
+        <p>Chưa có tài khoản? <a href="@Url.Action("Signin", "User")">Đăng ký</a></p>
+
+    </div>
+</div>
+
