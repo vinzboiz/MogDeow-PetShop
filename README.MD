@@ -33,7 +33,7 @@ Clone the project and run:
 
 ```bash
 # 1. Clone
-git clone https://github.com/vinzboiz/MogDeow-PetShop
+git clone https://github.com/vinzboiz/MogDeow-PetShop.git
 cd MOGDEOW
 
 # 2. Go into the main web app folder
@@ -86,7 +86,7 @@ Open your browser and navigate to the address where the app is listening (for ex
 ### 1. Clone repo
 
 ```bash
-git clone https://github.com/vinzboiz/MogDeow-PetShop
+git clone https://github.com/vinzboiz/MogDeow-PetShop.git
 cd MOGDEOW
 ```
 
