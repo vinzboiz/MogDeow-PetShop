@@ -1,6 +1,6 @@
 ## 🐾 MogDeow PetShop — ASP.NET Core pet shop web app
 
-MogDeow PetShop is a web application for selling pets & accessories, built with **ASP.NET Core MVC** and **SQL Server**.  
+MogDeow PetShop is a web application for selling pets & accessories, built with **ASP.NET Core MVC** and **SQL Server**.
 Users can browse products by category (dog/cat/accessories), manage their cart, place orders, rate products, add favorites, and admins have a dedicated area to manage content.
 
 ---
@@ -33,7 +33,7 @@ Clone the project and run:
 
 ```bash
 # 1. Clone
-git clone <your-github-repo-url>
+git clone https://github.com/vinzboiz/MogDeow-PetShop
 cd MOGDEOW
 
 # 2. Go into the main web app folder
@@ -86,7 +86,7 @@ Open your browser and navigate to the address where the app is listening (for ex
 ### 1. Clone repo
 
 ```bash
-git clone <your-github-repo-url>
+git clone https://github.com/vinzboiz/MogDeow-PetShop
 cd MOGDEOW
 ```
 
